@@ -1,0 +1,457 @@
+[  
+  {
+    "id": "shinx",
+    "engName": "Shinx",
+    "jpnName": "コリンク"
+  },
+  
+  {
+    "id": "luxio",
+    "engName": "Luxio",
+    "jpnName": "ルクシオ"
+  },
+  
+  {
+    "id": "luxray",
+    "engName": "Luxray",
+    "jpnName": "レントラー"
+  },
+  
+  {
+    "id": "zubat",
+    "engName": "Zubat",
+    "jpnName": "ズバット"
+  },
+  
+  {
+    "id": "golbat",
+    "engName": "Golbat",
+    "jpnName": "ゴルバット"
+  },
+  
+  {
+    "id": "crobat",
+    "engName": "Crobat",
+    "jpnName": "クロバット"
+  },
+
+{
+    "id": "burmy",
+    "engName": "Burmy (Sand)",
+    "jpnName": "ミノムッチすなちのミノ"
+  },
+
+{
+    "id": "wormadam",
+    "engName": "Wormadam (Sand)",
+    "jpnName": "ミノマダムすなちのミノ"
+  },
+
+{
+    "id": "mothim",
+    "engName": "Mothim",
+    "jpnName": "ガーメイル"
+  },
+
+{
+    "id": "geodude",
+    "engName": "Geodude",
+    "jpnName": "イシツブテ"
+  },
+
+{
+    "id": "graveler",
+    "engName": "Graveler",
+    "jpnName": "ゴローン"
+  },
+  
+  {
+    "id": "golem",
+    "engName": "Golem",
+    "jpnName": "ゴローニャ"
+  },
+
+{
+    "id": "stantler",
+    "engName": "Stantler",
+    "jpnName": "オドシシ"
+  },
+
+{
+    "id": "paras",
+    "engName": "Paras",
+    "jpnName": "パラス"
+  },
+
+{
+    "id": "parasect",
+    "engName": "Parasect",
+    "jpnName": "パラセクト"
+  },
+  
+  {
+    "id": "cherubi",
+    "engName": "Cherubi",
+    "jpnName": "チェリンボ"
+  },
+  
+  {
+    "id": "cherrim",
+    "engName": "Cherrim",
+    "jpnName": "チェリム"
+  },
+
+{
+    "id": "psyduck",
+    "engName": "Psyduck",
+    "jpnName": "コダック"
+  },
+  
+  {
+    "id": "golduck",
+    "engName": "Golduck",
+    "jpnName": "ゴルダック"
+  },
+  
+  {
+    "id": "scyther",
+    "engName": "Scyther",
+    "jpnName": "ストライク"
+  },
+  
+  {
+    "id": "heracross",
+    "engName": "Heracross",
+    "jpnName": "ヘラクロス"
+  },
+  
+  {
+    "id": "magikarp",
+    "engName": "Magikarp",
+    "jpnName": "コイキング"
+  },
+
+{
+    "id": "gyarados",
+    "engName": "Gyarados",
+    "jpnName": "ギャラドス"
+  },
+  
+  {
+    "id": "budew",
+    "engName": "Budew",
+    "jpnName": "スボミー"
+  },
+  
+  {
+    "id": "roselia",
+    "engName": "Roselia",
+    "jpnName": "ロゼリア"
+  },
+  
+  {
+    "id": "carnivine",
+    "engName": "Carnivine",
+    "jpnName": "マスキッパ"
+  },
+  
+  {
+    "id": "barboach",
+    "engName": "Barboach",
+    "jpnName": "ドジョッチ"
+  },
+  
+  {
+    "id": "whiscash",
+    "engName": "Whiscash",
+    "jpnName": "ナマズン"
+  },
+  
+  {
+    "id": "croagunk",
+    "engName": "Croagunk",
+    "jpnName": "グレッグル"
+  },
+  
+{
+    "id": "toxicroak",
+    "engName": "Toxicroak",
+    "jpnName": "ドクロッグ"
+  },
+  
+  {
+    "id": "yanma",
+    "engName": "Yanma",
+    "jpnName": "ヤンヤンマ"
+  },
+  
+  {
+    "id": "yanmega",
+    "engName": "Yanmega",
+    "jpnName": "メガヤンマ"
+  },
+  
+  {
+    "id": "hippopotas",
+    "engName": "Hippopotas",
+    "jpnName": "ヒポポタス"
+  },
+  
+  {
+    "id": "hippowdon",
+    "engName": "Hippowdon",
+    "jpnName": "カバルドン"
+  },
+  
+  {
+    "id": "stunky",
+    "engName": "Stunky",
+    "jpnName": "スカンプー"
+  },
+  
+  {
+    "id": "skuntank",
+    "engName": "Skuntank",
+    "jpnName": "スカタンク"
+  },
+  
+  {
+    "id": "teddiursa",
+    "engName": "Teddiursa",
+    "jpnName": "ヒメグマ"
+  },
+
+{
+    "id": "ursaring",
+    "engName": "Ursaring",
+    "jpnName": "リングマ"
+  },
+  
+  {
+    "id": "goomy",
+    "engName": "Goomy",
+    "jpnName": "ヌメラ"
+  },
+  
+  {
+    "id": "sliggoo",
+    "engName": "Sliggoo",
+    "jpnName": "ヌメイル"
+  },
+  
+  {
+    "id": "goodra",
+    "engName": "Goodra",
+    "jpnName": "ヌメルゴン"
+  },
+  
+  {
+    "id": "onix",
+    "engName": "Onix",
+    "jpnName": "イワーク"
+  },
+  
+  {
+    "id": "steelix",
+    "engName": "Steelix",
+    "jpnName": "ハガネール"
+  },
+  
+  {
+    "id": "rhyhorn",
+    "engName": "Rhyhorn",
+    "jpnName": "サイホーン"
+  },
+  
+  {
+    "id": "rhydon",
+    "engName": "Rhydon",
+    "jpnName": "サイドン"
+  },
+  
+  {
+    "id": "rhyperior",
+    "engName": "Rhyperior",
+    "jpnName": "ドサイドン"
+  },
+  
+  {
+    "id": "bonsly",
+    "engName": "Bonsly",
+    "jpnName": "ウソハチ"
+  },
+  
+  {
+    "id": "sudowoodo",
+    "engName": "Sudowoodo",
+    "jpnName": "ウソッキー"
+  },
+  
+  {
+    "id": "gastly",
+    "engName": "Gastly",
+    "jpnName": "ゴース"
+  },
+  
+  {
+    "id": "haunter",
+    "engName": "Haunter",
+    "jpnName": "ゴースト"
+  },
+
+{
+    "id": "machop",
+    "engName": "Machop",
+    "jpnName": "ワンリキー"
+  },
+
+{
+    "id": "machoke",
+    "engName": "Machoke",
+    "jpnName": "ゴーリキー"
+  },
+
+  {
+    "id": "basculin",
+    "engName": "Basculin",
+    "jpnName": "バスラオ"
+  },
+  
+  {
+    "id": "magnezone",
+    "engName": "Magnezone",
+    "jpnName": "ジバコイル"
+  },
+  
+  {
+    "id": "bronzor",
+    "engName": "Bronzor",
+    "jpnName": "ドーミラー"
+  },
+  
+  {
+    "id": "bronzong",
+    "engName": "Bronzong",
+    "jpnName": "ドータクン"
+  },
+  
+  {
+    "id": "elekid",
+    "engName": "Elekid",
+    "jpnName": "エレキッド"
+  },
+  
+  {
+    "id": "electabuzz",
+    "engName": "Electabuzz",
+    "jpnName": "エレブー"
+  },
+  
+  {
+    "id": "electivire",
+    "engName": "Electivire",
+    "jpnName": "エレキブル"
+  },
+  
+  {
+    "id": "gligar",
+    "engName": "Gligar",
+    "jpnName": "グライガー"
+  },
+  
+  {
+    "id": "gliscor",
+    "engName": "Gliscor",
+    "jpnName": "グライオン"
+  },
+  
+  {
+    "id": "gible",
+    "engName": "Gible",
+    "jpnName": "フカマル"
+  },
+  
+  {
+    "id": "gabite",
+    "engName": "Gabite",
+    "jpnName": "ガバイト"
+  },
+  
+  {
+    "id": "nosepass",
+    "engName": "Nosepass",
+    "jpnName": "ノズパス"
+  },
+  
+  {
+    "id": "probopass",
+    "engName": "Probopass",
+    "jpnName": "ダイノーズ"
+  },
+  
+  {
+    "id": "voltorb",
+    "engName": "Voltorb",
+    "jpnName": "ビリリダマ"
+  },
+  
+  {
+    "id": "rotom",
+    "engName": "Rotom",
+    "jpnName": "ロトム"
+  },
+  
+  {
+    "id": "chingling",
+    "engName": "Chingling",
+    "jpnName": "リーシャン"
+  },
+  
+  {
+    "id": "chimecho",
+    "engName": "Chimecho",
+    "jpnName": "チリーン"
+  },
+  
+  {
+    "id": "misdreavus",
+    "engName": "Misdreavus",
+    "jpnName": "ムウマ"
+  },
+  
+  {
+    "id": "mismagius",
+    "engName": "Mismagius",
+    "jpnName": "ムウマージ"
+  },
+  
+  {
+    "id": "cleffa",
+    "engName": "Cleffa",
+    "jpnName": "ピィ"
+  },
+  
+  {
+    "id": "clefairy",
+    "engName": "Clefairy",
+    "jpnName": "ピッピ"
+  },
+  
+  {
+    "id": "clefable",
+    "engName": "Clefable",
+    "jpnName": "ピクシー"
+  },
+  
+  {
+    "id": "sneasel",
+    "engName": "Sneasel",
+    "jpnName": "ニューラ"
+  },
+  
+  {
+    "id": "darkrai",
+    "engName": "Darkrai",
+    "jpnName": "ダークライ"
+  }
+]

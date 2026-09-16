@@ -1,0 +1,25 @@
+.lza-location-shot {
+  margin: 0 0 0.85rem;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(140, 190, 170, 0.14);
+  background: #0a1216;
+  flex-shrink: 0;
+}
+
+.lza-location-shot img {
+  display: block;
+  width: 100%;
+  height: 160px;
+  max-height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.lza-location-shot figcaption {
+  padding: 0.4rem 0.65rem 0.55rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #8aa399;
+}

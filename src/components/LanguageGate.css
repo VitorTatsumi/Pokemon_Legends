@@ -1,0 +1,64 @@
+.lang-gate {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 10%, rgba(46, 160, 120, 0.22), transparent 55%),
+    radial-gradient(ellipse 70% 50% at 85% 80%, rgba(30, 90, 140, 0.18), transparent 50%),
+    linear-gradient(160deg, #0f1a1f 0%, #15262e 45%, #1a2f28 100%);
+}
+
+.lang-gate__panel {
+  width: min(420px, 100%);
+  text-align: center;
+  padding: 2.5rem 2rem;
+  border: 1px solid rgba(180, 220, 200, 0.18);
+  background: rgba(12, 22, 26, 0.72);
+  backdrop-filter: blur(10px);
+}
+
+.lang-gate__brand {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #7dceb0;
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.lang-gate__games {
+  margin: 0.35rem 0 0.75rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8aa399;
+}
+
+.lang-gate__panel h1 {
+  margin: 0 0 1.75rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #d7e6df;
+}
+
+.lang-gate__actions {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.lang-gate__actions button {
+  font: inherit;
+  font-weight: 600;
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(125, 206, 176, 0.35);
+  background: #1d3a34;
+  color: #e8f6ef;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.lang-gate__actions button:hover {
+  background: #275549;
+  transform: translateY(-1px);
+}

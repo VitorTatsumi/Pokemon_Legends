@@ -1,0 +1,277 @@
+{
+  "jubi": [
+    {
+      "id": 156467,
+      "cat": "Fast Travel Point",
+      "title": "Practice Field",
+      "lat": 0.64780971791086,
+      "lng": -0.91772711049086
+    },
+    {
+      "id": 156469,
+      "cat": "Fast Travel Point",
+      "title": "Farm",
+      "lat": 0.72097754201558,
+      "lng": -0.97256104963381
+    },
+    {
+      "id": 156473,
+      "cat": "Fast Travel Point",
+      "title": "Front Gate",
+      "lat": 0.74035894572668,
+      "lng": -0.90775492300156
+    },
+    {
+      "id": 156477,
+      "cat": "Fast Travel Point",
+      "title": "Galaxy Hall",
+      "lat": 0.74421697212877,
+      "lng": -0.94035029411509
+    },
+    {
+      "id": 156468,
+      "cat": "Point of Interest",
+      "title": "Farm",
+      "lat": 0.70960817983126,
+      "lng": -0.97256104963381
+    },
+    {
+      "id": 156470,
+      "cat": "Point of Interest",
+      "title": "Pastures",
+      "lat": 0.72116091859357,
+      "lng": -0.91259215966821
+    },
+    {
+      "id": 156471,
+      "cat": "Point of Interest",
+      "title": "Sevii Kitchen",
+      "lat": 0.73559117261362,
+      "lng": -0.91545734923551
+    },
+    {
+      "id": 156476,
+      "cat": "Point of Interest",
+      "title": "Galaxy Hall",
+      "lat": 0.75543300967151,
+      "lng": -0.94043076038551
+    },
+    {
+      "id": 156478,
+      "cat": "Point of Interest",
+      "title": "Ginkgo Guild Cart",
+      "lat": 0.74666802149726,
+      "lng": -0.93201429222674
+    },
+    {
+      "id": 156479,
+      "cat": "Point of Interest",
+      "title": "Candy Stand",
+      "lat": 0.74588516508632,
+      "lng": -0.94757616520033
+    },
+    {
+      "id": 156595,
+      "cat": "Point of Interest",
+      "title": "The Wallflower",
+      "lat": 0.73587028075666,
+      "lng": -0.9462726034424
+    },
+    {
+      "id": 157320,
+      "cat": "Point of Interest",
+      "title": "Prelude Beach",
+      "lat": 0.63399242778604,
+      "lng": -0.97310025849623
+    },
+    {
+      "id": 156487,
+      "cat": "Clothier",
+      "title": "First-Rate Clothier",
+      "lat": 0.7350392176363,
+      "lng": -0.9224170446397
+    },
+    {
+      "id": 156483,
+      "cat": "Craftworks",
+      "title": "Craftworks",
+      "lat": 0.73623148045927,
+      "lng": -0.95356250379683
+    },
+    {
+      "id": 156485,
+      "cat": "General Store",
+      "title": "First-Rate General Store",
+      "lat": 0.7350392176363,
+      "lng": -0.93512535095195
+    },
+    {
+      "id": 156486,
+      "cat": "Hairdresser",
+      "title": "First-Rate Hairdresser",
+      "lat": 0.73495339400969,
+      "lng": -0.92906892299612
+    },
+    {
+      "id": 156474,
+      "cat": "Photo Studio",
+      "title": "Photography Studio",
+      "lat": 0.74649969038583,
+      "lng": -0.91416967952028
+    },
+    {
+      "id": 156475,
+      "cat": "Quarters",
+      "title": "Your Quarters",
+      "lat": 0.74666802149726,
+      "lng": -0.92225025885907
+    },
+    {
+      "id": 156480,
+      "cat": "Trading Post",
+      "title": "Trading Post",
+      "lat": 0.74784837527972,
+      "lng": -0.95693171024439
+    },
+    {
+      "id": 156481,
+      "cat": "Training Grounds",
+      "title": "Training Grounds",
+      "lat": 0.74582636587574,
+      "lng": -0.96383157337431
+    },
+    {
+      "id": 156482,
+      "cat": "Training Grounds",
+      "title": "Training Grounds",
+      "lat": 0.75205461365158,
+      "lng": -0.97241718892175
+    },
+    {
+      "id": 156488,
+      "cat": "Vendor",
+      "title": "Charm Lady Lucille",
+      "lat": 0.76366943030287,
+      "lng": -0.95911790209337
+    }
+  ],
+  "arenas": [
+    {
+      "id": 156443,
+      "cat": "Arena",
+      "title": "Moonview Arena",
+      "lat": 0.96027770173089,
+      "lng": -0.77248210018068,
+      "region_id": 1204
+    },
+    {
+      "id": 156497,
+      "cat": "Arena",
+      "title": "Grandtree Arena",
+      "lat": 0.36461688765256,
+      "lng": -0.77760196866834,
+      "region_id": 1208
+    },
+    {
+      "id": 156498,
+      "cat": "Arena",
+      "title": "Grandtree Arena",
+      "lat": 0.37457304035746,
+      "lng": -0.76541401090486,
+      "region_id": 1208
+    },
+    {
+      "id": 156529,
+      "cat": "Arena",
+      "title": "Icepeak Arena",
+      "lat": 0.94964459863921,
+      "lng": -1.0103379363147,
+      "region_id": 1205
+    },
+    {
+      "id": 156562,
+      "cat": "Arena",
+      "title": "Brava Arena",
+      "lat": 0.50581618460811,
+      "lng": -0.61396463502209,
+      "region_id": 1207
+    },
+    {
+      "id": 156563,
+      "cat": "Arena",
+      "title": "Brava Arena",
+      "lat": 0.50052826902566,
+      "lng": -0.61165709196635,
+      "region_id": 1207
+    },
+    {
+      "id": 156591,
+      "cat": "Arena",
+      "title": "Molten Arena",
+      "lat": 0.75743466434568,
+      "lng": -0.40870076172621,
+      "region_id": 1206
+    },
+    {
+      "id": 156592,
+      "cat": "Arena",
+      "title": "Molten Arena",
+      "lat": 0.75786378026767,
+      "lng": -0.40080433838648,
+      "region_id": 1206
+    },
+    {
+      "id": 156658,
+      "cat": "Arena",
+      "title": "Moonview Arena",
+      "lat": 0.95149962052565,
+      "lng": -0.76084554354866,
+      "region_id": 1204
+    },
+    {
+      "id": 157741,
+      "cat": "Arena",
+      "title": "Icepeak Arena",
+      "lat": 0.93966740954998,
+      "lng": -0.99390651976165,
+      "region_id": 1205
+    }
+  ],
+  "ft": [
+    {
+      "id": 156467,
+      "title": "Practice Field",
+      "lat": 0.64780971791086,
+      "lng": -0.91772711049086,
+      "region_id": 1209
+    },
+    {
+      "id": 156469,
+      "title": "Farm",
+      "lat": 0.72097754201558,
+      "lng": -0.97256104963381,
+      "region_id": 1209
+    },
+    {
+      "id": 156473,
+      "title": "Front Gate",
+      "lat": 0.74035894572668,
+      "lng": -0.90775492300156,
+      "region_id": 1209
+    },
+    {
+      "id": 156477,
+      "title": "Galaxy Hall",
+      "lat": 0.74421697212877,
+      "lng": -0.94035029411509,
+      "region_id": 1209
+    },
+    {
+      "id": 156553,
+      "title": "Diamond Settlement",
+      "lat": 0.46446560571138,
+      "lng": -0.57079320845745,
+      "region_id": 1207
+    }
+  ]
+}

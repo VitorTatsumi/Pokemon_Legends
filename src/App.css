@@ -1,0 +1,125 @@
+.app-shell {
+  display: grid;
+  grid-template-columns: minmax(200px, 240px) minmax(0, 1fr);
+  height: 100vh;
+  height: 100dvh;
+  max-width: 100vw;
+  background: #0b1215;
+  color: #e6f0ea;
+  overflow: hidden;
+}
+
+.app-shell--la {
+  background: #0c0e0b;
+  color: #f0e6d8;
+}
+
+.app-main {
+  min-width: 0;
+  min-height: 0;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main > .pokedex-panel {
+  flex: 1;
+  min-height: 0;
+  height: 100%;
+}
+
+.map-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 380px);
+  flex: 1;
+  min-height: 0;
+  min-width: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.map-layout > .map-shell {
+  min-height: 0;
+  min-width: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.map-layout > .zone-panel {
+  min-height: 0;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+}
+
+.map-layout > .mission-panel {
+  min-height: 0;
+  height: 100%;
+}
+
+.map-layout > .screw-panel {
+  min-height: 0;
+  height: 100%;
+}
+
+.map-layout > .center-panel {
+  min-height: 0;
+  height: 100%;
+}
+
+.map-layout > .market-panel {
+  min-height: 0;
+  height: 100%;
+}
+
+.map-layout > .cafe-panel {
+  min-height: 0;
+  height: 100%;
+}
+
+.map-layout > .style-panel {
+  min-height: 0;
+  height: 100%;
+}
+
+.map-layout > .restaurant-panel {
+  min-height: 0;
+  height: 100%;
+}
+
+.app-main > .locations-view {
+  min-height: 0;
+  height: 100%;
+}
+
+.map-layout > .hisui-panel {
+  min-height: 0;
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  .app-shell {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto minmax(0, 1fr);
+  }
+
+  .map-layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(0, 1fr) minmax(240px, 42%);
+  }
+
+  .map-layout > .zone-panel {
+    border-left: none;
+    border-top: 1px solid rgba(140, 190, 170, 0.18);
+  }
+
+  .map-layout > .zone-panel--empty {
+    display: none;
+  }
+
+  .map-layout:has(.zone-panel--empty) {
+    grid-template-rows: minmax(0, 1fr);
+  }
+}

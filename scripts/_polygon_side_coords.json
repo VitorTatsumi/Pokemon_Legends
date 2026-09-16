@@ -1,0 +1,597 @@
+{
+  "1": {
+    "x": 56.02,
+    "y": 26.88,
+    "name": "001: A Big Ol' Bunnelby"
+  },
+  "2": {
+    "x": 53.19,
+    "y": 8.94,
+    "name": "002: A Use for an Evolution Stone!"
+  },
+  "3": {
+    "x": 51.26,
+    "y": 14.59,
+    "name": "003: Sableye in the Cemetery"
+  },
+  "4": {
+    "x": 44.48,
+    "y": 29.4,
+    "name": "004: A Break Time Battle"
+  },
+  "5": {
+    "x": 37.51,
+    "y": 50.11,
+    "name": "005: I\\u2019d Like to See an Ekans"
+  },
+  "6": {
+    "x": 31.42,
+    "y": 66.11,
+    "name": "006: Long-Range Moves Have Style"
+  },
+  "7": {
+    "x": 59.18,
+    "y": 33.96,
+    "name": "007: A Feisty Chespin"
+  },
+  "8": {
+    "x": 50.49,
+    "y": 75.3,
+    "name": "008: Get Well, Fennekin"
+  },
+  "9": {
+    "x": 87.75,
+    "y": 28.41,
+    "name": "009: A Challenge from Froakie"
+  },
+  "10": {
+    "x": 50.6,
+    "y": 87.39,
+    "name": "010: Skiddo's Fragrant Leaves"
+  },
+  "11": {
+    "x": 58.7,
+    "y": 43.55,
+    "name": "011: The Kakuna Master"
+  },
+  "12": {
+    "x": 22.28,
+    "y": 83.87,
+    "name": "012: The Many Flowers of Flabebe"
+  },
+  "13": {
+    "x": 75.76,
+    "y": 21.88,
+    "name": "013: Stumped at the Fountain"
+  },
+  "14": {
+    "x": 11.6,
+    "y": 64.18,
+    "name": "014: Slurpuff's Cafe Visit"
+  },
+  "15": {
+    "x": 44.18,
+    "y": 31.97,
+    "name": "015: A Sensitive Audino"
+  },
+  "16": {
+    "x": 48.77,
+    "y": 77.09,
+    "name": "016: The Budew Show"
+  },
+  "17": {
+    "x": 59.63,
+    "y": 89.32,
+    "name": "017: A Shiny Mareep?"
+  },
+  "18": {
+    "x": 68.2,
+    "y": 71.71,
+    "name": "018: A Pan-tastic Pot of Tea"
+  },
+  "19": {
+    "x": 71.67,
+    "y": 61.46,
+    "name": "019: Poisonous, Paralyzing Strategies"
+  },
+  "20": {
+    "x": 92.16,
+    "y": 49.63,
+    "name": "020: A Berry Clever Plan"
+  },
+  "21": {
+    "x": 61.27,
+    "y": 4.78,
+    "name": "021: Spwepa in the Museum"
+  },
+  "22": {
+    "x": 53.55,
+    "y": 95.14,
+    "name": "022: A Call from Mable"
+  },
+  "23": {
+    "x": 51.88,
+    "y": 88.95,
+    "name": "023: Underneath the Holovator"
+  },
+  "24": {
+    "x": 59.27,
+    "y": 28.78,
+    "name": "024: An Abra Playmate"
+  },
+  "25": {
+    "x": 33.35,
+    "y": 29.74,
+    "name": "025: Trubblesome Patrons"
+  },
+  "26": {
+    "x": 32.05,
+    "y": 23.29,
+    "name": "026: Burn, Litleo, Burn"
+  },
+  "27": {
+    "x": 53.29,
+    "y": 95.55,
+    "name": "027: Restored From a Fossil"
+  },
+  "28": {
+    "x": 45.99,
+    "y": 90.69,
+    "name": "028: Who Says Normal Is Weak?"
+  },
+  "29": {
+    "x": 89.2,
+    "y": 67.07,
+    "name": "029: Full Course of Battles: One Star"
+  },
+  "30": {
+    "x": 49.17,
+    "y": 80.57,
+    "name": "030: Show Me a Mega Camerupt!"
+  },
+  "31": {
+    "x": 49.4,
+    "y": 80.54,
+    "name": "031: Show Me a Mega Sableye!"
+  },
+  "32": {
+    "x": 49.29,
+    "y": 80.84,
+    "name": "032: Show Me a Mega Medicham!"
+  },
+  "33": {
+    "x": 56.24,
+    "y": 69.06,
+    "name": "033: Who Has the Bigger Magikarp?"
+  },
+  "34": {
+    "x": 76.13,
+    "y": 27.85,
+    "name": "034: Moves That Put Up a Wall"
+  },
+  "35": {
+    "x": 61.87,
+    "y": 44.71,
+    "name": "035: Guidance from a Yoga Master"
+  },
+  "36": {
+    "x": 17.43,
+    "y": 58.89,
+    "name": "036: Some Friendly Competition"
+  },
+  "37": {
+    "x": 18.33,
+    "y": 38.93,
+    "name": "037: Binacle by the Boatload"
+  },
+  "38": {
+    "x": 22.9,
+    "y": 43.13,
+    "name": "038: Chasing Status"
+  },
+  "39": {
+    "x": 11.06,
+    "y": 73.16,
+    "name": "039: Slowpoke for Slowpoke"
+  },
+  "40": {
+    "x": 80.51,
+    "y": 81.46,
+    "name": "040: A Holovator Without Power"
+  },
+  "41": {
+    "x": 61.33,
+    "y": 88.5,
+    "name": "041: Watch Out for Traps"
+  },
+  "42": {
+    "x": 93.46,
+    "y": 50.36,
+    "name": "042: A Fan of Fairy Types"
+  },
+  "43": {
+    "x": 30.15,
+    "y": 52.33,
+    "name": "043: A Big Weedle Problem"
+  },
+  "44": {
+    "x": 51.04,
+    "y": 87.26,
+    "name": "044: Vanillite's Fragrant Snow"
+  },
+  "45": {
+    "x": 37.17,
+    "y": 91.64,
+    "name": "045: On Maintenance Duty"
+  },
+  "46": {
+    "x": 75.08,
+    "y": 54.78,
+    "name": "046: Pidgeot Soaring High"
+  },
+  "47": {
+    "x": 79.99,
+    "y": 51.88,
+    "name": "047: Becoming a Furfrou Trimmer"
+  },
+  "48": {
+    "x": 48.81,
+    "y": 21.25,
+    "name": "048: All Tied Up"
+  },
+  "49": {
+    "x": 57.55,
+    "y": 38.16,
+    "name": "049: Hit and Heal"
+  },
+  "50": {
+    "x": 37.51,
+    "y": 47.66,
+    "name": "050: Just a Few Questions for You..."
+  },
+  "51": {
+    "x": 22.72,
+    "y": 83.95,
+    "name": "051: Floette Frolicking with Flowers"
+  },
+  "52": {
+    "x": 46.61,
+    "y": 84.73,
+    "name": "052: Numel Frozen Solid"
+  },
+  "53": {
+    "x": 36.81,
+    "y": 81.53,
+    "name": "053: The Most Electrifying Eelektrik"
+  },
+  "54": {
+    "x": 26.84,
+    "y": 28.88,
+    "name": "054: Get ENERGIZED!"
+  },
+  "55": {
+    "x": 68.06,
+    "y": 54.33,
+    "name": "055: Carvanha, Menace of the Deep!"
+  },
+  "56": {
+    "x": 74.76,
+    "y": 50.61,
+    "name": "056: We'll Just Muscle Our Way Through!"
+  },
+  "57": {
+    "x": 46.67,
+    "y": 67.59,
+    "name": "057: The Camerupt Entrepreneur"
+  },
+  "58": {
+    "x": 29.11,
+    "y": 66.18,
+    "name": "058: Better to Detect Than to Protect"
+  },
+  "59": {
+    "x": 23.84,
+    "y": 44.76,
+    "name": "059: A Rematch with Hawlucha!"
+  },
+  "60": {
+    "x": 33.14,
+    "y": 23.8,
+    "name": "060: Full Course of Battles - Two Stars"
+  },
+  "61": {
+    "x": 41.12,
+    "y": 74.46,
+    "name": "061: My Favorite Holovator"
+  },
+  "62": {
+    "x": 80.24,
+    "y": 51.65,
+    "name": "062: Becoming a Pro Furfrou Trimmer"
+  },
+  "63": {
+    "x": 11.27,
+    "y": 29.8,
+    "name": "063: An Extra-Large Gogoat"
+  },
+  "64": {
+    "x": 41.2,
+    "y": 14.19,
+    "name": "064: Let It Rain, Let It Pour"
+  },
+  "65": {
+    "x": 37.76,
+    "y": 13.23,
+    "name": "065: Apartment Block Eeriness"
+  },
+  "66": {
+    "x": 42.4,
+    "y": 67.41,
+    "name": "066: Investigating with Shuppet"
+  },
+  "67": {
+    "x": 75.87,
+    "y": 70.48,
+    "name": "067: Sylveon the Soother"
+  },
+  "68": {
+    "x": 88.4,
+    "y": 65.2,
+    "name": "068: The Best Use for Leftovers"
+  },
+  "69": {
+    "x": 16.77,
+    "y": 35.71,
+    "name": "069: A Sky Battle, for Old Times' Sake"
+  },
+  "70": {
+    "x": 33.01,
+    "y": 56.31,
+    "name": "070: Who's the Strongest, Huh?!"
+  },
+  "71": {
+    "x": 39.49,
+    "y": 37.49,
+    "name": "071: The Burning Gaze of Watchog"
+  },
+  "72": {
+    "x": 92.18,
+    "y": 62.23,
+    "name": "072: Find My Galarian Stunfisk!"
+  },
+  "73": {
+    "x": 51.67,
+    "y": 19.99,
+    "name": "073: Full Course of Battles: High Rolling"
+  },
+  "74": {
+    "x": 61.28,
+    "y": 85.53,
+    "name": "074: Delibird Gets in a Flap"
+  },
+  "75": {
+    "x": 62.68,
+    "y": 90.09,
+    "name": "075: Some Unusual Pokemon"
+  },
+  "76": {
+    "x": 61.7,
+    "y": 26.63,
+    "name": "076: Let's Learn About Mega Evolution!"
+  },
+  "77": {
+    "x": 26.47,
+    "y": 48.17,
+    "name": "077: Catch Mawile If You Can"
+  },
+  "78": {
+    "x": 50.82,
+    "y": 87.6,
+    "name": "078: Inkay's Fragrant Ink"
+  },
+  "79": {
+    "x": 71.08,
+    "y": 23.59,
+    "name": "079: A Fateful Swing of a Metronome"
+  },
+  "80": {
+    "x": 73.04,
+    "y": 18.35,
+    "name": "080: A Shocking Territorial Dispute"
+  },
+  "81": {
+    "x": 82.7,
+    "y": 80.37,
+    "name": "081: Pancham the Courier"
+  },
+  "82": {
+    "x": 86.39,
+    "y": 35.8,
+    "name": "082: Clauncher Launching Water Gun"
+  },
+  "83": {
+    "x": 50.78,
+    "y": 4.67,
+    "name": "083: Honedge's Cutting Edge"
+  },
+  "84": {
+    "x": 26.88,
+    "y": 30.78,
+    "name": "084: Strike First to Make 'Em Flinch!"
+  },
+  "85": {
+    "x": 16.87,
+    "y": 26.85,
+    "name": "085: Follow Litwick!"
+  },
+  "86": {
+    "x": 33.83,
+    "y": 62.25,
+    "name": "086: Who Messed Up the Garden?"
+  },
+  "87": {
+    "x": 80.35,
+    "y": 51.9,
+    "name": "087: Becoming a Peerless Furfrou Trimmer"
+  },
+  "88": {
+    "x": 46.79,
+    "y": 23.15,
+    "name": "088: The Nervous Novice Cabbie"
+  },
+  "89": {
+    "x": 74.77,
+    "y": 23.76,
+    "name": "089: Up, Up, and Away AFter Emolga!"
+  },
+  "90": {
+    "x": 45.05,
+    "y": 71.26,
+    "name": "090: Froslass's Unfinished Business"
+  },
+  "91": {
+    "x": 74.07,
+    "y": 62.41,
+    "name": "091: Dragon You into Battle"
+  },
+  "92": {
+    "x": 19.3,
+    "y": 80.68,
+    "name": "092: The Beldum Blockade"
+  },
+  "93": {
+    "x": 16.05,
+    "y": 77.18,
+    "name": "093: Finding a Place for Heliolisk"
+  },
+  "94": {
+    "x": 58.54,
+    "y": 35.09,
+    "name": "094: Full Course of Battles: Three Stars"
+  },
+  "95": {
+    "x": 70.17,
+    "y": 48.51,
+    "name": "095: A Haunting Experience"
+  },
+  "96": {
+    "x": 47.34,
+    "y": 41.1,
+    "name": "096: Let Us Battle... Artisically"
+  },
+  "97": {
+    "x": 5.12,
+    "y": 55.4,
+    "name": "097: Stop the Runaway Whirlipede!"
+  },
+  "98": {
+    "x": 85.17,
+    "y": 23.64,
+    "name": "098: Jumbo Variety Pumpkaboo"
+  },
+  "99": {
+    "x": 51.76,
+    "y": 95.43,
+    "name": "099: Pleasing Aron's Palate"
+  },
+  "100": {
+    "x": 38.71,
+    "y": 44.65,
+    "name": "100: Starmie on High"
+  },
+  "101": {
+    "x": 29.7,
+    "y": 76.41,
+    "name": "101: Steadfast as Steel"
+  },
+  "102": {
+    "x": 40.31,
+    "y": 78.51,
+    "name": "102: A Chilling Challenge"
+  },
+  "103": {
+    "x": 80.16,
+    "y": 52.05,
+    "name": "103: Facing the Furfrou League"
+  },
+  "104": {
+    "x": 39.98,
+    "y": 14.12,
+    "name": "104: Abuzz About Bug Types"
+  },
+  "105": {
+    "x": 60.25,
+    "y": 18.2,
+    "name": "105: Trevanant, the Haunted Elder Tree!"
+  },
+  "106": {
+    "x": 74.74,
+    "y": 13.86,
+    "name": "106: Klefki's Lost Key"
+  },
+  "107": {
+    "x": 46.11,
+    "y": 39.79,
+    "name": "107: The World's Greatest Pikachu"
+  },
+  "108": {
+    "x": 28.55,
+    "y": 23.98,
+    "name": "108: Alola, Raichu!"
+  },
+  "109": {
+    "x": 74.57,
+    "y": 85.38,
+    "name": "109: Wondrous Self-Healing Pokemon"
+  },
+  "110": {
+    "x": 66.41,
+    "y": 9.74,
+    "name": "110: A Tune That Beckons Doom"
+  },
+  "111": {
+    "x": 53.46,
+    "y": 79.18,
+    "name": "111: My Adorable, Adorable Babies"
+  },
+  "112": {
+    "x": 8.14,
+    "y": 36.76,
+    "name": "112: Exploring the Scents of Spritzee"
+  },
+  "113": {
+    "x": 30.51,
+    "y": 91.54,
+    "name": "113: Bergmite sur un Avalugg"
+  },
+  "114": {
+    "x": 80.21,
+    "y": 74.04,
+    "name": "114: A Feather from Skarmory"
+  },
+  "115": {
+    "x": 28.39,
+    "y": 19.53,
+    "name": "115: Tyrantrum's Furious Jaws!"
+  },
+  "116": {
+    "x": 49.59,
+    "y": 82.84,
+    "name": "116: Show the Power of Aurorus!"
+  },
+  "117": {
+    "x": 67.77,
+    "y": 50.61,
+    "name": "117: Josee's Training"
+  },
+  "118": {
+    "x": 19.89,
+    "y": 75.66,
+    "name": "118: Goodbye, Gengar"
+  },
+  "119": {
+    "x": 74.41,
+    "y": 10.72,
+    "name": "119: Le Super-Tournoi de Jacinthe O"
+  }
+}

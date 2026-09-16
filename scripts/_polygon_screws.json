@@ -1,0 +1,702 @@
+[
+  {
+    "uid": "m690514edc00242ea12f9c584",
+    "x": 0.5481744173,
+    "y": 0.04977620444,
+    "popup": "Found on scaffolding. Climb to the top and jump over the gap to reach it.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c585",
+    "x": 0.5714547867,
+    "y": 0.05279962904,
+    "popup": "Follow the scaffolding course to the end",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6e9",
+    "x": 0.60150206,
+    "y": 0.0869876051,
+    "popup": "On the roof of the building with several shops in it.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c693",
+    "x": 0.3590691497,
+    "y": 0.0988452573,
+    "popup": "Found up on the rooftop south of Wild Zone 13",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c5ba",
+    "x": 0.2819022937,
+    "y": 0.1024021674,
+    "popup": "Found at the top of the scaffolding on a narrow plank.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c5b9",
+    "x": 0.2711780907,
+    "y": 0.1085340913,
+    "popup": "At the top of the scaffolding along North Boulevard.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6ea",
+    "x": 0.6614874788,
+    "y": 0.1292210141,
+    "popup": "Found on top of some scaffolding",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6fb",
+    "x": 0.4881129744,
+    "y": 0.1310198569,
+    "popup": "Found in a courtyard with a lot of scaffolding. You have to climb to the roof and Roto Glide to reach this one.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c54c",
+    "x": 0.4264398006,
+    "y": 0.1347000686,
+    "popup": "Found on scaffolding",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6fc",
+    "x": 0.4817915908,
+    "y": 0.1393455816,
+    "popup": "Found up on the rooftops of Vert Sector 2 near Wild Zone 2.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6eb",
+    "x": 0.6586918867,
+    "y": 0.1394049567,
+    "popup": "Found midway between some scaffolding, requires Rotom Glide to reach.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6fd",
+    "x": 0.6584397302,
+    "y": 0.1514945517,
+    "popup": "Colorful Screw",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6fa",
+    "x": 0.3179874737,
+    "y": 0.1738142295,
+    "popup": "Found on the roof of a building along Rouge Street",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c60f",
+    "x": 0.3687677531,
+    "y": 0.1788247773,
+    "popup": "Found on the rooftop on the skylight",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6a6",
+    "x": 0.7120538489,
+    "y": 0.1900268495,
+    "popup": "Found on top of some scaffolding. You have to use Roto-Glide to reach the platform.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c56c",
+    "x": 0.2007542977,
+    "y": 0.2101441084,
+    "popup": "Found near the top of the scaffolding in Magenta Sector 9.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c56d",
+    "x": 0.1755058187,
+    "y": 0.2226098846,
+    "popup": "Found up on the rooftops of Magenta Sector 9.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c568",
+    "x": 0.8338340367,
+    "y": 0.2280048377,
+    "popup": "Found on the roof tops east of Jaune Sector 7 and Jaune Sector 8.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c54a",
+    "x": 0.4576019495,
+    "y": 0.2300636329,
+    "popup": "Rooftop in Rouge Sector 5",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c56e",
+    "x": 0.1481049349,
+    "y": 0.2318598784,
+    "popup": "Found at the top of a large amount of scaffolding along North Boulevard.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c54b",
+    "x": 0.3300445631,
+    "y": 0.2351119831,
+    "popup": "Rooftop above Restaurant Le Yeah",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c625",
+    "x": 0.1315984363,
+    "y": 0.2351477215,
+    "popup": "Use roto glide from the adjacent scaffolding",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6d1",
+    "x": 0.6312813684,
+    "y": 0.2469091202,
+    "popup": "Found on the rooftops of Academie Etoile.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c567",
+    "x": 0.8671976504,
+    "y": 0.284541793,
+    "popup": "Found at the top of the scaffolding. It is right next to the ramp that connects to the roof.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6d4",
+    "x": 0.6036062421,
+    "y": 0.2856759659,
+    "popup": "Found on the rooftops of Academie Etoile.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6a9",
+    "x": 0.7280264543,
+    "y": 0.286898787,
+    "popup": "Found under some scaffolding in the enclosed plaza between Jaune Sector 4, 7, and 8.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c52e",
+    "x": 0.40205706,
+    "y": 0.2892885996,
+    "popup": "Found on the roof of a building west of Wild Zone 3.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c52f",
+    "x": 0.3943108581,
+    "y": 0.3006021313,
+    "popup": "Found on top of the scaffolding.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c564",
+    "x": 0.8941946882,
+    "y": 0.3046993004,
+    "popup": "Found at the top of some scaffolding along Northern Boulevard",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c521",
+    "x": 0.6544339682,
+    "y": 0.3075879932,
+    "popup": "Found on the scaffolding southwest of the Hibernal Pokemon Center. Use the holovator to get to the roof and then drop down onto the scaffolding.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c610",
+    "x": 0.3911954045,
+    "y": 0.3163416923,
+    "popup": "Found on scaffolding. Access from rooftop.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6ec",
+    "x": 0.7748320183,
+    "y": 0.3278273078,
+    "popup": "Found on top of a roof in Jaune Sector 3.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c629",
+    "x": 0.1966278703,
+    "y": 0.3315393238,
+    "popup": "From the building just north of here, jump and use roto glide to access this Colorful Screw.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c612",
+    "x": 0.4519861438,
+    "y": 0.3328673302,
+    "popup": "Use roto glide to access scaffolding in courtyard",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c56f",
+    "x": 0.1373064914,
+    "y": 0.3333042775,
+    "popup": "Found on the ground, hidden behind some boxes. Accessible by climbing the scaffolding and rolling across the gap.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c51e",
+    "x": 0.5821392124,
+    "y": 0.3429456913,
+    "popup": "Found at the top of the scaffolding north of Restaurant Le Wow",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c525",
+    "x": 0.465328433,
+    "y": 0.3485628758,
+    "popup": "Found in the Rouge Sector northwest of Centrico Pokemon Center. Climb to the top of the scaffolding and then roll down toward the boxes where the screw is.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c658",
+    "x": 0.6986203918,
+    "y": 0.3606911952,
+    "popup": "Found inside the courtyard. Access the courtyard from the rooftop.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c51d",
+    "x": 0.6055348805,
+    "y": 0.3769851471,
+    "popup": "Found on top of a building in Jaune Sector 3. Climb to the roof and then walk along the edge to reach it.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6ed",
+    "x": 0.6534840071,
+    "y": 0.4011598907,
+    "popup": "Found on a rooftop near the entrance to Wild Zone 11.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c51c",
+    "x": 0.6226357759,
+    "y": 0.4029952348,
+    "popup": "Found on the scaffolding in Jaune Sector 3.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c583",
+    "x": 0.4063412317,
+    "y": 0.4111182911,
+    "popup": "Found on scaffolding",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c607",
+    "x": 0.8981999133,
+    "y": 0.4231751928,
+    "popup": "Roto glide from the building on the west side of the courtyard to reach this Colorful Screw",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c683",
+    "x": 0.0535210682,
+    "y": 0.4270115921,
+    "popup": "Found up on some scaffolding.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c5c3",
+    "x": 0.1639403315,
+    "y": 0.4357411902,
+    "popup": "Found on some scaffolding in a dead end plaza near the Saison Canal. You have to climb around and then roll down toward the platform where the Colorful Screw is.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6f9",
+    "x": 0.1601101424,
+    "y": 0.4384900392,
+    "popup": "On some scaffolding along the side of a building. Requires Roto Glide to reach.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c608",
+    "x": 0.9113537449,
+    "y": 0.445312129,
+    "popup": "Roto glide from the building on the west side of the courtyard to reach this Colorful Screw",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6f8",
+    "x": 0.2328129211,
+    "y": 0.4522813526,
+    "popup": "Found up on the roof near the Poke Ball Boutique.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c605",
+    "x": 0.8151061963,
+    "y": 0.4542952336,
+    "popup": "Access by using roto glide to jump across from the nearby rooftop",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c5be",
+    "x": 0.8411398163,
+    "y": 0.458034959,
+    "popup": "Found up on the scaffolding above the rooftops in Jaune Sector 9.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c5ef",
+    "x": 0.6397319375,
+    "y": 0.4756380185,
+    "popup": "Jump down from rooftop to access Colorful Screw inside the courtyard.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c5f1",
+    "x": 0.6733365554,
+    "y": 0.483852112,
+    "popup": "Use holovator or roto glide to access Colorful Screw found on rooftop",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c5bc",
+    "x": 0.8352845718,
+    "y": 0.4913308996,
+    "popup": "Found up on some scaffolding.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c630",
+    "x": 0.093704374,
+    "y": 0.4917672037,
+    "popup": "Use roto glide to access the middle of the scaffolding",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c5bf",
+    "x": 0.7477628673,
+    "y": 0.4945417093,
+    "popup": "Found on scaffolding in Jaune Sector 6. You have to climb to the top and then jump down onto the narrow plank below to reach this Colorful Screw.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c539",
+    "x": 0.0843417579,
+    "y": 0.4978038215,
+    "popup": "Found on some scaffolding after crossing the planks.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c534",
+    "x": 0.3996649353,
+    "y": 0.5225984286,
+    "popup": "Found on some scaffolding near Prism Tower.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c62a",
+    "x": 0.1352551431,
+    "y": 0.527000312,
+    "popup": "Use roto glide and jump from nearby rooftop",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c51a",
+    "x": 0.5728238425,
+    "y": 0.5483594555,
+    "popup": "Found on the scaffolding northeast of Nouveau Cafe",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c51b",
+    "x": 0.6145996556,
+    "y": 0.5501748532,
+    "popup": "Found on the scaffolding near Saison Canal. You have to cross a narrow bridge to reach it.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c5b4",
+    "x": 0.1562939864,
+    "y": 0.5522305258,
+    "popup": "Found up in some scaffolding in Magenta Sector 5. This area becomes Wild Zone 9 later in the story.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6ee",
+    "x": 0.7841244037,
+    "y": 0.5567874991,
+    "popup": "Found up on a rooftop against the barrier of Wild Zone 17.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c5ed",
+    "x": 0.6712894394,
+    "y": 0.585328643,
+    "popup": "Jump from southern side of scaffolding and use roto glide ability to reach the Colorful Screw at the top of the scaffolding.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c5ee",
+    "x": 0.6081081198,
+    "y": 0.5889218934,
+    "popup": "Use scaffolding and roto glide ability on eastern side of building to reach the rooftop. Then drop down to find Colorful Screw in the courtyard.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c672",
+    "x": 0.6800717911,
+    "y": 0.6208864262,
+    "popup": "Found on rooftop awning. Roto glide from nearby rooftop to reach it.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c5ac",
+    "x": 0.3118853715,
+    "y": 0.6346780669,
+    "popup": "Colorful Screw",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c537",
+    "x": 0.0743840592,
+    "y": 0.6626093713,
+    "popup": "Found under some scaffolding west of Shutterbug Cafe along South Boulevard.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6f0",
+    "x": 0.8980602425,
+    "y": 0.6672271333,
+    "popup": "Found up on a roof near Hotel Z",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6ff",
+    "x": 0.5579391426,
+    "y": 0.6686733422,
+    "popup": "Found up on the roof.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c581",
+    "x": 0.4855443798,
+    "y": 0.6788897602,
+    "popup": "Found on scaffolding",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c5a9",
+    "x": 0.2095270564,
+    "y": 0.6930008612,
+    "popup": "Found hidden in the middle of some scaffolding near Bleu Sector 6.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c5aa",
+    "x": 0.2092276763,
+    "y": 0.6946840075,
+    "popup": "Found at the top of the scaffolding near Bleu Sector 6.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c670",
+    "x": 0.7220820337,
+    "y": 0.6996243086,
+    "popup": "Found on the rooftop",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c596",
+    "x": 0.5343716603,
+    "y": 0.7168868859,
+    "popup": "Take holovator to access rooftop",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c59d",
+    "x": 0.7405960028,
+    "y": 0.7169603009,
+    "popup": "Found on scaffolding",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6f4",
+    "x": 0.5522204118,
+    "y": 0.7193896284,
+    "popup": "Found halfway up some scaffolding in Bleu Sector 7",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c58a",
+    "x": 0.8314869098,
+    "y": 0.7217060782,
+    "popup": "Found on upper scaffolding",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c61c",
+    "x": 0.3169299931,
+    "y": 0.7297197431,
+    "popup": "Found on rooftop",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c560",
+    "x": 0.8895634699,
+    "y": 0.7338781756,
+    "popup": "Found up on some scaffolding south of Restaurant Le Nah",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c591",
+    "x": 0.3463968686,
+    "y": 0.7391743644,
+    "popup": "Found on the top of the scaffolding. Access by dropping down from the rooftop.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c5e9",
+    "x": 0.6063114946,
+    "y": 0.7401378478,
+    "popup": "Use roto glide to reach the rooftop and then glide to the scaffolding.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6f3",
+    "x": 0.5454083504,
+    "y": 0.7404340324,
+    "popup": "Found under some scaffolding in Vert Sector 4.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c5f8",
+    "x": 0.4355619249,
+    "y": 0.7410762225,
+    "popup": "Found on scaffolding",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c592",
+    "x": 0.3357635911,
+    "y": 0.7522242959,
+    "popup": "Found on scaffolding",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c67d",
+    "x": 0.8318948,
+    "y": 0.7645613179,
+    "popup": "Found inside Racine Construction.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6ef",
+    "x": 0.8051099566,
+    "y": 0.7647501078,
+    "popup": "Found up on the roof of Restaurant Le Nah",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c590",
+    "x": 0.3238823383,
+    "y": 0.7666317073,
+    "popup": "Take the sewers to reach the ladder in between the buildings, then use the ladder to access the roof.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c61f",
+    "x": 0.1385820979,
+    "y": 0.7753894028,
+    "popup": "Found on scaffolding",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c55f",
+    "x": 0.8262966647,
+    "y": 0.7919317276,
+    "popup": "Found up on some scaffolding northeast of Vert Pokemon Center.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6f2",
+    "x": 0.5720539173,
+    "y": 0.8052598557,
+    "popup": "Found in the middle of the courtyard on a box in Vert Sector 4.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c531",
+    "x": 0.6772958228,
+    "y": 0.8079864232,
+    "popup": "Found on some scaffolding. You have to jump down from the roof to reach it.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6f7",
+    "x": 0.3770348609,
+    "y": 0.8091778282,
+    "popup": "Found at the top of the scaffolding.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c5d1",
+    "x": 0.6088149489,
+    "y": 0.8164933459,
+    "popup": "Found on scaffolding",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6f1",
+    "x": 0.6971748823,
+    "y": 0.8166307215,
+    "popup": "Found up on a roof in Vert Sector 9.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6f5",
+    "x": 0.3651668807,
+    "y": 0.8767679216,
+    "popup": "Found up on a roof northeast of Nouveau Cafe (Truck No. 2)",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6f6",
+    "x": 0.3421372713,
+    "y": 0.8863216896,
+    "popup": "Found in the narrow corner of a courtyard.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c5fb",
+    "x": 0.4862357784,
+    "y": 0.8968238015,
+    "popup": "Access rooftop via holovator or roto gliding from the building just north of here",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c527",
+    "x": 0.4915828501,
+    "y": 0.9207391625,
+    "popup": "Found on the scaffolding on the southern edge of Vernal Avenue.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c52c",
+    "x": 0.4107994872,
+    "y": 0.9453841715,
+    "popup": "Found on some scaffolding. After claiming the Colorful Screw at the top, drop down to reach this one.",
+    "tooltip": "Colorful Screw"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c52b",
+    "x": 0.4143545393,
+    "y": 0.9453940293,
+    "popup": "Found at the top of the scaffolding.",
+    "tooltip": "Colorful Screw"
+  }
+]

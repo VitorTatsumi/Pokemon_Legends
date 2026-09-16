@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Market stall / shop awning -->
+  <path d="M8 22h48v6H8z" fill="#e8b84a"/>
+  <path d="M8 28c4 4 4 4 8 0s4-4 8 0 4 4 8 0 4-4 8 0 4 4 8 0 4-4 8 0v4H8v-4z" fill="#c9a227"/>
+  <rect x="10" y="32" width="44" height="24" rx="2" fill="#1c2228" stroke="#f2e6c8" stroke-width="2"/>
+  <rect x="26" y="38" width="12" height="18" rx="1.5" fill="#e8b84a"/>
+  <rect x="14" y="36" width="9" height="9" rx="1" fill="#7eb6e8"/>
+  <rect x="41" y="36" width="9" height="9" rx="1" fill="#7eb6e8"/>
+  <circle cx="32" cy="47" r="1.6" fill="#1c2228"/>
+</svg>

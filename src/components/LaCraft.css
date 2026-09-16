@@ -1,0 +1,425 @@
+/* Detail panel: compact hero + material grid (no stretched mission-details gaps). */
+.la-craft-panel .la-craft-detail {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  align-content: start;
+}
+
+.la-craft-detail__hero {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.85rem;
+  border-radius: 14px;
+  border: 1px solid rgba(140, 190, 170, 0.16);
+  background:
+    radial-gradient(120% 140% at 0% 0%, rgba(43, 187, 173, 0.14), transparent 55%),
+    rgba(8, 16, 18, 0.55);
+}
+
+.la-craft-detail__sprite {
+  flex-shrink: 0;
+  width: 76px;
+  height: 76px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 0 0 1px rgba(43, 187, 173, 0.08);
+}
+
+.la-craft-detail__sprite img {
+  width: 56px;
+  height: 56px;
+  image-rendering: pixelated;
+  object-fit: contain;
+}
+
+.la-craft-detail__hero-text {
+  min-width: 0;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.la-craft-detail__unlock {
+  margin: 0;
+  font-size: 0.84rem;
+  line-height: 1.35;
+  color: #d7ebe1;
+}
+
+.la-craft-detail__category {
+  margin: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #7dceb0;
+}
+
+.la-craft-detail__desc {
+  margin: 0;
+  font-size: 0.84rem;
+  line-height: 1.45;
+  color: #c5ddd2;
+}
+
+.la-craft-detail__count {
+  margin: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #7dceb0;
+}
+
+.la-craft-detail__section {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.la-craft-detail__section h3 {
+  margin: 0;
+  font-size: 0.72rem;
+  font-weight: 650;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8aa399;
+}
+
+.lza-item-price {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.45rem 0.65rem;
+  padding: 0.7rem 0.85rem;
+  border-radius: 12px;
+  border: 1px solid rgba(140, 190, 170, 0.16);
+  background: rgba(12, 22, 26, 0.65);
+}
+
+.lza-item-price__kind {
+  font-size: 0.68rem;
+  font-weight: 650;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #8aa399;
+}
+
+.lza-item-price__amount {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #e8f3ee;
+  letter-spacing: 0.02em;
+}
+
+.lza-item-price__currency {
+  font-size: 0.82rem;
+  color: #7dceb0;
+}
+
+.lza-item-sources {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.lza-item-source {
+  display: grid;
+  gap: 0.28rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: 12px;
+  border: 1px solid rgba(140, 190, 170, 0.12);
+  background: rgba(12, 22, 26, 0.65);
+}
+
+.lza-item-source__kind {
+  justify-self: start;
+  font-size: 0.65rem;
+  font-weight: 650;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.18rem 0.45rem;
+  border-radius: 6px;
+  color: #0c161a;
+  background: #8aa399;
+}
+
+.lza-item-source--mysteryGift .lza-item-source__kind,
+.lza-item-source--event .lza-item-source__kind {
+  background: #d4a017;
+  color: #1a1408;
+}
+
+.lza-item-source--ranked .lza-item-source__kind {
+  background: #6ea8ff;
+  color: #0a1524;
+}
+
+.lza-item-source--hyperspace .lza-item-source__kind,
+.lza-item-source--dlc .lza-item-source__kind {
+  background: #c084fc;
+  color: #1a0f24;
+}
+
+.lza-item-source--shop .lza-item-source__kind {
+  background: #7dceb0;
+  color: #0c161a;
+}
+
+.lza-item-source--field .lza-item-source__kind,
+.lza-item-source--mission .lza-item-source__kind,
+.lza-item-source--story .lza-item-source__kind {
+  background: #9bc4a8;
+  color: #0c161a;
+}
+
+.lza-item-source__label {
+  font-size: 0.88rem;
+  line-height: 1.35;
+  color: #e8f3ee;
+}
+
+.la-craft-mats {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.45rem;
+}
+
+.la-craft-mat {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: 0.65rem;
+  align-items: center;
+  margin: 0;
+  padding: 0.55rem 0.65rem;
+  border-radius: 12px;
+  border: 1px solid rgba(140, 190, 170, 0.12);
+  background: rgba(12, 22, 26, 0.65);
+}
+
+.la-craft-mat__sprite {
+  width: 36px;
+  height: 36px;
+  image-rendering: pixelated;
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.28);
+  border-radius: 8px;
+  padding: 2px;
+  display: block;
+}
+
+.la-craft-mat__body {
+  min-width: 0;
+  display: grid;
+  gap: 0.2rem;
+}
+
+.la-craft-mat__body--full {
+  grid-column: 1 / -1;
+}
+
+.la-craft-mat__title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.la-craft-mat__title strong {
+  font-size: 0.88rem;
+  font-weight: 650;
+  color: #e8f3ee;
+  min-width: 0;
+}
+
+.la-craft-mat__qty {
+  flex-shrink: 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: #2bbbad;
+  background: rgba(43, 187, 173, 0.12);
+  border: 1px solid rgba(43, 187, 173, 0.28);
+  border-radius: 999px;
+  padding: 0.12rem 0.45rem;
+}
+
+.la-craft-mat__note {
+  font-size: 0.72rem;
+  line-height: 1.35;
+  color: #8aa399;
+}
+
+.la-craft-mat__farm {
+  justify-self: start;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #7dd3c7;
+  font: inherit;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  text-align: left;
+  cursor: pointer;
+}
+
+.la-craft-mat__farm:hover {
+  text-decoration: underline;
+}
+
+.la-craft-mat__farm--strong {
+  font-size: 0.88rem;
+  font-weight: 650;
+  color: #7dd3c7;
+}
+
+@media (min-width: 1100px) {
+  .map-layout--crafts {
+    grid-template-columns: minmax(0, 1fr) minmax(340px, 420px);
+  }
+
+  .la-craft-mats {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+
+  .la-craft-mat {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    padding: 0.75rem 0.65rem;
+    gap: 0.5rem;
+  }
+
+  .la-craft-mat__title {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .la-craft-mat__body--full {
+    justify-items: center;
+    text-align: center;
+  }
+
+  .la-craft-mat__farm {
+    justify-self: center;
+    text-align: center;
+  }
+}
+
+.la-craft-browser {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.la-craft-browser__body {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0.85rem 1rem 1rem;
+  overflow: hidden;
+}
+
+.la-craft-browser__grid {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(132px, 1fr));
+  gap: 0.65rem;
+  align-content: start;
+  padding-bottom: 0.35rem;
+}
+
+.la-craft-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0;
+  padding: 0.85rem 0.65rem 0.75rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  color: inherit;
+  cursor: pointer;
+  text-align: center;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease,
+    transform 0.15s ease;
+}
+
+.la-craft-card:hover {
+  background: rgba(43, 187, 173, 0.1);
+  border-color: rgba(43, 187, 173, 0.35);
+}
+
+.la-craft-card.is-active {
+  background: rgba(43, 187, 173, 0.16);
+  border-color: #2bbbad;
+  box-shadow: 0 0 0 1px rgba(43, 187, 173, 0.25);
+}
+
+.la-craft-card img {
+  width: 40px;
+  height: 40px;
+  image-rendering: pixelated;
+  object-fit: contain;
+}
+
+.la-craft-card strong {
+  font-size: 0.82rem;
+  font-weight: 650;
+  line-height: 1.25;
+}
+
+.la-craft-card__meta {
+  font-size: 0.68rem;
+  line-height: 1.3;
+  opacity: 0.65;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.la-craft-browser .mission-panel__kind-tabs {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.la-craft-browser .mission-panel__kind-tabs.la-craft-tabs--wrap {
+  flex-wrap: wrap;
+}
+
+.la-craft-browser .mission-panel__kind-tabs.la-craft-tabs--wrap button {
+  flex: 0 1 auto;
+  min-width: 4.5rem;
+}
+
+.la-craft-browser .mission-panel__kind-tabs button,
+.la-craft-browser .la-craft-tabs button {
+  flex: 1;
+  min-width: 0;
+  padding-inline: 0.35rem;
+}
+
+@media (max-width: 720px) {
+  .la-craft-browser__grid {
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  }
+}

@@ -1,0 +1,55 @@
+.mission-marker {
+  position: absolute;
+  min-width: clamp(1.25rem, 3vmin, 1.65rem);
+  height: clamp(1.25rem, 3vmin, 1.65rem);
+  padding: 0 0.22rem;
+  transform: translate(-50%, -50%);
+  border: 1.5px solid rgba(12, 18, 16, 0.9);
+  border-radius: 0.3rem;
+  color: #0a1210;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: clamp(0.46rem, 1.05vmin, 0.6rem);
+  line-height: 1;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  z-index: 3;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, z-index 0s;
+}
+
+.mission-marker--main {
+  background: rgba(240, 199, 94, 0.92);
+  box-shadow: 0 0 0 1px rgba(240, 199, 94, 0.35);
+}
+
+.mission-marker--side {
+  background: rgba(110, 170, 230, 0.92);
+  box-shadow: 0 0 0 1px rgba(110, 170, 230, 0.35);
+}
+
+.mission-marker:hover {
+  transform: translate(-50%, -50%) scale(1.18);
+  z-index: 5;
+}
+
+.mission-marker--main.is-selected {
+  background: #2f6fbf;
+  color: #f4f8fc;
+  box-shadow: 0 0 0 3px rgba(47, 111, 191, 0.5);
+  z-index: 6;
+}
+
+.mission-marker--side.is-selected {
+  background: #e8923a;
+  color: #1a1208;
+  box-shadow: 0 0 0 3px rgba(232, 146, 58, 0.5);
+  z-index: 6;
+}
+
+.mission-marker.is-completed:not(.is-selected) {
+  background: rgba(72, 120, 96, 0.92);
+  color: #e8f5ee;
+  box-shadow: 0 0 0 1px rgba(125, 206, 176, 0.4);
+  opacity: 0.88;
+}

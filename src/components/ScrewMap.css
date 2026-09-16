@@ -1,0 +1,47 @@
+.screw-marker {
+  position: absolute;
+  width: clamp(1.25rem, 2.9vmin, 1.65rem);
+  height: clamp(1.25rem, 2.9vmin, 1.65rem);
+  transform: translate(-50%, -50%);
+  border: 1.5px solid rgba(12, 10, 18, 0.9);
+  border-radius: 0.45rem;
+  background: rgba(10, 12, 18, 0.92);
+  box-shadow: 0 0 0 1px rgba(180, 140, 220, 0.28);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  z-index: 3;
+  padding: 0.18rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.screw-marker img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: contain;
+  object-position: center;
+  pointer-events: none;
+  display: block;
+}
+
+.screw-marker:hover {
+  transform: translate(-50%, -50%) scale(1.18);
+  z-index: 5;
+}
+
+.screw-marker.is-selected {
+  background: rgba(48, 28, 12, 0.95);
+  box-shadow: 0 0 0 3px rgba(232, 146, 58, 0.55);
+  z-index: 6;
+}
+
+.screw-marker.is-collected:not(.is-selected) {
+  background: rgba(22, 34, 48, 0.95);
+  box-shadow: 0 0 0 1px rgba(90, 150, 220, 0.45);
+}
+
+.screw-marker.is-collected:not(.is-selected) img {
+  filter: grayscale(0.25) brightness(0.95);
+  opacity: 0.85;
+}

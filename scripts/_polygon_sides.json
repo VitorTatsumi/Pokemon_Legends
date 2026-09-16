@@ -1,0 +1,835 @@
+[
+  {
+    "uid": "m690514edc00242ea12f9c6ad",
+    "x": 0.5078422611,
+    "y": 0.0467198697,
+    "popup": "083: Honedge's Cutting Edge. Rewards: 1,000 money, x1 Dusk Stone, x2 Hyper Potion",
+    "tooltip": "083: Honedge's Cutting Edge"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c578",
+    "x": 0.6127213263,
+    "y": 0.04782811964,
+    "popup": "021: Spwepa in the Museum Rewards:  $3000  Wise Glasses (1)  Normal Gem (3)",
+    "tooltip": "021: Spwepa in the Museum"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c524",
+    "x": 0.5319072644,
+    "y": 0.0894069472,
+    "popup": "002: A Use for an Evolution Stone! Rewards: 800 money, x5 Poke Ball, x3 Potion",
+    "tooltip": "002: A Use for an Evolution Stone!"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6d5",
+    "x": 0.6640619828,
+    "y": 0.0973899006,
+    "popup": "110: A Tune That Beckons Doom. Rewards: 3,400 money, x5 Kasib Berry, x5 Exp. Candy M",
+    "tooltip": "110: A Tune That Beckons Doom"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6e2",
+    "x": 0.7441152202,
+    "y": 0.1071596693,
+    "popup": "119: Le Super-Tournoi de Jacinthe O. Rewards: 300,000 money, x30 Luxury Ball",
+    "tooltip": "119: Le Super-Tournoi de Jacinthe O"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c691",
+    "x": 0.3776192008,
+    "y": 0.1322544868,
+    "popup": "065: Apartment Block Eeriness. Rewards: 4,000 money, x1 Magnet, x5 Wacan Berry",
+    "tooltip": "065: Apartment Block Eeriness"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6d6",
+    "x": 0.7474207105,
+    "y": 0.138602952,
+    "popup": "106: Klefki's Lost Key. Rewards: 5,000 money, x1 Nugget",
+    "tooltip": "106: Klefki's Lost Key"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6c4",
+    "x": 0.3998355031,
+    "y": 0.1411613957,
+    "popup": "104: Abuzz About Bug Types. Rewards: 2,500 money, x5 Exp. Candy M, x1 Power Lens",
+    "tooltip": "104: Abuzz About Bug Types"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c690",
+    "x": 0.4120392901,
+    "y": 0.141898763,
+    "popup": "064: Let It Rain, Let It Pour. Rewards: Rewards: 2,000 money, x1 Mystic Water, x3 Fresh Water",
+    "tooltip": "064: Let It Rain, Let It Pour"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c522",
+    "x": 0.512633113,
+    "y": 0.1459406348,
+    "popup": "003: Sableye. Rewards: 4,000 money, 2x Revive",
+    "tooltip": "003: Sableye in the Cemetery"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6e7",
+    "x": 0.602498401,
+    "y": 0.1819976182,
+    "popup": "105: Trevanant, the Haunted Elder Tree!",
+    "tooltip": "105: Trevanant, the Haunted Elder Tree!"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6a5",
+    "x": 0.7303724787,
+    "y": 0.1834539012,
+    "popup": "080: A Shocking Territorial Dispute. Rewards: Rewards: 3,500 money, x4 Quick Ball, x1 Lumiose Galette",
+    "tooltip": "080: A Shocking Territorial Dispute"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6e8",
+    "x": 0.2839180197,
+    "y": 0.1952784783,
+    "popup": "115: Tyrantrum's Furious Jaws!",
+    "tooltip": "115: Tyrantrum's Furious Jaws!"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6dc",
+    "x": 0.5167071211,
+    "y": 0.1998659909,
+    "popup": "073: Full Course of Battles: High Rolling. Rewards: 1,500 money, x10 Qualot Berry, x10 Grepa Berry, x10 Kelpsy Berry",
+    "tooltip": "073: Full Course of Battles: High Rolling"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6ab",
+    "x": 0.488060229,
+    "y": 0.2125113526,
+    "popup": "048: All Tied Up. Rewards: 1,500 money, x10 Net Ball",
+    "tooltip": "048: All Tied Up"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c569",
+    "x": 0.7575619528,
+    "y": 0.2188452109,
+    "popup": "013: Stumped at the Fountain. Reward: 1,000 money, x3 Nest Ball",
+    "tooltip": "013: Stumped at the Fountain"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6aa",
+    "x": 0.467892029,
+    "y": 0.2314814418,
+    "popup": "088: The Nervous Novice Cabbie. Rewards: 4,500 money, x1 Agility, x10 Swift Feather",
+    "tooltip": "088: The Nervous Novice Cabbie"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c57e",
+    "x": 0.3204796987,
+    "y": 0.2328694751,
+    "popup": "026: Burn, Litleo, Burn. Rewards:  $900  Will-O-Wisp (1)  Fire Stone (1)",
+    "tooltip": "026: Burn, Litleo, Burn"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6a4",
+    "x": 0.7107538476,
+    "y": 0.2359337395,
+    "popup": "079: A Fateful Swing of a Metronome. Rewards: 1,400 money, x1 Metronome",
+    "tooltip": "079: A Fateful Swing of a Metronome"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6d8",
+    "x": 0.8517241711,
+    "y": 0.2363971328,
+    "popup": "098: Jumbo Variety Pumpkaboo. Rewards: 6,000 money, x5 Seed of Mastery, x2 Rare Candy",
+    "tooltip": "098: Jumbo Variety Pumpkaboo"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6d7",
+    "x": 0.7477306762,
+    "y": 0.2376369956,
+    "popup": "089: Up, Up, and Away After Emolga! Rewards: 2,000 money, x8 Kelpsy Bery, x8 Pomeg Berry, x8 Tamato Berry",
+    "tooltip": "089: Up, Up, and Away AFter Emolga!"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6de",
+    "x": 0.3314118436,
+    "y": 0.2380488992,
+    "popup": "060: Full Course of Battles - Two Stars. Rewards: 1,000 money, x1 Whirlwind, x3 Calcium, x3 Zinc",
+    "tooltip": "060: Full Course of Battles - Two Stars"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6bf",
+    "x": 0.2855273492,
+    "y": 0.2397540402,
+    "popup": "108: Alola, Raichu! Rewards: 500 money, x10 Tomato Berry, x10 Pomeg Berry.",
+    "tooltip": "108: Alola, Raichu!"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6d0",
+    "x": 0.6170257264,
+    "y": 0.2663061413,
+    "popup": "076: Let's Learn About Mega Evolution! Rewards: 500 money, x100 Mega Shard",
+    "tooltip": "076: Let's Learn About Mega Evolution!"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6af",
+    "x": 0.1686580043,
+    "y": 0.2684783231,
+    "popup": "085: Follow Litwick! Rewards: 1,300 money, x1 Life Orb",
+    "tooltip": "085: Follow Litwick!"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c51f",
+    "x": 0.5602346118,
+    "y": 0.2687854728,
+    "popup": "001: A Big Ol' Bunnelby. Rewards: 400 money, 2x Fresh Water",
+    "tooltip": "001: A Big Ol' Bunnelby"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c68f",
+    "x": 0.7612541144,
+    "y": 0.2784644134,
+    "popup": "034: Moves That Put Up a Wall. Rewards: 1,100 money, x1 Reflect, x1 Lemonade",
+    "tooltip": "034: Moves That Put Up a Wall"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c566",
+    "x": 0.877506238,
+    "y": 0.2840987217,
+    "popup": "009: A Challenge from Froakie. Reward: 1,800 money, x3 Exp. Candy XS, x1 Exp Candy S",
+    "tooltip": "009: A Challenge from Froakie"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c57b",
+    "x": 0.5927338253,
+    "y": 0.2877859868,
+    "popup": "024: An Abra Playmate. Rewards:  $300  Exp. Candy XS (5)",
+    "tooltip": "024: An Abra Playmate"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c695",
+    "x": 0.2683648308,
+    "y": 0.2888499364,
+    "popup": "054: Get ENERGIZED! Rewards: Rewards: 3,000 money, x1 Scope Lens, x3 Ultra Ball",
+    "tooltip": "054: Get ENERGIZED!"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c526",
+    "x": 0.4447904593,
+    "y": 0.2939929712,
+    "popup": "004: A Break Time Battle. Reward: 1,200 money, x3 Exp. Candy S, x1 Fresh Water",
+    "tooltip": "004: A Break Time Battle"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c57d",
+    "x": 0.3334870148,
+    "y": 0.2973767091,
+    "popup": "025: Trubblesome Patrons. Rewards:  $1200  Rare Candy (2)  Dusk Ball (5)",
+    "tooltip": "025: Trubblesome Patrons"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c696",
+    "x": 0.1127120564,
+    "y": 0.2979510631,
+    "popup": "063: An Extra-Large Gogoat. Rewards: Rewards: 8,000 money, x10 Carbos",
+    "tooltip": "063: An Extra-Large Gogoat"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6ae",
+    "x": 0.2687937893,
+    "y": 0.3078244076,
+    "popup": "084: Strike First to Make 'Em Flinch!",
+    "tooltip": "084: Strike First to Make 'Em Flinch!"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c572",
+    "x": 0.4418131758,
+    "y": 0.3197372467,
+    "popup": "015: A Sensitive Audino. Rewards:   $900  Revive (3)  Super Potion (5)",
+    "tooltip": "015: A Sensitive Audino"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c5a5",
+    "x": 0.5918113351,
+    "y": 0.3395908606,
+    "popup": "007: A Feisty Chespin. Rewards: 1,000 Money, x3 Exp. Candy XS, x1 Exp. Candy S x1",
+    "tooltip": "007: A Feisty Chespin"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6df",
+    "x": 0.585382195,
+    "y": 0.3509244656,
+    "popup": "094: Full Course of Battles: Three Stars. Rewards: 2,000 money, x1 Knock Off, x5 Hp Up, x5 Carbos",
+    "tooltip": "094: Full Course of Battles: Three Stars"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c697",
+    "x": 0.1676989482,
+    "y": 0.3570879091,
+    "popup": "069: A Sky Battle, for Old Times' Sake. Rewards: 3,900 money, x1 Sharp Beak, x1 Power Anklet",
+    "tooltip": "069: A Sky Battle, for Old Times' Sake"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6b0",
+    "x": 0.8638541537,
+    "y": 0.3579957971,
+    "popup": "082: Clauncher Launching Water Gun. Rewards: 1,500 money, x3 Pearl, x1 Big Pearl",
+    "tooltip": "082: Clauncher Launching Water Gun"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6be",
+    "x": 0.0813827163,
+    "y": 0.3676040466,
+    "popup": "112: Exploring the Scents of Spritzee. Rewards: 4,000 money, x3 modest mint, x1 Exp. Candy L",
+    "tooltip": "112: Exploring the Scents of Spritzee"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c69c",
+    "x": 0.3949205656,
+    "y": 0.3749007177,
+    "popup": "071: The Burning Gaze of Watchog. Rewards: Rewards: 1,200 money, x1 Assault Vest, x3 Full Heal",
+    "tooltip": "071: The Burning Gaze of Watchog"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c680",
+    "x": 0.5755471418,
+    "y": 0.3816489485,
+    "popup": "049: Hit and Heal. Rewards: 1,500 money, x1 Big Root, x10 Sitrus Berry",
+    "tooltip": "049: Hit and Heal"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c682",
+    "x": 0.1832889389,
+    "y": 0.3893151303,
+    "popup": "037: Binacle by the Boatload. Rewards: 1,500 money, x3 Pearl",
+    "tooltip": "037: Binacle by the Boatload"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6c2",
+    "x": 0.4610816697,
+    "y": 0.3978782823,
+    "popup": "107: The World's Greatest Pikachu. Rewards: 700 money, x1 Light Ball, x3 Exp. Candy L",
+    "tooltip": "107: The World's Greatest Pikachu"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6c3",
+    "x": 0.4734104434,
+    "y": 0.4110024608,
+    "popup": "096: Let Us Battle... Artisically. Rewards: 1,900 money, x1 Self-Destruct, x2 Bottle Cap",
+    "tooltip": "096: Let Us Battle... Artisically"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c643",
+    "x": 0.2289591811,
+    "y": 0.4313458531,
+    "popup": "038: Chasing Status. Rewards: 2,500 money, x3 Protein, x3 Calcuim, x1 Power Bracer",
+    "tooltip": "038: Chasing Status"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c571",
+    "x": 0.5869816093,
+    "y": 0.4355457454,
+    "popup": "011: The Kakuna Master. Rewards:  $700  Silver Powder (1)  Net Ball (5)",
+    "tooltip": "011: The Kakuna Master"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6c1",
+    "x": 0.3871040159,
+    "y": 0.4465367708,
+    "popup": "100: Starmie on High. Rewards: 2,800 money, x1 Eviolite, x1 Big Pearl",
+    "tooltip": "100: Starmie on High"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c67f",
+    "x": 0.6186768741,
+    "y": 0.4471296185,
+    "popup": "035: Guidance from a Yoga Master. Rewards: 2,000 money, x1 Twisted Spoon, x5 Exp. Candy S",
+    "tooltip": "035: Guidance from a Yoga Master"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c698",
+    "x": 0.2384218923,
+    "y": 0.4476113994,
+    "popup": "059: A Rematch with Hawlucha! Rewards: 2,500 money, x1 Focus Sash, x5 Coba Berry",
+    "tooltip": "059: A Rematch with Hawlucha!"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6cf",
+    "x": 0.375094519,
+    "y": 0.4766035377,
+    "popup": "050: Just a Few Questions for You... Rewards: 2,000 money, x3 Lax Mint",
+    "tooltip": "050: Just a Few Questions for You..."
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6c0",
+    "x": 0.2647270291,
+    "y": 0.4817051541,
+    "popup": "077: Catch Mawile If You Can. Rewards: 1,900 money, x20 Ultra Ball",
+    "tooltip": "077: Catch Mawile If You Can"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6d3",
+    "x": 0.7017354142,
+    "y": 0.4851028687,
+    "popup": "095: A Haunting Experience. Rewards: 4,444 money, x1 Spell Tag",
+    "tooltip": "095: A Haunting Experience"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c562",
+    "x": 0.9215618235,
+    "y": 0.4963153928,
+    "popup": "020: A Berry Clever Plan. Rewards: 900 money, x10 Oran Berry, x2 Exp. Candy XS",
+    "tooltip": "020: A Berry Clever Plan"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c535",
+    "x": 0.3750524708,
+    "y": 0.5010625222,
+    "popup": "005: I\\u2019d Like to See an Ekans Rewards: 500 money, x3 Pecha Berry, x3 Cheri Berry, x1 Soda Pop",
+    "tooltip": "005: I\\u2019d Like to See an Ekans"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c63e",
+    "x": 0.9345779993,
+    "y": 0.5035793321,
+    "popup": "042: A Fan of Fairy Types. Rewards: 2,400 money, x1 Fair Feather",
+    "tooltip": "042: A Fan of Fairy Types"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6d2",
+    "x": 0.677670305,
+    "y": 0.5061361531,
+    "popup": "117: Josee's Training. Rewards: 1,500 money, x1 Expert Belt, x10 Seed of Mastery",
+    "tooltip": "117: Josee's Training"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c687",
+    "x": 0.7476110458,
+    "y": 0.5061450966,
+    "popup": "056: We'll Just Muscle Our Way Through! Rewards: 900 money, x1 Muscle Band",
+    "tooltip": "056: We'll Just Muscle Our Way Through!"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c68b",
+    "x": 0.8024060519,
+    "y": 0.5164961328,
+    "popup": "062: Becoming a Pro Furfrou Trimmer. Rewards: 1,600 money, x3 Revive, x3 Exp. Candy M",
+    "tooltip": "062: Becoming a Pro Furfrou Trimmer"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c68a",
+    "x": 0.7998618043,
+    "y": 0.5187771824,
+    "popup": "047: Becoming a Furfrou Trimmer. Rewards: 800 money, x1 Revive, x3 Exp. Candy S",
+    "tooltip": "047: Becoming a Furfrou Trimmer"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6d9",
+    "x": 0.8035350562,
+    "y": 0.5189809541,
+    "popup": "087: Becoming a Peerless Furfrou Trimmer. Rewards: 2,400 money, x1 Max Revive, x2 Exp. Candy L",
+    "tooltip": "087: Becoming a Peerless Furfrou Trimmer"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6e6",
+    "x": 0.801601993,
+    "y": 0.5205384203,
+    "popup": "103: Facing the Furfrou League",
+    "tooltip": "103: Facing the Furfrou League"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c640",
+    "x": 0.3015489878,
+    "y": 0.5233424827,
+    "popup": "043: A Big Weedle Problem. Rewards: 1,500 money, x5 Sitrus Berry, x5 Hondew Berry, x5 Rindo Berry",
+    "tooltip": "043: A Big Weedle Problem"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c685",
+    "x": 0.6805728651,
+    "y": 0.5432625679,
+    "popup": "055: Carvanha, Menace of the Deep! Rewards: 1,800 money, x3 Dive Ball, x2 Exp. Candy M",
+    "tooltip": "055: Carvanha, Menace of the Deep!"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c686",
+    "x": 0.7507640148,
+    "y": 0.547782834,
+    "popup": "046: Pidgeot Soaring High. Rewards: 2,600 money, x1 Fly, x5 Repeat Ball",
+    "tooltip": "046: Pidgeot Soaring High"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6bd",
+    "x": 0.0511703951,
+    "y": 0.5540390961,
+    "popup": "097: Stop the Runaway Whirlipede! Rewards: 3,900 money, x3 Repeat Ball, x3 Quick Ball",
+    "tooltip": "097: Stop the Runaway Whirlipede!"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6ba",
+    "x": 0.3301424682,
+    "y": 0.5631429114,
+    "popup": "070: Who's the Strongest, Huh?! Rewards: 2,000 money, x 1 Black Glasses, x1 Focus Band",
+    "tooltip": "070: Who's the Strongest, Huh?!"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c63f",
+    "x": 0.1743363253,
+    "y": 0.5888656217,
+    "popup": "036: Some Friendly Competition. Rewards: 3,000 money, x1 Soothe Bell",
+    "tooltip": "036: Some Friendly Competition"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c576",
+    "x": 0.7166612924,
+    "y": 0.6145668947,
+    "popup": "019: Poisonous, Paralyzing Strategies. Rewards:  $1200  Potion (5)  Poke Ball (3)",
+    "tooltip": "019: Poisonous, Paralyzing Strategies"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6b2",
+    "x": 0.9217536591,
+    "y": 0.6223259493,
+    "popup": "072: Find My Galarian Stunfisk! Rewards: 800 money, x1 Max Revive, x1 Power Weight",
+    "tooltip": "072: Find My Galarian Stunfisk!"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6b9",
+    "x": 0.3382977297,
+    "y": 0.6225162633,
+    "popup": "086: Who Messed Up the Garden? Rewards: 2,000 money, x1 Weakness Policy, x3 Adamant Mint",
+    "tooltip": "086: Who Messed Up the Garden?"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6b1",
+    "x": 0.7406918133,
+    "y": 0.6240981505,
+    "popup": "091: Dragon You into Battle. Rewards: 5,000 money, x1 Dragon Fang, x5 Haban Berry",
+    "tooltip": "091: Dragon You into Battle"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c536",
+    "x": 0.1160154989,
+    "y": 0.6417702691,
+    "popup": "014: Slurpuff's Cafe Visit. Rewards: 3,000 money, x2 Whipped Dream",
+    "tooltip": "014: Slurpuff's Cafe Visit"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c68e",
+    "x": 0.8840213568,
+    "y": 0.6520460913,
+    "popup": "068: The Best Use for Leftovers. Rewards: 1,500 money, x1 Leftovers",
+    "tooltip": "068: The Best Use for Leftovers"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c533",
+    "x": 0.314194468,
+    "y": 0.6611001458,
+    "popup": "006: Long-Range Moves Have Style Reward: 1,000 money, x1 Nugget",
+    "tooltip": "006: Long-Range Moves Have Style"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c69b",
+    "x": 0.2911059674,
+    "y": 0.6617813535,
+    "popup": "058: Better to Detect Than to Protect. Rewards: 1,500 money, x1 Black Belt, x3 Exp. Candy M",
+    "tooltip": "058: Better to Detect Than to Protect"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6e0",
+    "x": 0.891978854,
+    "y": 0.6707064327,
+    "popup": "029: Full Course of Battles: One Star. Rewards: 300 money, x1 Substitute, x2 Protein, x2 Iron",
+    "tooltip": "029: Full Course of Battles: One Star"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c68c",
+    "x": 0.4240337838,
+    "y": 0.6740516914,
+    "popup": "066: Investigating with Shuppet. Rewards: Rewards: 3,000 money, x5 Exp. Candy M",
+    "tooltip": "066: Investigating with Shuppet"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6dd",
+    "x": 0.4667407073,
+    "y": 0.6759238971,
+    "popup": "057: The Camerupt Entrepreneur. Rewards: 4,500 money, x1 Fire Stone, x1 Charcoal",
+    "tooltip": "057: The Camerupt Entrepreneur"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c681",
+    "x": 0.5623630689,
+    "y": 0.6905584766,
+    "popup": "033: Who Has the Bigger Magikarp? Rewards: 1,500 money, x1 Pearl, x10 Exp. Candy S",
+    "tooltip": "033: Who Has the Bigger Magikarp?"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c68d",
+    "x": 0.7586591683,
+    "y": 0.7047641607,
+    "popup": "067: Sylveon the Soother. Rewards: 2,700 money, x1 Shell Bell, x5 Hondew Berry",
+    "tooltip": "067: Sylveon the Soother"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6c5",
+    "x": 0.450509944,
+    "y": 0.7126058274,
+    "popup": "090: Froslass's Unfinished Business. Rewards: 400 money, x1 Dawn Stone",
+    "tooltip": "090: Froslass's Unfinished Business"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c574",
+    "x": 0.6820095311,
+    "y": 0.717121506,
+    "popup": "018: A Pan-tastic Pot of Tea. Rewards:  $1000  HP Up (3)  White Herb (1)",
+    "tooltip": "018: A Pan-tastic Pot of Tea"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6a0",
+    "x": 0.1106346033,
+    "y": 0.7316010413,
+    "popup": "039: Slowpoke for Slowpoke. Rewards: 1,000 money, x1 Pearl, x1 Power Belt",
+    "tooltip": "039: Slowpoke for Slowpoke"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6ce",
+    "x": 0.8020597296,
+    "y": 0.740395681,
+    "popup": "114: A Feather from Skarmory. Rewards: 3,500 money, x1 Metal Coat, x3 Babiri Berry",
+    "tooltip": "114: A Feather from Skarmory"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c699",
+    "x": 0.4112409018,
+    "y": 0.7445683452,
+    "popup": "061: My Favorite Holovator. Rewards: 2,000 money, x1 Poison Barb, x20 Mega Shard",
+    "tooltip": "061: My Favorite Holovator"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c570",
+    "x": 0.5049324682,
+    "y": 0.7529540691,
+    "popup": "008: Get Well, Fennekin. Rewards:  $1200  Exp. Candy XS (3)  Exp. Candy S (1)",
+    "tooltip": "008: Get Well, Fennekin"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6e1",
+    "x": 0.1989347171,
+    "y": 0.7566276966,
+    "popup": "118: Goodbye, Gengar. Rewards: 4,000 money, x2 Exp Candy L, x1 Exp Candy XL",
+    "tooltip": "118: Goodbye, Gengar"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6bb",
+    "x": 0.2970436633,
+    "y": 0.76414341,
+    "popup": "101: Steadfast as Steel. Rewards: 3,000 money, x1 Metal Coat, x2 Exp. Candy M",
+    "tooltip": "101: Steadfast as Steel"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c529",
+    "x": 0.4876949131,
+    "y": 0.7709468486,
+    "popup": "016: The Budew Show, Rewards: 10,000 money, x1 Miracle Seed",
+    "tooltip": "016: The Budew Show"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6bc",
+    "x": 0.1604576586,
+    "y": 0.7717664351,
+    "popup": "093: Finding a Place for Heliolisk. Rewards: 4,000 money, x1 Sun Stone, x2 Exp. Candy M",
+    "tooltip": "093: Finding a Place for Heliolisk"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6c6",
+    "x": 0.4030564782,
+    "y": 0.7850920848,
+    "popup": "102: A Chilling Challenge. Rewards: 4,200 money, x1 Never-Melt Ice, x1 Ice Stone",
+    "tooltip": "102: A Chilling Challenge"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6da",
+    "x": 0.5346381232,
+    "y": 0.7918055502,
+    "popup": "111: My Adorable, Adorable Babies. Rewards: 20,000 money, x12 Moomoo Milk",
+    "tooltip": "111: My Adorable, Adorable Babies"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6b3",
+    "x": 0.8270411684,
+    "y": 0.8037438482,
+    "popup": "081: Pancham the Courier",
+    "tooltip": "081: Pancham the Courier"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6e3",
+    "x": 0.4940353735,
+    "y": 0.8054016589,
+    "popup": "031: Show Me a Mega Sableye!",
+    "tooltip": "031: Show Me a Mega Sableye!"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6c7",
+    "x": 0.4917475379,
+    "y": 0.8056987886,
+    "popup": "030: Show Me a Mega Camerupt! Rewards: 1,200 money, x2 Fresh Water",
+    "tooltip": "030: Show Me a Mega Camerupt!"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c66c",
+    "x": 0.1930028158,
+    "y": 0.8067526882,
+    "popup": "092: The Beldum Blockade     Rewards:   $3000  Rocky Helmet (1)  Full Restore (1)",
+    "tooltip": "092: The Beldum Blockade"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6e4",
+    "x": 0.4929062269,
+    "y": 0.8084127166,
+    "popup": "032: Show Me a Mega Medicham!",
+    "tooltip": "032: Show Me a Mega Medicham!"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c63d",
+    "x": 0.805145322,
+    "y": 0.8146349812,
+    "popup": "040: A Holovator Without Power. Rewards: 1,700 money, x3 Ultra Ball, x10 Mega Shard",
+    "tooltip": "040: A Holovator Without Power"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6a1",
+    "x": 0.3680938699,
+    "y": 0.8153228997,
+    "popup": "053: The Most Electrifying Eelektrik. Rewards: 1,800 money, x1 Thunder Stone, x1 Calcium",
+    "tooltip": "053: The Most Electrifying Eelektrik"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6c8",
+    "x": 0.4958592041,
+    "y": 0.8284338844,
+    "popup": "116: Show the Power of Aurorus! Rewards: 1,000 money, x3 Rare Candy, x1 Lemonade",
+    "tooltip": "116: Show the Power of Aurorus!"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c52d",
+    "x": 0.2228134111,
+    "y": 0.8387024653,
+    "popup": "012: The Many Flowers of Flabebe. Rewards: 1,500 money, x1 Rare Candy",
+    "tooltip": "012: The Many Flowers of Flabebe"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6e5",
+    "x": 0.2271527373,
+    "y": 0.8394643677,
+    "popup": "051: Floette Frolicking with Flowers",
+    "tooltip": "051: Floette Frolicking with Flowers"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6a2",
+    "x": 0.4661003873,
+    "y": 0.8472531671,
+    "popup": "052: Numel Frozen Solid. Rewards: 900 money, x3 Ice Heal, x2 Exp. Candy M",
+    "tooltip": "052: Numel Frozen Solid"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6db",
+    "x": 0.7457136001,
+    "y": 0.8538381734,
+    "popup": "109: Wondrous Self-Healing Pokemon. Rewards: 4,500 money, x1 Lucky Egg, x5 Full Restore, x2 Max Revive",
+    "tooltip": "109: Wondrous Self-Healing Pokemon"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6b5",
+    "x": 0.6127764411,
+    "y": 0.85531443,
+    "popup": "074: Delibird Gets in a Flap",
+    "tooltip": "074: Delibird Gets in a Flap"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6a3",
+    "x": 0.5104266331,
+    "y": 0.8725824504,
+    "popup": "044: Vanillite\\u2019s Fragrant Snow. Rewards: 2,500 money, x1 Leaf Stone, x3 Quiet Mint",
+    "tooltip": "044: Vanillite's Fragrant Snow"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c528",
+    "x": 0.5059631026,
+    "y": 0.8739142081,
+    "popup": "010: Skiddo's Fragrant Leaves Rewards: 800 money, x2 Sachet, x5 Persim Berry",
+    "tooltip": "010: Skiddo's Fragrant Leaves"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6c9",
+    "x": 0.5082258725,
+    "y": 0.8759533295,
+    "popup": "078: Inkay's Fragrant Ink. Rewards: 2,000 money, x3 Big Pearl",
+    "tooltip": "078: Inkay's Fragrant Ink"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c63a",
+    "x": 0.613303763,
+    "y": 0.8850212825,
+    "popup": "041: Watch Out for Traps. Rewards: 1,300 money, x1 Spikes, x5 Super Potion",
+    "tooltip": "041: Watch Out for Traps"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c57a",
+    "x": 0.5187903717,
+    "y": 0.889490498,
+    "popup": "023: Underneath the Holovator. Rewards:  $1500  Soft Sand (1)  Revive (1)",
+    "tooltip": "023: Underneath the Holovator"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c573",
+    "x": 0.5963195981,
+    "y": 0.8932349445,
+    "popup": "017: A Shiny Mareep? Rewards:  $500  Pretty Feather (3)",
+    "tooltip": "017: A Shiny Mareep?"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6b6",
+    "x": 0.626773986,
+    "y": 0.9008932126,
+    "popup": "075: Some Unusual Pokemon. Rewards: 3,200 money, x1 Galarica Cuff, x1 Galarica Wreath",
+    "tooltip": "075: Some Unusual Pokemon"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c63b",
+    "x": 0.4598599498,
+    "y": 0.9069486203,
+    "popup": "028: Who Says Normal Is Weak? Rewards: 3,000 money, x1 Silk Scarf",
+    "tooltip": "028: Who Says Normal Is Weak?"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6ca",
+    "x": 0.3050658715,
+    "y": 0.9153599577,
+    "popup": "113: Bergmite sur un Avalugg. Rewards: 5,000 money, x4 Exp. Candy L",
+    "tooltip": "113: Bergmite sur un Avalugg"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6cb",
+    "x": 0.3717212066,
+    "y": 0.9164014473,
+    "popup": "045: On Maintenance Duty. Rewards: 800 money, x1 Serious Mint, x10 Chilan Berry",
+    "tooltip": "045: On Maintenance Duty"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c579",
+    "x": 0.5355340339,
+    "y": 0.9513822493,
+    "popup": "022: A Call from Mable. Rewards:  $1000  Exp. Candy XS (3)  Exp. Candy S (2)",
+    "tooltip": "022: A Call from Mable"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c6cd",
+    "x": 0.5176254567,
+    "y": 0.9542879815,
+    "popup": "099: Pleasing Aron's Palate. Rewards: 3,500 money, x5 Zinc, x1 Power Band",
+    "tooltip": "099: Pleasing Aron's Palate"
+  },
+  {
+    "uid": "m690514edc00242ea12f9c634",
+    "x": 0.5328558799,
+    "y": 0.9555370359,
+    "popup": "Side Mission 027. Rewards: 2,500 money, x1 Hard Stone, x10 Kelpsy Berry",
+    "tooltip": "027: Restored From a Fossil"
+  }
+]

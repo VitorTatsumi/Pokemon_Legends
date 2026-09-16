@@ -1,0 +1,3163 @@
+{
+  "regions": {
+    "1204": "coronet",
+    "1205": "alabaster",
+    "1206": "cobalt",
+    "1207": "crimson",
+    "1208": "obsidian",
+    "1209": "jubilife",
+    "1210": "coronet"
+  },
+  "locs": [
+    {
+      "id": 156444,
+      "cat": "area",
+      "title": "Sacred Plaza",
+      "description": "",
+      "lat": 0.94406986627955,
+      "lng": -0.74760522797002,
+      "region_id": 1204,
+      "ign": null
+    },
+    {
+      "id": 156445,
+      "cat": "area",
+      "title": "Stonetooth Rows",
+      "description": "",
+      "lat": 0.93391788068914,
+      "lng": -0.78074011101401,
+      "region_id": 1204,
+      "ign": null
+    },
+    {
+      "id": 156446,
+      "cat": "area",
+      "title": "Bolderoll Ravine",
+      "description": "",
+      "lat": 0.91454596283927,
+      "lng": -0.7756859658512,
+      "region_id": 1204,
+      "ign": null
+    },
+    {
+      "id": 156448,
+      "cat": "area",
+      "title": "Fabled Spring",
+      "description": "",
+      "lat": 0.8822447913634,
+      "lng": -0.7622671782475,
+      "region_id": 1204,
+      "ign": null
+    },
+    {
+      "id": 156449,
+      "cat": "area",
+      "title": "Wayward Wood",
+      "description": "",
+      "lat": 0.87489371726516,
+      "lng": -0.6992131011173,
+      "region_id": 1204,
+      "ign": null
+    },
+    {
+      "id": 156450,
+      "cat": "area",
+      "title": "Ancient Quarry",
+      "description": "",
+      "lat": 0.89016323219001,
+      "lng": -0.70536405207685,
+      "region_id": 1204,
+      "ign": null
+    },
+    {
+      "id": 156451,
+      "cat": "area",
+      "title": "Sonorous Path",
+      "description": "",
+      "lat": 0.90507767936481,
+      "lng": -0.68380310576849,
+      "region_id": 1204,
+      "ign": null
+    },
+    {
+      "id": 156452,
+      "cat": "area",
+      "title": "Celestica Trail",
+      "description": "",
+      "lat": 0.92040202808423,
+      "lng": -0.71284660710675,
+      "region_id": 1204,
+      "ign": null
+    },
+    {
+      "id": 156453,
+      "cat": "area",
+      "title": "Primeval Grotto",
+      "description": "",
+      "lat": 0.93742777566384,
+      "lng": -0.71260392665775,
+      "region_id": 1204,
+      "ign": null
+    },
+    {
+      "id": 156457,
+      "cat": "area",
+      "title": "Lonely Spring",
+      "description": "",
+      "lat": 0.92636535100853,
+      "lng": -0.64144328053624,
+      "region_id": 1204,
+      "ign": null
+    },
+    {
+      "id": 156459,
+      "cat": "area",
+      "title": "Clamberclaw Cliffs",
+      "description": "",
+      "lat": 0.93409691635157,
+      "lng": -0.65459311008593,
+      "region_id": 1204,
+      "ign": null
+    },
+    {
+      "id": 156460,
+      "cat": "area",
+      "title": "Celestica Ruins",
+      "description": "",
+      "lat": 0.95890985189208,
+      "lng": -0.69043569355006,
+      "region_id": 1204,
+      "ign": null
+    },
+    {
+      "id": 156463,
+      "cat": "area",
+      "title": "Cloudcap Pass",
+      "description": "",
+      "lat": 0.98927491309794,
+      "lng": -0.74621392587986,
+      "region_id": 1204,
+      "ign": null
+    },
+    {
+      "id": 156491,
+      "cat": "area",
+      "title": "Sandgem Flat",
+      "description": "",
+      "lat": 0.39763417895071,
+      "lng": -0.88879453784691,
+      "region_id": 1208,
+      "ign": null
+    },
+    {
+      "id": 156492,
+      "cat": "area",
+      "title": "Windswept Run",
+      "description": "",
+      "lat": 0.4216208622185,
+      "lng": -0.84084367706865,
+      "region_id": 1208,
+      "ign": null
+    },
+    {
+      "id": 156493,
+      "cat": "area",
+      "title": "Ramanas Island",
+      "description": "",
+      "lat": 0.37461597332062,
+      "lng": -0.86829839745164,
+      "region_id": 1208,
+      "ign": null
+    },
+    {
+      "id": 156494,
+      "cat": "area",
+      "title": "Nature's Pantry",
+      "description": "",
+      "lat": 0.40735974437749,
+      "lng": -0.81385731697128,
+      "region_id": 1208,
+      "ign": null
+    },
+    {
+      "id": 156495,
+      "cat": "area",
+      "title": "Tidewater Dam",
+      "description": "",
+      "lat": 0.39053287666891,
+      "lng": -0.80553350594113,
+      "region_id": 1208,
+      "ign": null
+    },
+    {
+      "id": 156496,
+      "cat": "area",
+      "title": "The Heartwood",
+      "description": "",
+      "lat": 0.38003404429595,
+      "lng": -0.78885912895191,
+      "region_id": 1208,
+      "ign": null
+    },
+    {
+      "id": 156500,
+      "cat": "area",
+      "title": "Oreburrow Tunnel",
+      "description": "",
+      "lat": 0.42109340782152,
+      "lng": -0.76204608561019,
+      "region_id": 1208,
+      "ign": null
+    },
+    {
+      "id": 156502,
+      "cat": "area",
+      "title": "Obsidian Falls",
+      "description": "",
+      "lat": 0.43838059188914,
+      "lng": -0.7661039293001,
+      "region_id": 1208,
+      "ign": null
+    },
+    {
+      "id": 156505,
+      "cat": "area",
+      "title": "Deertrack Heights",
+      "description": "",
+      "lat": 0.44576332151547,
+      "lng": -0.8074368647745,
+      "region_id": 1208,
+      "ign": null
+    },
+    {
+      "id": 156506,
+      "cat": "area",
+      "title": "Deertrack Path",
+      "description": "",
+      "lat": 0.45514847185174,
+      "lng": -0.83195792476909,
+      "region_id": 1208,
+      "ign": null
+    },
+    {
+      "id": 156508,
+      "cat": "area",
+      "title": "Worn Bridge",
+      "description": "",
+      "lat": 0.46664989209975,
+      "lng": -0.78367987289747,
+      "region_id": 1208,
+      "ign": null
+    },
+    {
+      "id": 156509,
+      "cat": "area",
+      "title": "Grueling Grove",
+      "description": "",
+      "lat": 0.50127270584314,
+      "lng": -0.77342044007216,
+      "region_id": 1208,
+      "ign": null
+    },
+    {
+      "id": 156510,
+      "cat": "area",
+      "title": "Horseshoe Plains",
+      "description": "",
+      "lat": 0.49070512382151,
+      "lng": -0.81154272225186,
+      "region_id": 1208,
+      "ign": null
+    },
+    {
+      "id": 156511,
+      "cat": "area",
+      "title": "Aspiration Hill",
+      "description": "",
+      "lat": 0.4816969501681,
+      "lng": -0.84948073499035,
+      "region_id": 1208,
+      "ign": null
+    },
+    {
+      "id": 156514,
+      "cat": "area",
+      "title": "Floaro Gardens",
+      "description": "",
+      "lat": 0.49220075796352,
+      "lng": -0.89410901069772,
+      "region_id": 1208,
+      "ign": null
+    },
+    {
+      "id": 156517,
+      "cat": "area",
+      "title": "Whiteout Valley",
+      "description": "",
+      "lat": 0.89249835455474,
+      "lng": -0.93699699676916,
+      "region_id": 1205,
+      "ign": null
+    },
+    {
+      "id": 156519,
+      "cat": "area",
+      "title": "Icebound Falls",
+      "description": "",
+      "lat": 0.88256206642261,
+      "lng": -0.97642600536295,
+      "region_id": 1205,
+      "ign": null
+    },
+    {
+      "id": 156520,
+      "cat": "area",
+      "title": "Avalanche Slopes",
+      "description": "",
+      "lat": 0.90389152565348,
+      "lng": -1.0025887770197,
+      "region_id": 1205,
+      "ign": null
+    },
+    {
+      "id": 156521,
+      "cat": "area",
+      "title": "Arena's Approach",
+      "description": "",
+      "lat": 0.92476616981176,
+      "lng": -0.98921205120902,
+      "region_id": 1205,
+      "ign": null
+    },
+    {
+      "id": 156522,
+      "cat": "area",
+      "title": "Bonechill Wastes",
+      "description": "",
+      "lat": 0.91681772586469,
+      "lng": -0.93768354964649,
+      "region_id": 1205,
+      "ign": null
+    },
+    {
+      "id": 156525,
+      "cat": "area",
+      "title": "Avalugg's Legacy",
+      "description": "",
+      "lat": 0.9538891969995,
+      "lng": -0.93696218426428,
+      "region_id": 1205,
+      "ign": null
+    },
+    {
+      "id": 156526,
+      "cat": "area",
+      "title": "Heart's Crag",
+      "description": "",
+      "lat": 0.96651999971059,
+      "lng": -0.89010439638481,
+      "region_id": 1205,
+      "ign": null
+    },
+    {
+      "id": 156530,
+      "cat": "area",
+      "title": "Snowfall Hot Spring",
+      "description": "",
+      "lat": 0.97015964544251,
+      "lng": -1.00161781763,
+      "region_id": 1205,
+      "ign": null
+    },
+    {
+      "id": 156531,
+      "cat": "area",
+      "title": "Glacier Terrace",
+      "description": "",
+      "lat": 0.98996306524985,
+      "lng": -0.98718675876237,
+      "region_id": 1205,
+      "ign": null
+    },
+    {
+      "id": 156532,
+      "cat": "area",
+      "title": "Lake Acuity",
+      "description": "",
+      "lat": 1.0006078104159,
+      "lng": -0.94807758265719,
+      "region_id": 1205,
+      "ign": null
+    },
+    {
+      "id": 156537,
+      "cat": "area",
+      "title": "Pearl Settlement",
+      "description": "",
+      "lat": 0.97992156648021,
+      "lng": -0.91340045045676,
+      "region_id": 1205,
+      "ign": null
+    },
+    {
+      "id": 156538,
+      "cat": "area",
+      "title": "Holm of Trials",
+      "description": "",
+      "lat": 0.36748994461892,
+      "lng": -0.59636452929283,
+      "region_id": 1207,
+      "ign": null
+    },
+    {
+      "id": 156541,
+      "cat": "area",
+      "title": "Gapejaw Bog",
+      "description": "",
+      "lat": 0.4083411266662,
+      "lng": -0.61577881421718,
+      "region_id": 1207,
+      "ign": null
+    },
+    {
+      "id": 156542,
+      "cat": "area",
+      "title": "Sludge Mound",
+      "description": "",
+      "lat": 0.38862611941126,
+      "lng": -0.57311701391438,
+      "region_id": 1207,
+      "ign": null
+    },
+    {
+      "id": 156543,
+      "cat": "area",
+      "title": "Ursa's Ring",
+      "description": "",
+      "lat": 0.37828473578398,
+      "lng": -0.55305732868314,
+      "region_id": 1207,
+      "ign": null
+    },
+    {
+      "id": 156544,
+      "cat": "area",
+      "title": "Droning Meadow",
+      "description": "",
+      "lat": 0.40207428324157,
+      "lng": -0.53259784331945,
+      "region_id": 1207,
+      "ign": null
+    },
+    {
+      "id": 156545,
+      "cat": "area",
+      "title": "Cottonsedge Prairie",
+      "description": "",
+      "lat": 0.41666517164987,
+      "lng": -0.53434245059839,
+      "region_id": 1207,
+      "ign": null
+    },
+    {
+      "id": 156546,
+      "cat": "area",
+      "title": "Scarlet Bog",
+      "description": "",
+      "lat": 0.42360844194637,
+      "lng": -0.58218238099599,
+      "region_id": 1207,
+      "ign": null
+    },
+    {
+      "id": 156547,
+      "cat": "area",
+      "title": "Bolderoll Slope",
+      "description": "",
+      "lat": 0.44019703411752,
+      "lng": -0.56219869762629,
+      "region_id": 1207,
+      "ign": null
+    },
+    {
+      "id": 156552,
+      "cat": "area",
+      "title": "Golden Lowlands",
+      "description": "",
+      "lat": 0.43421716955588,
+      "lng": -0.62498528054564,
+      "region_id": 1207,
+      "ign": null
+    },
+    {
+      "id": 156555,
+      "cat": "area",
+      "title": "Solaceon Ruins",
+      "description": "",
+      "lat": 0.45162848546639,
+      "lng": -0.60051681755459,
+      "region_id": 1207,
+      "ign": null
+    },
+    {
+      "id": 156556,
+      "cat": "area",
+      "title": "Diamond Settlement",
+      "description": "",
+      "lat": 0.47075129024567,
+      "lng": -0.57432771522909,
+      "region_id": 1207,
+      "ign": null
+    },
+    {
+      "id": 156557,
+      "cat": "area",
+      "title": "Diamond Heath",
+      "description": "",
+      "lat": 0.4767958551143,
+      "lng": -0.58714193690827,
+      "region_id": 1207,
+      "ign": null
+    },
+    {
+      "id": 156558,
+      "cat": "area",
+      "title": "Cloudpool Ridge",
+      "description": "",
+      "lat": 0.48544433356284,
+      "lng": -0.61726798130974,
+      "region_id": 1207,
+      "ign": null
+    },
+    {
+      "id": 156559,
+      "cat": "area",
+      "title": "Shrouded Ruins",
+      "description": "",
+      "lat": 0.49657922232436,
+      "lng": -0.58018287460143,
+      "region_id": 1207,
+      "ign": null
+    },
+    {
+      "id": 156560,
+      "cat": "area",
+      "title": "Lake Valor",
+      "description": "",
+      "lat": 0.48415767034511,
+      "lng": -0.54465424147921,
+      "region_id": 1207,
+      "ign": null
+    },
+    {
+      "id": 156564,
+      "cat": "area",
+      "title": "Hideaway Bay",
+      "description": "",
+      "lat": 0.61412439546399,
+      "lng": -0.47124266624277,
+      "region_id": 1206,
+      "ign": null
+    },
+    {
+      "id": 156565,
+      "cat": "area",
+      "title": "Bathers' Lagoon",
+      "description": "",
+      "lat": 0.62454628036171,
+      "lng": -0.4695798979443,
+      "region_id": 1206,
+      "ign": null
+    },
+    {
+      "id": 156566,
+      "cat": "area",
+      "title": "Aipom Hill",
+      "description": "",
+      "lat": 0.63840450952144,
+      "lng": -0.5070931725958,
+      "region_id": 1206,
+      "ign": null
+    },
+    {
+      "id": 156567,
+      "cat": "area",
+      "title": "Ginkgo Landing",
+      "description": "",
+      "lat": 0.66649564265929,
+      "lng": -0.50985184142672,
+      "region_id": 1206,
+      "ign": null
+    },
+    {
+      "id": 156568,
+      "cat": "area",
+      "title": "Crossing Slope",
+      "description": "",
+      "lat": 0.65542591854638,
+      "lng": -0.5327035405418,
+      "region_id": 1206,
+      "ign": null
+    },
+    {
+      "id": 156569,
+      "cat": "area",
+      "title": "Deadwood Haunt",
+      "description": "",
+      "lat": 0.63377984377745,
+      "lng": -0.43861397200965,
+      "region_id": 1206,
+      "ign": null
+    },
+    {
+      "id": 156570,
+      "cat": "area",
+      "title": "Sand's Reach",
+      "description": "",
+      "lat": 0.65395793390383,
+      "lng": -0.41626175693207,
+      "region_id": 1206,
+      "ign": null
+    },
+    {
+      "id": 156571,
+      "cat": "area",
+      "title": "Tombolo Walk",
+      "description": "",
+      "lat": 0.62228202256446,
+      "lng": -0.39479582754819,
+      "region_id": 1206,
+      "ign": null
+    },
+    {
+      "id": 156574,
+      "cat": "area",
+      "title": "Tranquility Cove",
+      "description": "",
+      "lat": 0.67120308410313,
+      "lng": -0.44972988282939,
+      "region_id": 1206,
+      "ign": null
+    },
+    {
+      "id": 156581,
+      "cat": "area",
+      "title": "Windbreak Stand",
+      "description": "",
+      "lat": 0.70785456369615,
+      "lng": -0.51706283649366,
+      "region_id": 1206,
+      "ign": null
+    },
+    {
+      "id": 156582,
+      "cat": "area",
+      "title": "Castaway Shore",
+      "description": "",
+      "lat": 0.69953368298016,
+      "lng": -0.46992894627058,
+      "region_id": 1206,
+      "ign": null
+    },
+    {
+      "id": 156583,
+      "cat": "area",
+      "title": "Veilstone Cape",
+      "description": "",
+      "lat": 0.71281620785058,
+      "lng": -0.44946849346076,
+      "region_id": 1206,
+      "ign": null
+    },
+    {
+      "id": 156584,
+      "cat": "area",
+      "title": "Lunker's Lair",
+      "description": "",
+      "lat": 0.70354899403576,
+      "lng": -0.40354365897394,
+      "region_id": 1206,
+      "ign": null
+    },
+    {
+      "id": 156585,
+      "cat": "area",
+      "title": "Seagrass Haven",
+      "description": "",
+      "lat": 0.72878775438674,
+      "lng": -0.43303841594002,
+      "region_id": 1206,
+      "ign": null
+    },
+    {
+      "id": 156588,
+      "cat": "area",
+      "title": "Spring Path",
+      "description": "",
+      "lat": 0.72907143846147,
+      "lng": -0.52402013810021,
+      "region_id": 1206,
+      "ign": null
+    },
+    {
+      "id": 156589,
+      "cat": "area",
+      "title": "Islespy Shore",
+      "description": "",
+      "lat": 0.74799938622455,
+      "lng": -0.49574277979988,
+      "region_id": 1206,
+      "ign": null
+    },
+    {
+      "id": 156593,
+      "cat": "area",
+      "title": "Firespit Island",
+      "description": "",
+      "lat": 0.74198646304377,
+      "lng": -0.40543919556413,
+      "region_id": 1206,
+      "ign": null
+    },
+    {
+      "id": 156722,
+      "cat": "area",
+      "title": "Temple of Sinnoh",
+      "description": "",
+      "lat": 1.0116900345603,
+      "lng": -0.75407648248025,
+      "region_id": 1204,
+      "ign": null
+    },
+    {
+      "id": 156982,
+      "cat": "area",
+      "title": "Lake Verity",
+      "description": "",
+      "lat": 0.45217283077587,
+      "lng": -0.89276790618828,
+      "region_id": 1208,
+      "ign": null
+    },
+    {
+      "id": 159823,
+      "cat": "area",
+      "title": "Heavenward Lookout",
+      "description": "",
+      "lat": 0.88489379616854,
+      "lng": -0.64158546187804,
+      "region_id": 1210,
+      "ign": null
+    },
+    {
+      "id": 156456,
+      "cat": "camp",
+      "title": "Mountain Camp",
+      "description": "",
+      "lat": 0.91582272572898,
+      "lng": -0.64883172512006,
+      "region_id": 1204,
+      "ign": "Setting_Up_the_Mountain_Camp"
+    },
+    {
+      "id": 156465,
+      "cat": "camp",
+      "title": "Summit Camp",
+      "description": "",
+      "lat": 0.95306044861438,
+      "lng": -0.75904185087278,
+      "region_id": 1204,
+      "ign": null
+    },
+    {
+      "id": 156504,
+      "cat": "camp",
+      "title": "Heights Camp",
+      "description": "**How to unlock:** Complete the [Story Mission #5](https://mapgenie.io/pokemon-legends-arceus/maps/hisui-region?locationIds=156627).",
+      "lat": 0.43324772900749,
+      "lng": -0.81440448760861,
+      "region_id": 1208,
+      "ign": "A_Request_From_Mai"
+    },
+    {
+      "id": 156512,
+      "cat": "camp",
+      "title": "Fieldlands Camp",
+      "description": "",
+      "lat": 0.49941056030839,
+      "lng": -0.85608736988161,
+      "region_id": 1208,
+      "ign": null
+    },
+    {
+      "id": 156516,
+      "cat": "camp",
+      "title": "Snowfields Camp",
+      "description": "",
+      "lat": 0.87932320671462,
+      "lng": -0.93717037470075,
+      "region_id": 1205,
+      "ign": null
+    },
+    {
+      "id": 156528,
+      "cat": "camp",
+      "title": "Icepeak Camp",
+      "description": "",
+      "lat": 0.97357454658779,
+      "lng": -0.95515750021745,
+      "region_id": 1205,
+      "ign": "Setting_Up_the_Icepeak_Camp"
+    },
+    {
+      "id": 156549,
+      "cat": "camp",
+      "title": "Bogbound Camp",
+      "description": "**How to unlock:** Complete the [#31: Setting Up the Bogbound Camp](https://mapgenie.io/pokemon-legends-arceus/maps/hisui-region?locationIds=157755) request.",
+      "lat": 0.3987822522094,
+      "lng": -0.56590855121561,
+      "region_id": 1207,
+      "ign": null
+    },
+    {
+      "id": 156550,
+      "cat": "camp",
+      "title": "Mirelands Camp",
+      "description": "",
+      "lat": 0.44785132265991,
+      "lng": -0.63157809926454,
+      "region_id": 1207,
+      "ign": null
+    },
+    {
+      "id": 156573,
+      "cat": "camp",
+      "title": "Coastlands Camp",
+      "description": "",
+      "lat": 0.64239208103946,
+      "lng": -0.41032215511228,
+      "region_id": 1206,
+      "ign": "Setting_Up_the_Coastlands_Camp"
+    },
+    {
+      "id": 156580,
+      "cat": "camp",
+      "title": "Beachside Camp",
+      "description": "",
+      "lat": 0.67087884183715,
+      "lng": -0.54028375262908,
+      "region_id": 1206,
+      "ign": null
+    },
+    {
+      "id": 156659,
+      "cat": "camp",
+      "title": "Highlands Camp",
+      "description": "",
+      "lat": 0.87607145537048,
+      "lng": -0.63708827238372,
+      "region_id": 1204,
+      "ign": null
+    },
+    {
+      "id": 156682,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On top of the cliffs.",
+      "lat": 0.95944569459414,
+      "lng": -0.7378005981445,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Wisp_18"
+    },
+    {
+      "id": 156685,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** Near the gravestones",
+      "lat": 0.93522329424884,
+      "lng": -0.75873255729604,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Wisp_2"
+    },
+    {
+      "id": 156687,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On top of a cliff, overlooking Moonview Arena.",
+      "lat": 0.96569110938196,
+      "lng": -0.76714425241218,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Wisp_3"
+    },
+    {
+      "id": 156689,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** In the the middle of a circle of pillars.",
+      "lat": 0.94477944391532,
+      "lng": -0.7184354375044,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Wisp_20"
+    },
+    {
+      "id": 156690,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** Just above the entrance to [Primeval Grotto](https://mapgenie.io/pokemon-legends-arceus/maps/hisui-region?locationIds=156453).",
+      "lat": 0.9348263801739,
+      "lng": -0.71963667869483,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Wisp_19"
+    },
+    {
+      "id": 156693,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** At the end of the high ridge, beside a tree.",
+      "lat": 0.9263678087661,
+      "lng": -0.67116916179498,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Wisp_11"
+    },
+    {
+      "id": 156695,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** At the end of the ravine.",
+      "lat": 0.90974005336252,
+      "lng": -0.77345436795127,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Wisp_14"
+    },
+    {
+      "id": 156715,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** Behind the Training Grounds building.",
+      "lat": 0.757272844737,
+      "lng": -0.98067998886199,
+      "region_id": 1209,
+      "ign": "Jubilife_Village_-_Wisp_3"
+    },
+    {
+      "id": 156717,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** Behind the Galaxy Hall.",
+      "lat": 0.76096324041249,
+      "lng": -0.93501806259044,
+      "region_id": 1209,
+      "ign": "Jubilife_Village_-_Wisp_2"
+    },
+    {
+      "id": 156719,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** By the river, next to the water wheel. Access from the west, near the Training Grounds.",
+      "lat": 0.73248060006674,
+      "lng": -0.95564961433439,
+      "region_id": 1209,
+      "ign": "Jubilife_Village_-_Wisp_4"
+    },
+    {
+      "id": 156720,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** Between the four surrounding buildings. Access from the south.",
+      "lat": 0.71000546948056,
+      "lng": -0.94908356666502,
+      "region_id": 1209,
+      "ign": "Jubilife_Village_-_Wisp_5"
+    },
+    {
+      "id": 156721,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** Behind the small building.",
+      "lat": 0.71023075773391,
+      "lng": -0.98352313041678,
+      "region_id": 1209,
+      "ign": "Jubilife_Village_-_Wisp_6"
+    },
+    {
+      "id": 156723,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** By a large rock near the shack.",
+      "lat": 0.63910351056829,
+      "lng": -0.97831964492863,
+      "region_id": 1209,
+      "ign": "Jubilife_Village_-_Wisp_7"
+    },
+    {
+      "id": 156728,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** By the river, near a tree.",
+      "lat": 0.72464072773171,
+      "lng": -0.9258785492581,
+      "region_id": 1209,
+      "ign": "Jubilife_Village_-_Wisp_1"
+    },
+    {
+      "id": 156730,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On top of a small mountain.",
+      "lat": 0.50593314712745,
+      "lng": -0.79820930957717,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Wisp_15"
+    },
+    {
+      "id": 156731,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On top of a small hill, next to a tree.",
+      "lat": 0.48808021942793,
+      "lng": -0.86841957328971,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Wisp_4"
+    },
+    {
+      "id": 156733,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On a ledge jutting from the mountain range.",
+      "lat": 0.44562191476527,
+      "lng": -0.8602760400874,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Wisp_6"
+    },
+    {
+      "id": 156734,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** At the top of a slanted rock.",
+      "lat": 0.39563341449636,
+      "lng": -0.89386224746474,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Wisp_7"
+    },
+    {
+      "id": 156735,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** Atop the cliff, overlooking the island.",
+      "lat": 0.37020708899291,
+      "lng": -0.86209828372628,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Wisp_1"
+    },
+    {
+      "id": 156736,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "",
+      "lat": 0.40645735346165,
+      "lng": -0.84592086885334,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Wisp_2"
+    },
+    {
+      "id": 156737,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** At the very end of the peninsula.",
+      "lat": 0.35676232206639,
+      "lng": -0.84619401194615,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Wisp_3"
+    },
+    {
+      "id": 156738,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On a ledge up the mountain.",
+      "lat": 0.3573631252229,
+      "lng": -0.81864236094765,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Wisp_8"
+    },
+    {
+      "id": 156739,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On top of the hill, looking over the dam.",
+      "lat": 0.37534636616847,
+      "lng": -0.79855847333081,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Wisp_9"
+    },
+    {
+      "id": 156740,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** At the end of the cliff, near the river.",
+      "lat": 0.39448617769053,
+      "lng": -0.77958989117719,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Wisp_10"
+    },
+    {
+      "id": 156741,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** Above Oreburrow Tunnel.",
+      "lat": 0.41886612193596,
+      "lng": -0.75072884559651,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Wisp_11"
+    },
+    {
+      "id": 156743,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On a ledge, near the top of the mountain.",
+      "lat": 0.48234369391625,
+      "lng": -0.76155308168148,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Wisp_14"
+    },
+    {
+      "id": 156747,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** At the very top of the mountain.",
+      "lat": 0.42403401762034,
+      "lng": -0.81385255606702,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Wisp_16"
+    },
+    {
+      "id": 156748,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On top of the cliff.",
+      "lat": 0.42862280030903,
+      "lng": -0.77781515376981,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Wisp_12"
+    },
+    {
+      "id": 156749,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On top of the small hill.",
+      "lat": 0.39921023876326,
+      "lng": -0.8191928745411,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Wisp_17"
+    },
+    {
+      "id": 156750,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On a cliff near Brave Arena.",
+      "lat": 0.49442154470933,
+      "lng": -0.59607267379954,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Wisp_9"
+    },
+    {
+      "id": 156751,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** Behind the trees, near the cliff.",
+      "lat": 0.49030182377916,
+      "lng": -0.61033129692083,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Wisp_8"
+    },
+    {
+      "id": 156753,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On the shore, opposite to the campfire.",
+      "lat": 0.47318961878331,
+      "lng": -0.62236589661828,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Wisp_6"
+    },
+    {
+      "id": 156755,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On a cliff overlooking the bog.",
+      "lat": 0.44507055902773,
+      "lng": -0.57467937469622,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Wisp_20"
+    },
+    {
+      "id": 156756,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On top of a cliff overlooking a ravine.",
+      "lat": 0.44464141851988,
+      "lng": -0.5949997901933,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Wisp_19"
+    },
+    {
+      "id": 156757,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On top of the cliff overlooking the river.",
+      "lat": 0.42674623745376,
+      "lng": -0.62047541141567,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Wisp_18"
+    },
+    {
+      "id": 156758,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** Within the valley between the two cliffs.",
+      "lat": 0.42620966271616,
+      "lng": -0.64170415902896,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Wisp_17"
+    },
+    {
+      "id": 156759,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On top of a hill.",
+      "lat": 0.39606338776144,
+      "lng": -0.62595953314732,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Wisp_5"
+    },
+    {
+      "id": 156760,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** In the middle of a puddle.",
+      "lat": 0.37294305879942,
+      "lng": -0.62778562268107,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Wisp_16"
+    },
+    {
+      "id": 156761,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On top of a hill, near some trees.",
+      "lat": 0.36284681016623,
+      "lng": -0.60190916061302,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Wisp_15"
+    },
+    {
+      "id": 156762,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On a rock in the middle of the lake.",
+      "lat": 0.36516419198627,
+      "lng": -0.57281255722057,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Wisp_14"
+    },
+    {
+      "id": 156763,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On a cliff, near the end of the river.",
+      "lat": 0.35864118979227,
+      "lng": -0.53749322891306,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Wisp_13"
+    },
+    {
+      "id": 156764,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On a mountain cliff, near a few trees.",
+      "lat": 0.39794542322215,
+      "lng": -0.51312804222135,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Wisp_12"
+    },
+    {
+      "id": 156765,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On top of the hill, by a withered tree.",
+      "lat": 0.41642001229974,
+      "lng": -0.52695751190262,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Wisp_1"
+    },
+    {
+      "id": 156766,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On a small hill overlooking the river.",
+      "lat": 0.41358954907059,
+      "lng": -0.55354551196422,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Wisp_3"
+    },
+    {
+      "id": 156767,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On top of a small hill.",
+      "lat": 0.42510109887989,
+      "lng": -0.54856557438507,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Wisp_11"
+    },
+    {
+      "id": 156768,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On top of a small rock outcroping, facing the river.",
+      "lat": 0.43825258628306,
+      "lng": -0.55508852004854,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Wisp_4"
+    },
+    {
+      "id": 156769,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** Between a circle of trees, near Lake Valor.",
+      "lat": 0.45541816743587,
+      "lng": -0.54633397648621,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Wisp_2"
+    },
+    {
+      "id": 156770,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On an island hidden behind Firespit Island.",
+      "lat": 0.77270370696155,
+      "lng": -0.38675874410214,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Wisp_19"
+    },
+    {
+      "id": 156771,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On a small lonely island.",
+      "lat": 0.76985665187344,
+      "lng": -0.44840097427385,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Wisp_17"
+    },
+    {
+      "id": 156773,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** At the end of the cliff, behind the trees.",
+      "lat": 0.76236322980682,
+      "lng": -0.5012780427937,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Wisp_16"
+    },
+    {
+      "id": 156774,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On a curved ledge, behind the spring.",
+      "lat": 0.73145071585256,
+      "lng": -0.53466389040807,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Wisp_14"
+    },
+    {
+      "id": 156775,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On a ledge, on the eastern side of the spring.",
+      "lat": 0.73299480411677,
+      "lng": -0.51452709114068,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Wisp_15"
+    },
+    {
+      "id": 156776,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** At the end of a ledge overlooking the sea.",
+      "lat": 0.72836106179351,
+      "lng": -0.47726154327268,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Wisp_12"
+    },
+    {
+      "id": 156777,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On top of the cliff.",
+      "lat": 0.72432734358406,
+      "lng": -0.47151088714728,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Wisp_11"
+    },
+    {
+      "id": 156779,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On a small island, just south of Firespit Island.",
+      "lat": 0.72566606804838,
+      "lng": -0.39387842269062,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Wisp_18"
+    },
+    {
+      "id": 156780,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On the southern side of the volcano, on a ledge.",
+      "lat": 0.74663785239818,
+      "lng": -0.40403946193948,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Wisp_20"
+    },
+    {
+      "id": 156781,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On a small rock outcroping, high up on the cliff.",
+      "lat": 0.70849818350624,
+      "lng": -0.45808911323837,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Wisp_10"
+    },
+    {
+      "id": 156782,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On top of a small hill.",
+      "lat": 0.69642108044685,
+      "lng": -0.50512728922811,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Wisp_13"
+    },
+    {
+      "id": 156784,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On top of the cliff just south of the camp.",
+      "lat": 0.66769399916943,
+      "lng": -0.53158700466193,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Wisp_3"
+    },
+    {
+      "id": 156785,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** At the end of a ledge, by an Oran Berry tree.",
+      "lat": 0.65350791223121,
+      "lng": -0.52355170633282,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Wisp_4"
+    },
+    {
+      "id": 156786,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On a cliff, by the beach.",
+      "lat": 0.64237409685545,
+      "lng": -0.48405080130956,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Wisp_5"
+    },
+    {
+      "id": 156787,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On a small island, in the middle of the lake.",
+      "lat": 0.63437753627052,
+      "lng": -0.4608735723827,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Wisp_1"
+    },
+    {
+      "id": 156789,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On a small island.",
+      "lat": 0.60943803813171,
+      "lng": -0.44465157225957,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Wisp_2"
+    },
+    {
+      "id": 156790,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On top of the high ledge overlooking the sea.",
+      "lat": 0.94735597032793,
+      "lng": -0.64360678195942,
+      "region_id": 1204,
+      "ign": "Cobalt_Coastlands_-_Wisp_10"
+    },
+    {
+      "id": 156791,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On a lone rock.",
+      "lat": 0.65272768986593,
+      "lng": -0.42957934630337,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Wisp_8"
+    },
+    {
+      "id": 156792,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** At the end of the sandy beach, near the rock archway,",
+      "lat": 0.66343047698196,
+      "lng": -0.38417815468981,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Wisp_7"
+    },
+    {
+      "id": 156793,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On a small rocky hill, on an island.",
+      "lat": 0.62755909370154,
+      "lng": -0.39977520420948,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Wisp_6"
+    },
+    {
+      "id": 156794,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** At the end of the rocky outcroping.",
+      "lat": 0.68709907044571,
+      "lng": -0.46113273800705,
+      "region_id": 1206,
+      "ign": "Crimson_Mirelands_-_Wisp_9"
+    },
+    {
+      "id": 156823,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On top of the hill.",
+      "lat": 0.88316817369821,
+      "lng": -0.7521075010302,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Wisp_16"
+    },
+    {
+      "id": 156824,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** Near the lake, at the start of the waterfall.",
+      "lat": 0.91123372861316,
+      "lng": -0.74069105885441,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Wisp_17"
+    },
+    {
+      "id": 156825,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On top of a tall stone pillar.",
+      "lat": 0.92770337401859,
+      "lng": -0.73502182960507,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Wisp_7"
+    },
+    {
+      "id": 156829,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** High up on the northern cliff.",
+      "lat": 0.90380080594628,
+      "lng": -0.72437523379624,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Wisp_1"
+    },
+    {
+      "id": 156830,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On the cliff looking over Fabled Spring.",
+      "lat": 0.87281911235545,
+      "lng": -0.73424630236454,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Wisp_15"
+    },
+    {
+      "id": 156832,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** At the far end of the beach.",
+      "lat": 0.86715493995594,
+      "lng": -0.67150377927474,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Wisp_5"
+    },
+    {
+      "id": 156833,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** Inside the Ancient Quarry. On top of a square stone pillar.",
+      "lat": 0.88639716830805,
+      "lng": -0.69019138812851,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Wisp_13"
+    },
+    {
+      "id": 156834,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On a small ledge jutting from the cliff.",
+      "lat": 0.91211102073945,
+      "lng": -0.67663013935004,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Wisp_8"
+    },
+    {
+      "id": 156836,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** Directly above Wayward Cave's entrance, near the waterfall.",
+      "lat": 0.88865699839015,
+      "lng": -0.6649729565973,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Wisp_6"
+    },
+    {
+      "id": 156838,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** Inside [Wayward Cave](https://mapgenie.io/pokemon-legends-arceus/maps/hisui-region?locationIds=156454). In the underwater lake cavern. Stick to the right side.",
+      "lat": 0.88616820696804,
+      "lng": -0.66033809941895,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Wisp_9"
+    },
+    {
+      "id": 156839,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** At the end of a rising cliff.",
+      "lat": 0.90556736300301,
+      "lng": -0.63226893621466,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Wisp_4"
+    },
+    {
+      "id": 156841,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** At the south end of a rock, in the middle of a puddle.",
+      "lat": 0.94698587605856,
+      "lng": -0.67113697528762,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Wisp_12"
+    },
+    {
+      "id": 156843,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On a small hill, north of Snowpoint Temple.",
+      "lat": 1.0265189687384,
+      "lng": -0.91741727027136,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Wisp_15"
+    },
+    {
+      "id": 156844,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On the 1st floor of Snowpoint Temple, just past the first puzzle door.",
+      "lat": 1.0204259620831,
+      "lng": -0.91312573584781,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Wisp_16"
+    },
+    {
+      "id": 156845,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** Behind the large tent.",
+      "lat": 1.001888115919,
+      "lng": -0.89544475078432,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Wisp_14"
+    },
+    {
+      "id": 156846,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On the eastern cliff overlooking the waterfall.",
+      "lat": 0.99673905788181,
+      "lng": -0.94325244426739,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Wisp_20"
+    },
+    {
+      "id": 156847,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** Inside the secret hollow, accessed by destroying the large brown rocks at the bottom of the waterfall.",
+      "lat": 0.9904756642977,
+      "lng": -0.95689938697456,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Wisp_19"
+    },
+    {
+      "id": 156848,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On a high ledge, near the border of the map.",
+      "lat": 0.99262111019743,
+      "lng": -0.9771306677977,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Wisp_18"
+    },
+    {
+      "id": 156849,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** Near the ledge overlooking the snowy plain.",
+      "lat": 0.95642594934796,
+      "lng": -0.96965610980919,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Wisp_17"
+    },
+    {
+      "id": 156850,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On a ledge jutting from the cliff.",
+      "lat": 0.93903152160912,
+      "lng": -0.99694490432668,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Wisp_4"
+    },
+    {
+      "id": 156851,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** Between the two nearby cliffs.",
+      "lat": 0.93660176575942,
+      "lng": -0.97090065479469,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Wisp_8"
+    },
+    {
+      "id": 156852,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** At the end of the tall cliff.",
+      "lat": 0.91033817414066,
+      "lng": -0.98298924015387,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Wisp_7"
+    },
+    {
+      "id": 156853,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On top of a pillar.",
+      "lat": 0.90639863492078,
+      "lng": -0.99803924560536,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Wisp_5"
+    },
+    {
+      "id": 156854,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** Between the two nearby cliffs.",
+      "lat": 0.88189695744036,
+      "lng": -1.0156130790705,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Wisp_6"
+    },
+    {
+      "id": 156855,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On the north side of a ledge jutting out of the mountain.",
+      "lat": 0.89579449205108,
+      "lng": -0.94735085964226,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Wisp_2"
+    },
+    {
+      "id": 156856,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** At the top of a cliff.",
+      "lat": 0.88292143977367,
+      "lng": -0.9234899282454,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Wisp_1"
+    },
+    {
+      "id": 156857,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** At the end of the ledge.",
+      "lat": 0.91049117140734,
+      "lng": -0.95430314540917,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Wisp_3"
+    },
+    {
+      "id": 156858,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On the side of the hill, on a small outcroping.",
+      "lat": 0.93724004615581,
+      "lng": -0.92927277088162,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Wisp_10"
+    },
+    {
+      "id": 156859,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** Undeground, in Ice Rock Cavern (can be accessed through [Ice Rock Cavern entrance](https://mapgenie.io/pokemon-legends-arceus/maps/hisui-region?locationIds=161290) and [Ice Rock Cavern entrance](https://mapgenie.io/pokemon-legends-arceus/maps/hisui-region?locationIds=161291)). At the end of a side cavern.",
+      "lat": 0.93921391869361,
+      "lng": -0.93416343273344,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Wisp_11"
+    },
+    {
+      "id": 156860,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** At the end of a large slanted rock.",
+      "lat": 0.94487794708112,
+      "lng": -0.90240776538744,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Wisp_12"
+    },
+    {
+      "id": 156861,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** At the end of the large, slanted piece of ice.",
+      "lat": 0.96830649057632,
+      "lng": -0.91871390882446,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Wisp_9"
+    },
+    {
+      "id": 156862,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On a small ledge, high up on the mountain.",
+      "lat": 0.94802643085703,
+      "lng": -0.88264524936773,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Wisp_13"
+    },
+    {
+      "id": 157194,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On a high ledge up the moutain.",
+      "lat": 0.43459121244167,
+      "lng": -0.83301971182775,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Wisp_18"
+    },
+    {
+      "id": 157730,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** At the end of a ledge overlooking the river.",
+      "lat": 0.49382075223318,
+      "lng": -0.62654256820733,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Wisp_7"
+    },
+    {
+      "id": 157731,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On top of a cliff overlooking Diamond Settlement.",
+      "lat": 0.46356649083619,
+      "lng": -0.58128833770888,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Wisp_10"
+    },
+    {
+      "id": 157732,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On a small island on the river.",
+      "lat": 0.44993129491947,
+      "lng": -0.76205620324615,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Wisp_13"
+    },
+    {
+      "id": 157733,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On a small cliff.",
+      "lat": 0.46193451328583,
+      "lng": -0.82150358922951,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Wisp_19"
+    },
+    {
+      "id": 157734,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On ground level, near the worn bridge.",
+      "lat": 0.46768498018045,
+      "lng": -0.78871626623192,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Wisp_20"
+    },
+    {
+      "id": 157736,
+      "cat": "wisp",
+      "title": "Wisp",
+      "description": "**Location:** On a small ledge, looking over Lake Verity.",
+      "lat": 0.45904768169613,
+      "lng": -0.88498797915418,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Wisp_5"
+    },
+    {
+      "id": 156718,
+      "cat": "alpha",
+      "title": "Alpha Luxray",
+      "description": "**Level:** 55",
+      "lat": 0.94969137539768,
+      "lng": -0.72639779310254,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Level_55_Alpha_Luxray"
+    },
+    {
+      "id": 156788,
+      "cat": "alpha",
+      "title": "Alpha Steelix",
+      "description": "**Level:** 60",
+      "lat": 0.92097819421264,
+      "lng": -0.67969107293271,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Level_60_Alpha_Steelix"
+    },
+    {
+      "id": 156826,
+      "cat": "alpha",
+      "title": "Alpha Gligar",
+      "description": "**Level:** 52",
+      "lat": 0.95628862176283,
+      "lng": -0.68810430656106,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Level_52_Alpha_Gligar"
+    },
+    {
+      "id": 156831,
+      "cat": "alpha",
+      "title": "Alpha Gabite",
+      "description": "**Level:** 56",
+      "lat": 0.94593336136526,
+      "lng": -0.69744649573839,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Level_56_Alpha_Gabite"
+    },
+    {
+      "id": 156837,
+      "cat": "alpha",
+      "title": "Alpha Gliscor",
+      "description": "**Level:** 77",
+      "lat": 0.93623580183695,
+      "lng": -0.69161000892211,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Level_77_Alpha_Gliscor"
+    },
+    {
+      "id": 156840,
+      "cat": "alpha",
+      "title": "Alpha Probopass",
+      "description": "**Level:** 73",
+      "lat": 0.92630678763239,
+      "lng": -0.71694389255971,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Level_73_Alpha_Probopass"
+    },
+    {
+      "id": 156863,
+      "cat": "alpha",
+      "title": "Alpha Luxio",
+      "description": "**Level:** 40",
+      "lat": 0.48380251970981,
+      "lng": -0.88479827207888,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Level_40_Alpha_Luxio"
+    },
+    {
+      "id": 156864,
+      "cat": "alpha",
+      "title": "Alpha Rapidash",
+      "description": "**Level:** 40",
+      "lat": 0.50288988270404,
+      "lng": -0.8063237656967,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Level_40_Alpha_Rapidash"
+    },
+    {
+      "id": 156865,
+      "cat": "alpha",
+      "title": "Alpha Heracross",
+      "description": "**Level:** 45",
+      "lat": 0.50091760988055,
+      "lng": -0.77070593833855,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Level_45_Alpha_Heracross"
+    },
+    {
+      "id": 156866,
+      "cat": "alpha",
+      "title": "Alpha Graveler",
+      "description": "**Level:** 30",
+      "lat": 0.46355381819046,
+      "lng": -0.75256033831019,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Level_30_Alpha_Graveler"
+    },
+    {
+      "id": 156867,
+      "cat": "alpha",
+      "title": "Alpha Stantler",
+      "description": "**Level:** 42",
+      "lat": 0.44830553409501,
+      "lng": -0.79891812323109,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Level_42_Alpha_Stantler"
+    },
+    {
+      "id": 156868,
+      "cat": "alpha",
+      "title": "Alpha Snorlax",
+      "description": "**Level:** 45",
+      "lat": 0.44397665185491,
+      "lng": -0.85942953558759,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Level_45_Alpha_Snorlax"
+    },
+    {
+      "id": 156869,
+      "cat": "alpha",
+      "title": "Alpha Staravia",
+      "description": "**Level:** 42",
+      "lat": 0.42229010152397,
+      "lng": -0.83500735074625,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Level_32_Alpha_Staravia"
+    },
+    {
+      "id": 156870,
+      "cat": "alpha",
+      "title": "Alpha Bibarel",
+      "description": "**Level:** 16",
+      "lat": 0.38701836009119,
+      "lng": -0.80281734466627,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Level_16_Alpha_Bibarel"
+    },
+    {
+      "id": 156871,
+      "cat": "alpha",
+      "title": "Alpha Lopunny",
+      "description": "**Level:** 40",
+      "lat": 0.35603034214239,
+      "lng": -0.84470621855738,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Level_40_Alpha_Lopunny"
+    },
+    {
+      "id": 156872,
+      "cat": "alpha",
+      "title": "Alpha Alakazam",
+      "description": "**Level:** 60",
+      "lat": 0.39154887213056,
+      "lng": -0.89602472042941,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Level_60_Alpha_Alakazam"
+    },
+    {
+      "id": 156873,
+      "cat": "alpha",
+      "title": "Alpha Infernape",
+      "description": "**Level:** 65",
+      "lat": 0.37618552374944,
+      "lng": -0.86169244503984,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Level_65_Alpha_Infernape"
+    },
+    {
+      "id": 156874,
+      "cat": "alpha",
+      "title": "Alpha Parasect",
+      "description": "**Level:** 30",
+      "lat": 0.42841452500791,
+      "lng": -0.79627275467115,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Level_30_Alpha_Parasect"
+    },
+    {
+      "id": 156875,
+      "cat": "alpha",
+      "title": "Alpha Floatzel",
+      "description": "**Level:** 40",
+      "lat": 0.47315238556492,
+      "lng": -0.79863846301936,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Level_31_Alpha_Floatzel"
+    },
+    {
+      "id": 156877,
+      "cat": "alpha",
+      "title": "Alpha Kricketune",
+      "description": "**Level:** 30",
+      "lat": 0.39339650520657,
+      "lng": -0.82049310207475,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Level_30_Alpha_Kricktune"
+    },
+    {
+      "id": 156878,
+      "cat": "alpha",
+      "title": "Alpha Scyther",
+      "description": "**Level:** 42",
+      "lat": 0.3620749851016,
+      "lng": -0.76780289641613,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Level_42_Alpha_Scyther"
+    },
+    {
+      "id": 156879,
+      "cat": "alpha",
+      "title": "Alpha Gyarados",
+      "description": "**Level:** 60",
+      "lat": 0.44412108562136,
+      "lng": -0.8978372812264,
+      "region_id": 1208,
+      "ign": null
+    },
+    {
+      "id": 156882,
+      "cat": "alpha",
+      "title": "Alpha Blissey",
+      "description": "**Level:** 62",
+      "lat": 0.44863528921994,
+      "lng": -0.75250907452897,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Level_62_Alpha_Blissey"
+    },
+    {
+      "id": 156883,
+      "cat": "alpha",
+      "title": "Alpha Ursaring",
+      "description": "**Level:** 41",
+      "lat": 0.36204952029715,
+      "lng": -0.54696344307371,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Level_41_Alpha_Ursaring"
+    },
+    {
+      "id": 156884,
+      "cat": "alpha",
+      "title": "Alpha Hisuian Sliggoo",
+      "description": "**Level:** 50",
+      "lat": 0.36531102075482,
+      "lng": -0.57262681892755,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Level_50_Alpha_Sliggoo"
+    },
+    {
+      "id": 156885,
+      "cat": "alpha",
+      "title": "Alpha Torterra",
+      "description": "**Level:** 65",
+      "lat": 0.37614119951323,
+      "lng": -0.60016522026896,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Level_65_Alpha_Torterra"
+    },
+    {
+      "id": 156886,
+      "cat": "alpha",
+      "title": "Alpha Toxicroak",
+      "description": "**Level:** 47",
+      "lat": 0.38412327785726,
+      "lng": -0.61192402459162,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Level_47_Alpha_Toxicroak"
+    },
+    {
+      "id": 156887,
+      "cat": "alpha",
+      "title": "Alpha Pachirisu",
+      "description": "**Level:** 40",
+      "lat": 0.39227700610068,
+      "lng": -0.63793072320479,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Level_40_Alpha_Pachirisu"
+    },
+    {
+      "id": 156888,
+      "cat": "alpha",
+      "title": "Alpha Ursaring",
+      "description": "**Level:** 55",
+      "lat": 0.40952855210368,
+      "lng": -0.64153561212547,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Level_55_Alpha_Ursaring"
+    },
+    {
+      "id": 156889,
+      "cat": "alpha",
+      "title": "Alpha Hippowdon",
+      "description": "**Level:** 45",
+      "lat": 0.390126353067,
+      "lng": -0.58561118977016,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Level_45_Alpha_Hippowdon"
+    },
+    {
+      "id": 156890,
+      "cat": "alpha",
+      "title": "Alpha Vespiquen",
+      "description": "**Level:** 61",
+      "lat": 0.43493715270007,
+      "lng": -0.52944642023579,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Level_61_Alpha_Vespiquen"
+    },
+    {
+      "id": 156891,
+      "cat": "alpha",
+      "title": "Alpha Onix",
+      "description": "**Level:** 50",
+      "lat": 0.45159263400083,
+      "lng": -0.5789660631402,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Level_50_Alpha_Onix"
+    },
+    {
+      "id": 156892,
+      "cat": "alpha",
+      "title": "Alpha Tangrowth",
+      "description": "**Level:** 45",
+      "lat": 0.42867651649649,
+      "lng": -0.60857765067587,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Level_45_Alpha_Tangrowth"
+    },
+    {
+      "id": 156894,
+      "cat": "alpha",
+      "title": "Alpha Honchkrow",
+      "description": "**Level:** 55  \n**Note:** Nighttime only",
+      "lat": 0.48668633743627,
+      "lng": -0.61830282211216,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Level_55_Alpha_Honchkrow"
+    },
+    {
+      "id": 156895,
+      "cat": "alpha",
+      "title": "Alpha Lickilicky",
+      "description": "**Level:** 52",
+      "lat": 0.50134238427948,
+      "lng": -0.58333340921112,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Level_52_Alpha_Lickilicky"
+    },
+    {
+      "id": 156896,
+      "cat": "alpha",
+      "title": "Alpha Rhyhorn",
+      "description": "**Level:** 45",
+      "lat": 0.47592078027117,
+      "lng": -0.5825607468702,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Level_45_Alpha_Rhyhorn"
+    },
+    {
+      "id": 156897,
+      "cat": "alpha",
+      "title": "Alpha Skuntank",
+      "description": "**Level:** 52",
+      "lat": 0.41659268900214,
+      "lng": -0.5801290113242,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Level_52_Alpha_Skuntank"
+    },
+    {
+      "id": 156898,
+      "cat": "alpha",
+      "title": "Alpha Carnivine",
+      "description": "**Level:** 40",
+      "lat": 0.44014562146593,
+      "lng": -0.53652081976466,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Level_43_Alpha_Carnivine"
+    },
+    {
+      "id": 156899,
+      "cat": "alpha",
+      "title": "Alpha Roserade",
+      "description": "**Level:** 50  \n**Note:** Daytime only",
+      "lat": 0.48660050984408,
+      "lng": -0.61595320701568,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Level_50_Alpha_Roserade"
+    },
+    {
+      "id": 156900,
+      "cat": "alpha",
+      "title": "Alpha Yanmega",
+      "description": "**Level:** 58",
+      "lat": 0.39643539882191,
+      "lng": -0.52575932944853,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Level_58_Alpha_Yanmega"
+    },
+    {
+      "id": 156901,
+      "cat": "alpha",
+      "title": "Alpha Raichu",
+      "description": "**Level:** 52",
+      "lat": 0.46556558245165,
+      "lng": -0.63603103672676,
+      "region_id": 1207,
+      "ign": "Crimson_Mirelands_-_Level_52_Alpha_Raichu"
+    },
+    {
+      "id": 156902,
+      "cat": "alpha",
+      "title": "Alpha Ninetales",
+      "description": "**Level:** 61",
+      "lat": 0.75161268685692,
+      "lng": -0.4094549539102,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Level_61_Alpha_Ninetales"
+    },
+    {
+      "id": 156903,
+      "cat": "alpha",
+      "title": "Alpha Gastrodon",
+      "description": "**Level:** 61",
+      "lat": 0.74834826334511,
+      "lng": -0.44836646510083,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Level_61_Alpha_Gastrodon"
+    },
+    {
+      "id": 156904,
+      "cat": "alpha",
+      "title": "Alpha Empoleon",
+      "description": "**Level:** 69",
+      "lat": 0.74484294977267,
+      "lng": -0.49489666509325,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Level_69_Alpha_Empoleon"
+    },
+    {
+      "id": 156905,
+      "cat": "alpha",
+      "title": "Alpha Mothim",
+      "description": "**Level:** 56",
+      "lat": 0.72598137671807,
+      "lng": -0.52938097733499,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Level_56_Alpha_Mothim"
+    },
+    {
+      "id": 156906,
+      "cat": "alpha",
+      "title": "Alpha Lumineon",
+      "description": "**Level:** 60",
+      "lat": 0.72339149275305,
+      "lng": -0.43850468586967,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Level_60_Alpha_Lumineon"
+    },
+    {
+      "id": 156907,
+      "cat": "alpha",
+      "title": "Alpha Purugly",
+      "description": "**Level:** 65",
+      "lat": 0.71306847586216,
+      "lng": -0.4452346318902,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Level_65_Alpha_Purugly"
+    },
+    {
+      "id": 156908,
+      "cat": "alpha",
+      "title": "Alpha Octillery",
+      "description": "**Level:** 46",
+      "lat": 0.70158626878568,
+      "lng": -0.47041957097522,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Level_46_Alpha_Octillery"
+    },
+    {
+      "id": 156909,
+      "cat": "alpha",
+      "title": "Alpha Machoke",
+      "description": "**Level:** 40",
+      "lat": 0.69381028346227,
+      "lng": -0.50405862284111,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Level_40_Alpha_Machoke"
+    },
+    {
+      "id": 156910,
+      "cat": "alpha",
+      "title": "Alpha Drapion",
+      "description": "**Level:** 45",
+      "lat": 0.68625773063542,
+      "lng": -0.51521661234284,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Level_45_Alpha_Drapion"
+    },
+    {
+      "id": 156911,
+      "cat": "alpha",
+      "title": "Alpha Mantine",
+      "description": "**Level:** 50",
+      "lat": 0.68510326459368,
+      "lng": -0.44701512104996,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Level_50_Alpha_Mantine"
+    },
+    {
+      "id": 156912,
+      "cat": "alpha",
+      "title": "Alpha Gyarados",
+      "description": "**Level:** 58",
+      "lat": 0.68546729939905,
+      "lng": -0.39569873837658,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Level_58_Alpha_Gyarados"
+    },
+    {
+      "id": 156913,
+      "cat": "alpha",
+      "title": "Alpha Walrein",
+      "description": "**Level:** 58",
+      "lat": 0.65707995994093,
+      "lng": -0.50502110960835,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Level_58_Alpha_Walrein"
+    },
+    {
+      "id": 156914,
+      "cat": "alpha",
+      "title": "Alpha Golduck",
+      "description": "**Level:** 50",
+      "lat": 0.62901639179364,
+      "lng": -0.46155861958246,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Level_50_Alpha_Golduck"
+    },
+    {
+      "id": 156915,
+      "cat": "alpha",
+      "title": "Alpha Ambipom",
+      "description": "**Level:** 50",
+      "lat": 0.62163539220647,
+      "lng": -0.48284463032527,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Level_50_Alpha_Ambipom"
+    },
+    {
+      "id": 156916,
+      "cat": "alpha",
+      "title": "Alpha Sealeo",
+      "description": "**Level:** 57\n\n*Note: Not guaranteed to spawn here.*",
+      "lat": 0.7527607871282,
+      "lng": -0.49496645413393,
+      "region_id": 1206,
+      "ign": null
+    },
+    {
+      "id": 156917,
+      "cat": "alpha",
+      "title": "Alpha Dusknoir",
+      "description": "**Level:** 65\n\nMay only appear at night",
+      "lat": 0.63539878605246,
+      "lng": -0.42117011779584,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Level_65_Alpha_Dusknoir"
+    },
+    {
+      "id": 156918,
+      "cat": "alpha",
+      "title": "Alpha Chansey",
+      "description": "**Level:** 51",
+      "lat": 0.62364069149659,
+      "lng": -0.39344680541959,
+      "region_id": 1206,
+      "ign": "Cobalt_Coastlands_-_Level_51_Alpha_Chansey"
+    },
+    {
+      "id": 156919,
+      "cat": "alpha",
+      "title": "Alpha Electivire",
+      "description": "**Level:** 69",
+      "lat": 0.97001080818765,
+      "lng": -0.73567937143693,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Level_69_Alpha_Electivire"
+    },
+    {
+      "id": 156923,
+      "cat": "alpha",
+      "title": "Alpha Haunter",
+      "description": "**Level:** 77",
+      "lat": 0.93629863884793,
+      "lng": -0.69161714795599,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Level_56_Alpha_Haunter"
+    },
+    {
+      "id": 156924,
+      "cat": "alpha",
+      "title": "Alpha Rhyperior",
+      "description": "**Level:** 74",
+      "lat": 0.92653478928935,
+      "lng": -0.73949826201715,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Level_74_Alpha_Rhyperior"
+    },
+    {
+      "id": 156927,
+      "cat": "alpha",
+      "title": "Alpha Golem",
+      "description": "**Level:** 60",
+      "lat": 0.91564844767611,
+      "lng": -0.76670586114228,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Level_60_Alpha_Golem"
+    },
+    {
+      "id": 156928,
+      "cat": "alpha",
+      "title": "Alpha Hisuian Goodra",
+      "description": "**Level:** 70",
+      "lat": 0.88711738864196,
+      "lng": -0.70413995881034,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Level_70_Alpha_Goodra"
+    },
+    {
+      "id": 156929,
+      "cat": "alpha",
+      "title": "Alpha Mothim",
+      "description": "**Level:** 55",
+      "lat": 0.87724802945043,
+      "lng": -0.68431306978078,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Level_55_Alpha_Mothim"
+    },
+    {
+      "id": 156930,
+      "cat": "alpha",
+      "title": "Alpha Crobat",
+      "description": "**Level:** 60",
+      "lat": 0.88708578397306,
+      "lng": -0.66413831830221,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Level_60_Alpha_Crobat"
+    },
+    {
+      "id": 156931,
+      "cat": "alpha",
+      "title": "Alpha Mismagius",
+      "description": "**Level:** 61",
+      "lat": 0.93319323413201,
+      "lng": -0.75717218067418,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Level_61_Alpha_Mismagius"
+    },
+    {
+      "id": 156932,
+      "cat": "alpha",
+      "title": "Alpha Budew",
+      "description": "**Level:** 59",
+      "lat": 0.87161795107995,
+      "lng": -0.75846794258425,
+      "region_id": 1204,
+      "ign": null
+    },
+    {
+      "id": 156933,
+      "cat": "alpha",
+      "title": "Alpha Bronzong",
+      "description": "**Level:** 55",
+      "lat": 0.94262119919383,
+      "lng": -0.64792573268363,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Level_55_Alpha_Bronzong"
+    },
+    {
+      "id": 156934,
+      "cat": "alpha",
+      "title": "Alpha Clefable",
+      "description": "**Level:** 62",
+      "lat": 0.87136515073304,
+      "lng": -0.74549497884406,
+      "region_id": 1204,
+      "ign": "Coronet_Highlands_-_Level_62_Alpha_Clefable"
+    },
+    {
+      "id": 156935,
+      "cat": "alpha",
+      "title": "Alpha Hisuian Basculin",
+      "description": "**Level:** 61",
+      "lat": 0.87745841995439,
+      "lng": -0.74626745504115,
+      "region_id": 1204,
+      "ign": null
+    },
+    {
+      "id": 156936,
+      "cat": "alpha",
+      "title": "Alpha Gallade",
+      "description": "**Level:** 70",
+      "lat": 1.0225639776737,
+      "lng": -0.91419154986534,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Level_70_Alpha_Gallade"
+    },
+    {
+      "id": 156937,
+      "cat": "alpha",
+      "title": "Alpha Gardevoir",
+      "description": "**Level:** 70\n\n*May only appear during the day.*",
+      "lat": 0.96510260910634,
+      "lng": -0.88539738348635,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Level_70_Alpha_Gardevoir"
+    },
+    {
+      "id": 156938,
+      "cat": "alpha",
+      "title": "Alpha Machamp",
+      "description": "**Level:** 70",
+      "lat": 0.94706345266869,
+      "lng": -0.97634976768552,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Level_70_Alpha_Machamp"
+    },
+    {
+      "id": 156939,
+      "cat": "alpha",
+      "title": "Alpha Glalie",
+      "description": "**Level:** 62",
+      "lat": 0.92889204146275,
+      "lng": -0.92979903654117,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Level_62_Alpha_Glalie"
+    },
+    {
+      "id": 156941,
+      "cat": "alpha",
+      "title": "Alpha Garchomp",
+      "description": "**Level:** 85",
+      "lat": 0.87316182779405,
+      "lng": -1.0059634682667,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Level_85_Alpha_Garchomp"
+    },
+    {
+      "id": 156943,
+      "cat": "alpha",
+      "title": "Alpha Rufflet",
+      "description": "**Level:** 67",
+      "lat": 0.97943144124287,
+      "lng": -0.89044565538811,
+      "region_id": 1205,
+      "ign": null
+    },
+    {
+      "id": 156944,
+      "cat": "alpha",
+      "title": "Alpha Piloswine",
+      "description": "**Level:** 65",
+      "lat": 0.9256002245245,
+      "lng": -0.96805770417387,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Level_65_Alpha_Piloswine"
+    },
+    {
+      "id": 156945,
+      "cat": "alpha",
+      "title": "Alpha Mamoswine",
+      "description": "**Level:** 68",
+      "lat": 0.95829729727153,
+      "lng": -0.92162330171973,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Level_68_Alpha_Mamoswine"
+    },
+    {
+      "id": 156946,
+      "cat": "alpha",
+      "title": "Alpha Swinub",
+      "description": "**Level:** 62",
+      "lat": 0.93478347054226,
+      "lng": -0.946862697602,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Level_62_Alpha_Swinub"
+    },
+    {
+      "id": 156947,
+      "cat": "alpha",
+      "title": "Alpha Froslass",
+      "description": "**Level:** 72\n\n*Underground.*",
+      "lat": 0.8865312097488,
+      "lng": -0.98538218294092,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Level_72_Alpha_Froslass"
+    },
+    {
+      "id": 156948,
+      "cat": "alpha",
+      "title": "Alpha Hisuian Sneasel",
+      "description": "**Level:** 61",
+      "lat": 0.9572861153591,
+      "lng": -0.94270364772933,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Level_61_Alpha_Sneasel"
+    },
+    {
+      "id": 157195,
+      "cat": "alpha",
+      "title": "Alpha Lucario",
+      "description": "**Level:** 70",
+      "lat": 0.8785988322675,
+      "lng": -0.97754333634862,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Level_70_Alpha_Lucario"
+    },
+    {
+      "id": 157695,
+      "cat": "alpha",
+      "title": "Alpha Abomasnow",
+      "description": "**Level**: 68",
+      "lat": 0.93795065139305,
+      "lng": -0.91689791443764,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Level_68_Alpha_Abomasnow"
+    },
+    {
+      "id": 157697,
+      "cat": "alpha",
+      "title": "Alpha Chimecho",
+      "description": "",
+      "lat": 0.99685705721976,
+      "lng": -0.95328390598308,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Level_65_Alpha_Chimecho"
+    },
+    {
+      "id": 157735,
+      "cat": "alpha",
+      "title": "Alpha Electabuzz",
+      "description": "**Level:** 65",
+      "lat": 0.89916782948617,
+      "lng": -0.97502509682599,
+      "region_id": 1205,
+      "ign": "Alabaster_Icelands_-_Level_65_Alpha_Electabuzz"
+    },
+    {
+      "id": 157742,
+      "cat": "alpha",
+      "title": "Alpha Magikarp",
+      "description": "**Level:** 55",
+      "lat": 0.41347847253768,
+      "lng": -0.76540267219622,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Level_55_Alpha_Magikarp"
+    },
+    {
+      "id": 157743,
+      "cat": "alpha",
+      "title": "Alpha Golbat",
+      "description": "**Level:** 40  \n**Notes:** Only appears during Nighttime.",
+      "lat": 0.4084145921732,
+      "lng": -0.7522705768595,
+      "region_id": 1208,
+      "ign": "Obsidian_Fieldlands_-_Level_35_Alpha_Golbat"
+    },
+    {
+      "id": 449050,
+      "cat": "alpha",
+      "title": "Alpha Tentacruel",
+      "description": "**Level:** 50",
+      "lat": 0.71548931140697,
+      "lng": -0.39383996438681,
+      "region_id": 1206,
+      "ign": null
+    },
+    {
+      "id": 449051,
+      "cat": "alpha",
+      "title": "Alpha Whiscash",
+      "description": "**Level:** 64",
+      "lat": 0.4608316246165,
+      "lng": -0.54529473607431,
+      "region_id": 1207,
+      "ign": null
+    },
+    {
+      "id": 449053,
+      "cat": "alpha",
+      "title": "Alpha Hisuian Qwilfish",
+      "description": "**Level:** 55",
+      "lat": 0.7467738760748,
+      "lng": -0.46988007782113,
+      "region_id": 1206,
+      "ign": null
+    },
+    {
+      "id": 157178,
+      "cat": "noble",
+      "title": "Kleavor",
+      "description": "",
+      "lat": 0.36496020344478,
+      "lng": -0.77485538663802,
+      "region_id": 1208,
+      "ign": null
+    },
+    {
+      "id": 157179,
+      "cat": "noble",
+      "title": "Lilligant",
+      "description": "",
+      "lat": 0.50613811859166,
+      "lng": -0.61172256473702,
+      "region_id": 1207,
+      "ign": null
+    },
+    {
+      "id": 157180,
+      "cat": "noble",
+      "title": "Arcanine",
+      "description": "",
+      "lat": 0.7581900552111,
+      "lng": -0.4060095591208,
+      "region_id": 1206,
+      "ign": null
+    },
+    {
+      "id": 157181,
+      "cat": "noble",
+      "title": "Electrode",
+      "description": "",
+      "lat": 0.96050231729845,
+      "lng": -0.76936590622948,
+      "region_id": 1204,
+      "ign": null
+    },
+    {
+      "id": 157182,
+      "cat": "noble",
+      "title": "Avalugg",
+      "description": "",
+      "lat": 0.94978935950631,
+      "lng": -1.007191191275,
+      "region_id": 1205,
+      "ign": null
+    },
+    {
+      "id": 157038,
+      "cat": "unown",
+      "title": "Unown A",
+      "description": "**Hint:** Within the settlement where time rules.  \n**Location:** On top of a tent in Diamond Settlement.",
+      "lat": 0.47059332202016,
+      "lng": -0.56407966700777,
+      "region_id": 1207,
+      "ign": "Unown_A_Location"
+    },
+    {
+      "id": 157039,
+      "cat": "unown",
+      "title": "Unown B",
+      "description": "**Hint:** Turn your eyes up at the volcanic island.  \n**Location:** High up on the western side of the volcano",
+      "lat": 0.75033560242443,
+      "lng": -0.40930555856824,
+      "region_id": 1206,
+      "ign": "Unown_B_Location"
+    },
+    {
+      "id": 157040,
+      "cat": "unown",
+      "title": "Unown C",
+      "description": "**Hint:** Look to the ruined pillars of Celestica.  \n**Location:** On top of a pillar.",
+      "lat": 0.94794069781057,
+      "lng": -0.71952149185775,
+      "region_id": 1204,
+      "ign": "Unown_C_Location"
+    },
+    {
+      "id": 157041,
+      "cat": "unown",
+      "title": "Unown D",
+      "description": "**Hint:** Among stumps and campire ashes in fields of gold.  \n**Location:** Sitting on a stump by the campfire.",
+      "lat": 0.4729056307454,
+      "lng": -0.62984168529542,
+      "region_id": 1207,
+      "ign": "Unown_D_Location"
+    },
+    {
+      "id": 157042,
+      "cat": "unown",
+      "title": "Unown E",
+      "description": "**Hint:** A lone tree in a pond in the grove.  \n**Location:** Near the bottom of the tree.",
+      "lat": 0.49853309393519,
+      "lng": -0.75109883304492,
+      "region_id": 1208,
+      "ign": "Unown_E_Location"
+    },
+    {
+      "id": 157043,
+      "cat": "unown",
+      "title": "Unown F",
+      "description": "**Hint:** A stony outcrop over pools of mud on a mighty mountain.  \n**Location:** On the north side of the stone pile, at the top of the mountain.",
+      "lat": 0.88601634018622,
+      "lng": -0.69357097148651,
+      "region_id": 1204,
+      "ign": "Unown_F_Location"
+    },
+    {
+      "id": 157044,
+      "cat": "unown",
+      "title": "Unown G",
+      "description": "**Hint:** Atop a waterfall of obsidian.  \n**Location:** On the boulder where the waterfall starts.",
+      "lat": 0.43785337959989,
+      "lng": -0.75437383329179,
+      "region_id": 1208,
+      "ign": "Unown_G_Location"
+    },
+    {
+      "id": 157045,
+      "cat": "unown",
+      "title": "Unown H",
+      "description": "**Hint:** A village gateway.  \n**Location:** On the village entry sign.",
+      "lat": 0.68620052253212,
+      "lng": -0.94016017595033,
+      "region_id": 1209,
+      "ign": "Unown_H_Location"
+    },
+    {
+      "id": 157046,
+      "cat": "unown",
+      "title": "Unown I",
+      "description": "**Hint:** A lake island where emotion resides.  \n**Location:** Directly behind [Verity Cavern](https://mapgenie.io/pokemon-legends-arceus/maps/hisui-region?locationIds=156489).",
+      "lat": 0.44699450196372,
+      "lng": -0.8927056292313,
+      "region_id": 1208,
+      "ign": "Unown_I_Location"
+    },
+    {
+      "id": 157047,
+      "cat": "unown",
+      "title": "Unown J",
+      "description": "**Hint:** A nook within a quarry.  \n**Location:** Inside the Ancient Quarry. High up on the east wall.",
+      "lat": 0.88829058078372,
+      "lng": -0.68977832793945,
+      "region_id": 1204,
+      "ign": "Unown_J_Location"
+    },
+    {
+      "id": 157048,
+      "cat": "unown",
+      "title": "Unown K",
+      "description": "**Hint:** Where stones pile high amid fogbound ruins.  \n**Location:** On top of the southernmost pillar.",
+      "lat": 0.48760429484547,
+      "lng": -0.57513670984082,
+      "region_id": 1207,
+      "ign": "Unown_K_Location"
+    },
+    {
+      "id": 157049,
+      "cat": "unown",
+      "title": "Unown L",
+      "description": "**Hint:** A impasse in a cave adorned by twin falls.  \n**Location:** Inside [Wayward Cave](https://mapgenie.io/pokemon-legends-arceus/maps/hisui-region?locationIds=156454). Find a tunnel blocked by brown boulders; the Unown is at the end of that corridor.",
+      "lat": 0.88744499170959,
+      "lng": -0.66207429127269,
+      "region_id": 1204,
+      "ign": "Unown_L_Location"
+    },
+    {
+      "id": 157050,
+      "cat": "unown",
+      "title": "Unown M",
+      "description": "**Hint:** A tree felled on sludge.  \n**Location:** On a tree in Sludge Mound.",
+      "lat": 0.37981947229135,
+      "lng": -0.57272672653127,
+      "region_id": 1207,
+      "ign": null
+    },
+    {
+      "id": 157051,
+      "cat": "unown",
+      "title": "Unown N",
+      "description": "**Hint:** Two horns rising from the sea.  \n**Location:** On the eastern side of the tall rock.",
+      "lat": 0.66806948291787,
+      "lng": -0.38588404655286,
+      "region_id": 1206,
+      "ign": "Unown_N_Location"
+    },
+    {
+      "id": 157052,
+      "cat": "unown",
+      "title": "Unown O",
+      "description": "**Hint:** Three pillars in a world of ice.  \n**Location:** Underground, inside Ice Column Chamber (access through [Ice Column Chamber entrance](https://mapgenie.io/pokemon-legends-arceus/maps/hisui-region?locationIds=161285)). On top of the southernmost pillar.",
+      "lat": 0.88134985157524,
+      "lng": -0.99043786525701,
+      "region_id": 1205,
+      "ign": "Unown_O_Location"
+    },
+    {
+      "id": 157053,
+      "cat": "unown",
+      "title": "Unown P",
+      "description": "**Hint:** Among flowers at the spring where fairies dwell.  \n**Location:** In the center of the purple flower bed.",
+      "lat": 0.87714464303913,
+      "lng": -0.75373291969268,
+      "region_id": 1204,
+      "ign": "Unown_P_Location"
+    },
+    {
+      "id": 157054,
+      "cat": "unown",
+      "title": "Unown Q",
+      "description": "**Hint:** Twin trees at the spring by the sea.  \n**Location:** On the southern tree.",
+      "lat": 0.73280076969296,
+      "lng": -0.52476974416959,
+      "region_id": 1206,
+      "ign": "Unown_Q_Location"
+    },
+    {
+      "id": 157055,
+      "cat": "unown",
+      "title": "Unown R",
+      "description": "**Hint:** By the grave upon the cape.  \n**Location:** On top of the rocky cliff, past the grave.",
+      "lat": 0.70801321338067,
+      "lng": -0.41472202746698,
+      "region_id": 1206,
+      "ign": "Unown_R_Location"
+    },
+    {
+      "id": 157056,
+      "cat": "unown",
+      "title": "Unown S",
+      "description": "**Hint:** Where stick and log dam the river.  \n**Location:** On the western side of the dam.",
+      "lat": 0.3897877178525,
+      "lng": -0.80710237846401,
+      "region_id": 1208,
+      "ign": "Unown_S_Location"
+    },
+    {
+      "id": 157057,
+      "cat": "unown",
+      "title": "Unown T",
+      "description": "**Hint:** Gaze down upon the greatest glacial legacy.  \n**Location:** On top of an ice pillar, near Avalugg's Legacy.",
+      "lat": 0.96181519490433,
+      "lng": -0.93033082239526,
+      "region_id": 1205,
+      "ign": "Unown_T_Location"
+    },
+    {
+      "id": 157058,
+      "cat": "unown",
+      "title": "Unown U",
+      "description": "**Hint:** The unusual stone staring out across the snowfields.  \n**Location:** Atop the large stone, near the waterfall.",
+      "lat": 0.95947251292462,
+      "lng": -0.87245821952635,
+      "region_id": 1205,
+      "ign": "Unown_U_Location"
+    },
+    {
+      "id": 157059,
+      "cat": "unown",
+      "title": "Unown V",
+      "description": "**Hint:** A withered tree in the sprawling red swamp.  \n**Location:** On top of a dead tree in the bog.",
+      "lat": 0.42338663620254,
+      "lng": -0.59083798531975,
+      "region_id": 1207,
+      "ign": "Unown_V_Location"
+    },
+    {
+      "id": 157060,
+      "cat": "unown",
+      "title": "Unown W",
+      "description": "**Hint:** The left eye atop the village.  \n**Location:** Over the left eye of Magikarp's statue. Access through Commander Kamado's chamber.",
+      "lat": 0.75258475035258,
+      "lng": -0.95279037952446,
+      "region_id": 1209,
+      "ign": "Unown_W_Location"
+    },
+    {
+      "id": 157061,
+      "cat": "unown",
+      "title": "Unown X",
+      "description": "**Hint:** Scale the Grandtree.  \n**Location:** On the lowest branch of the tree.",
+      "lat": 0.37073352656641,
+      "lng": -0.759857685014,
+      "region_id": 1208,
+      "ign": "Unown_X_Location"
+    },
+    {
+      "id": 157062,
+      "cat": "unown",
+      "title": "Unown Y",
+      "description": "**Hint:** Scale the frozen falls.  \n**Location:** Not quite at the top of the frozen falls.",
+      "lat": 0.88456275643097,
+      "lng": -0.96607267856527,
+      "region_id": 1205,
+      "ign": "Unown_Y_Location"
+    },
+    {
+      "id": 157063,
+      "cat": "unown",
+      "title": "Unown Z",
+      "description": "**Hint:** A timeworn ship on a sandy shore.  \n**Location:** Atop the mast of the wrecked ship.",
+      "lat": 0.63815943164128,
+      "lng": -0.42931056050602,
+      "region_id": 1206,
+      "ign": "Unown_Z_Location"
+    },
+    {
+      "id": 157064,
+      "cat": "unown",
+      "title": "Unown !",
+      "description": "**Hint:** A dead tree by the hot spring.  \n**Location:** Atop a dead tree, on the highest ledge near the spring.",
+      "lat": 0.96252443744902,
+      "lng": -0.98812043666828,
+      "region_id": 1205,
+      "ign": "Unown_!_Location"
+    },
+    {
+      "id": 157065,
+      "cat": "unown",
+      "title": "Unown ?",
+      "description": "**Hint:** Where things hang to dry at living quarters.  \n**Location:** Behind your quarters, on a clothesline.",
+      "lat": 0.75189737723369,
+      "lng": -0.92409150703,
+      "region_id": 1209,
+      "ign": "Unown_%3F_Location"
+    }
+  ]
+}
