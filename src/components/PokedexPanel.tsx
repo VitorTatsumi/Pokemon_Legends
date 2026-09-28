@@ -582,7 +582,7 @@ function PokedexCard({
     defaultSprite
 
   const displayName = details?.name ?? summaryName
-  const artUrl = details?.artworkUrl || altSpriteFromIndex || summarySprite
+  const artUrl = summarySprite
   const formMegas = showMegas ? megas : []
   const showFormTabs =
     !focusedFormId &&
@@ -754,7 +754,7 @@ function PokedexCard({
           )}
 
           <div className="poke-detail__hero">
-            <img src={artUrl} alt={displayName} />
+            <img src={artUrl} alt={displayName} className="is-pixel" />
             <div className="poke-detail__hero-meta">
               {details?.genus && <p className="pokedex-card__genus">{details.genus}</p>}
               {details && (

@@ -1,6 +1,7 @@
-import { useEffect, useMemo } from 'react'
+import { useMemo } from 'react'
 import type { StyleKind, StyleSpot } from '../data/laStyleSpots'
 import { LA_STYLE_SPOTS } from '../data/laStyleSpots'
+import { styleItemSpriteUrl } from '../data/styleSpots'
 import type { Locale } from '../i18n'
 import { t } from '../i18n'
 import './StylePanel.css'
@@ -24,112 +25,12 @@ const KIND_LABEL: Record<StyleKind, string> = {
   clothier: 'styleKindClothier',
 }
 
-export function LaStylePanel({
-  locale,
-  selectedId,
-  kind,
-  onSelect,
-  onKindChange,
-  onClose,
-}: Props) {
-  const selected = LA_STYLE_SPOTS.find((s) => s.id === selectedId) ?? null
-
-  useEffect(() => {
-    if (selectedId == null) return
-    const el = document.querySelector(`[data-la-style-id="${selectedId}"]`)
-    el?.scrollIntoView({ block: 'nearest', behavior: 'smooth' })
-  }, [selectedId, kind])
-
-  const list = useMemo(() => {
-    if (kind === 'all') return LA_STYLE_SPOTS
-    return LA_STYLE_SPOTS.filter((s) => s.kind === kind)
-  }, [kind])
-
-  return (
-    <aside className={`style-panel${selected ? '' : ' style-panel--list-only'}`}>
-      <header className="style-panel__head">
-        <div>
-          <p className="style-panel__eyebrow">{t(locale, 'toolStyle')}</p>
-          <h2>{selected ? selected.name[locale] : t(locale, 'styleTitle')}</h2>
-        </div>
-        {selected && (
-          <button type="button" className="style-panel__close" onClick={onClose}>
-            {t(locale, 'close')}
-          </button>
-        )}
-      </header>
-
-      {selected ? (
-        <StyleDetails locale={locale} spot={selected} />
-      ) : (
-        <p className="style-panel__hint">{t(locale, 'styleSelectHint')}</p>
-      )}
-
-      <section className="style-panel__list-section">
-        <div className="style-panel__section-head">
-          <h3>{t(locale, 'styleList')}</h3>
-        </div>
-
-        <div className="style-panel__filters" role="group" aria-label={t(locale, 'styleType')}>
-          <button
-            type="button"
-            className={kind === 'all' ? 'is-active' : undefined}
-            onClick={() => onKindChange('all')}
-          >
-            {t(locale, 'styleAll')}
-          </button>
-          <button
-            type="button"
-            className={['style-panel__filter--salon', kind === 'salon' ? 'is-active' : '']
-              .filter(Boolean)
-              .join(' ')}
-            onClick={() => onKindChange('salon')}
-          >
-            {t(locale, 'styleKindSalon')}
-          </button>
-          <button
-            type="button"
-            className={['style-panel__filter--clothier', kind === 'clothier' ? 'is-active' : '']
-              .filter(Boolean)
-              .join(' ')}
-            onClick={() => onKindChange('clothier')}
-          >
-            {t(locale, 'styleKindClothier')}
-          </button>
-        </div>
-
-        <ul className="style-list">
-          {list.map((spot) => (
-            <li key={spot.id}>
-              <button
-                type="button"
-                data-la-style-id={spot.id}
-                className={selectedId === spot.id ? 'is-active' : undefined}
-                onClick={() => onSelect(spot.id)}
-              >
-                <span className={`style-list__icon style-list__icon--${spot.kind}`}>
-                  <img src={ICON[spot.kind]} alt="" draggable={false} />
-                </span>
-                <span className="style-list__body">
-                  <strong>{spot.name[locale]}</strong>
-                  <span>{t(locale, KIND_LABEL[spot.kind])}</span>
-                </span>
-              </button>
-            </li>
-          ))}
-        </ul>
-      </section>
-    </aside>
-  )
-}
-
 function formatStylePrice(locale: Locale, price: number | undefined) {
   if (price == null) return t(locale, 'stylePriceVaries')
   if (price === 0) return t(locale, 'stylePriceFree')
   return `₽${price.toLocaleString('en-US')}`
 }
 
-/** Split "A · B · C" notes into one line per piece. */
 function StyleItemNote({ text }: { text: string }) {
   const lines = text
     .split(/\s*·\s*/)
@@ -149,38 +50,171 @@ function StyleItemNote({ text }: { text: string }) {
   )
 }
 
+export function LaStylePanel({
+  locale,
+  selectedId,
+  kind,
+  onSelect,
+  onKindChange,
+  onClose,
+}: Props) {
+  const selected = LA_STYLE_SPOTS.find((s) => s.id === selectedId) ?? null
+
+  const list = useMemo(() => {
+    if (kind === 'all') return LA_STYLE_SPOTS
+    return LA_STYLE_SPOTS.filter((s) => s.kind === kind)
+  }, [kind])
+
+  const switcherList = useMemo(() => {
+    if (!selected) return list
+    if (kind === 'all' || selected.kind === kind) return list
+    return LA_STYLE_SPOTS
+  }, [kind, list, selected])
+
+  return (
+    <aside className={`style-panel${selected ? '' : ' style-panel--list-only'}`}>
+      <header className="style-panel__head">
+        <div>
+          <p className="style-panel__eyebrow">{t(locale, 'toolStyle')}</p>
+          <h2>{selected ? selected.name[locale] : t(locale, 'styleTitle')}</h2>
+        </div>
+        {selected && (
+          <button type="button" className="style-panel__close" onClick={onClose}>
+            {t(locale, 'close')}
+          </button>
+        )}
+      </header>
+
+      {selected ? (
+        <>
+          <label className="style-panel__switcher">
+            <span className="style-panel__switcher-label">{t(locale, 'styleList')}</span>
+            <select
+              className="style-panel__switcher-select"
+              value={selected.id}
+              onChange={(e) => onSelect(Number(e.target.value))}
+            >
+              {switcherList.map((spot) => (
+                <option key={spot.id} value={spot.id}>
+                  {spot.name[locale]} — {t(locale, KIND_LABEL[spot.kind])}
+                </option>
+              ))}
+            </select>
+          </label>
+          <StyleDetails locale={locale} spot={selected} />
+        </>
+      ) : (
+        <>
+          <p className="style-panel__hint">{t(locale, 'styleSelectHint')}</p>
+          <section className="style-panel__list-section">
+            <div className="style-panel__section-head">
+              <h3>{t(locale, 'styleList')}</h3>
+            </div>
+
+            <div
+              className="style-panel__filters"
+              role="group"
+              aria-label={t(locale, 'styleType')}
+            >
+              <button
+                type="button"
+                className={kind === 'all' ? 'is-active' : undefined}
+                onClick={() => onKindChange('all')}
+              >
+                {t(locale, 'styleAll')}
+              </button>
+              <button
+                type="button"
+                className={['style-panel__filter--salon', kind === 'salon' ? 'is-active' : '']
+                  .filter(Boolean)
+                  .join(' ')}
+                onClick={() => onKindChange('salon')}
+              >
+                {t(locale, 'styleKindSalon')}
+              </button>
+              <button
+                type="button"
+                className={[
+                  'style-panel__filter--clothier',
+                  kind === 'clothier' ? 'is-active' : '',
+                ]
+                  .filter(Boolean)
+                  .join(' ')}
+                onClick={() => onKindChange('clothier')}
+              >
+                {t(locale, 'styleKindClothier')}
+              </button>
+            </div>
+
+            <ul className="style-list">
+              {list.map((spot) => (
+                <li key={spot.id}>
+                  <button type="button" onClick={() => onSelect(spot.id)}>
+                    <span className={`style-list__icon style-list__icon--${spot.kind}`}>
+                      <img src={ICON[spot.kind]} alt="" draggable={false} />
+                    </span>
+                    <span className="style-list__body">
+                      <strong>{spot.name[locale]}</strong>
+                      <span>
+                        {t(locale, KIND_LABEL[spot.kind])} · {spot.items.length}{' '}
+                        {t(locale, 'styleOfferCount')}
+                      </span>
+                    </span>
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </section>
+        </>
+      )}
+    </aside>
+  )
+}
+
 function StyleDetails({ locale, spot }: { locale: Locale; spot: StyleSpot }) {
   return (
     <div className="style-details">
-      <dl className="style-details__facts">
-        <div>
-          <dt>{t(locale, 'styleType')}</dt>
-          <dd>{t(locale, KIND_LABEL[spot.kind])}</dd>
-        </div>
-        <div>
-          <dt>{t(locale, 'missionLocation')}</dt>
-          <dd>{spot.description[locale]}</dd>
-        </div>
-      </dl>
+      <p className="style-details__meta">
+        <span>{t(locale, KIND_LABEL[spot.kind])}</span>
+        <span aria-hidden="true">·</span>
+        <span>{spot.description[locale]}</span>
+      </p>
 
       <div className="style-details__items">
         <h3>{t(locale, spot.kind === 'salon' ? 'styleServices' : 'styleItems')}</h3>
         <ul className="style-item-list">
-          {spot.items.map((entry) => (
-            <li key={entry.name.en}>
-              <div className="style-item-list__text">
-                <div className="style-item-list__main">
-                  <strong>{entry.name[locale]}</strong>
-                  <span className="style-item-list__price">
-                    {formatStylePrice(locale, entry.price)}
-                  </span>
+          {spot.items.map((entry) => {
+            const src = styleItemSpriteUrl(entry.sprite)
+            const isPixelArt =
+              src.includes('/sprites/items/') || src.includes('Bag_')
+            return (
+              <li key={entry.name.en}>
+                <img
+                  className={`style-item-list__sprite${isPixelArt ? ' style-item-list__sprite--pixel' : ''}`}
+                  src={src}
+                  alt=""
+                  width={32}
+                  height={32}
+                  loading="lazy"
+                />
+                <div className="style-item-list__text">
+                  <div className="style-item-list__main">
+                    <strong>{entry.name[locale]}</strong>
+                    <span className="style-item-list__price">
+                      {formatStylePrice(locale, entry.price)}
+                    </span>
+                  </div>
+                  {entry.note ? (
+                    <StyleItemNote text={entry.note[locale]} />
+                  ) : (
+                    <span className="style-item-list__note">
+                      {t(locale, spot.kind === 'salon' ? 'styleServiceNote' : 'styleShopNote')}
+                    </span>
+                  )}
                 </div>
-                {entry.note && (
-                  <StyleItemNote text={entry.note[locale]} />
-                )}
-              </div>
-            </li>
-          ))}
+              </li>
+            )
+          })}
         </ul>
       </div>
     </div>

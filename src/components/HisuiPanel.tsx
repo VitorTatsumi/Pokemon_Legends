@@ -11,6 +11,7 @@ import type { Locale } from '../i18n'
 import { t } from '../i18n'
 import './HisuiPanel.css'
 import './ZonePanel.css'
+import './LocationShot.css'
 
 type Props = {
   locale: Locale
@@ -90,6 +91,13 @@ export function HisuiPanel({
       {selected ? (
         <div className="hisui-details">
           <p className="hisui-details__desc">{selected.description[locale]}</p>
+
+          {selected.locationImageSrc && (
+            <figure className="lza-location-shot hisui-location-shot">
+              <img src={selected.locationImageSrc} alt="" loading="lazy" />
+              <figcaption>{t(locale, 'lzaLocationShot')}</figcaption>
+            </figure>
+          )}
 
           <div className="hisui-details__subs">
             <h3>

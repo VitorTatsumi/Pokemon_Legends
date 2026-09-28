@@ -1,17 +1,22 @@
-import { useMemo, useState } from 'react'
+import { useMemo, useState, type ReactNode } from 'react'
 import {
   LA_CRAFT_CATEGORY_KEYS,
   LA_CRAFTS,
   LA_ITEMS,
+  LA_MATERIAL_GROUP_KEYS,
   LA_MATERIALS,
   laCraftIngredientById,
+  laMaterialGroup,
+  type LaCraftCategory,
   type LaCraftItem,
   type LaCraftRecipe,
   type LaMaterial,
+  type LaMaterialGroup,
 } from '../data/laCrafts'
 import {
   LA_SPECIAL_CATEGORY_KEYS,
   LA_SPECIAL_ITEMS,
+  type LaSpecialCategory,
   type LaSpecialItem,
 } from '../data/laSpecialItems'
 import { HISUI_REGIONS, getHisuiRegion, type HisuiRegionId } from '../data/hisuiRegions'
@@ -23,8 +28,27 @@ import './MarketPanel.css'
 import './LaPinGuide.css'
 import './LaCraft.css'
 
-export type CraftTab = 'materials' | 'items' | 'special'
-export type RecipeBrowserTab = 'recipes'
+export type CraftTab = 'materials' | 'items' | 'special' | 'recipes'
+
+const CRAFT_CATEGORIES: LaCraftCategory[] = [
+  'ball',
+  'medicine',
+  'battle',
+  'field',
+  'food',
+  'valuable',
+  'tool',
+]
+
+const SPECIAL_CATEGORIES: LaSpecialCategory[] = [
+  'evolution',
+  'held',
+  'valuable',
+  'key',
+  'rotom',
+]
+
+const MATERIAL_GROUPS: LaMaterialGroup[] = ['ore', 'plant', 'berry', 'food', 'misc']
 
 type BrowserProps = {
   locale: Locale
@@ -34,7 +58,7 @@ type BrowserProps = {
   onSelect: (id: string) => void
 }
 
-/** Middle column: Materials / Items / Special (evolution & shop). */
+/** Middle column: Materials / Items / Special / Recipes. */
 export function LaCraftBrowser({
   locale,
   tab,
@@ -43,34 +67,67 @@ export function LaCraftBrowser({
   onSelect,
 }: BrowserProps) {
   const [query, setQuery] = useState('')
+  const [materialGroupFilter, setMaterialGroupFilter] = useState<LaMaterialGroup | 'all'>(
+    'all',
+  )
+  const [craftCategory, setCraftCategory] = useState<LaCraftCategory | 'all'>('all')
+  const [specialCategory, setSpecialCategory] = useState<LaSpecialCategory | 'all'>('all')
 
   const materials = useMemo(() => {
     const q = query.trim().toLowerCase()
-    return LA_MATERIALS.filter((m) => !q || m.name[locale].toLowerCase().includes(q))
-  }, [locale, query])
+    return LA_MATERIALS.filter((m) => {
+      if (materialGroupFilter !== 'all' && laMaterialGroup(m.id) !== materialGroupFilter) {
+        return false
+      }
+      return !q || m.name[locale].toLowerCase().includes(q)
+    })
+  }, [locale, query, materialGroupFilter])
 
   const items = useMemo(() => {
     const q = query.trim().toLowerCase()
-    return LA_ITEMS.filter(
-      (item) =>
+    return LA_ITEMS.filter((item) => {
+      if (craftCategory !== 'all' && item.category !== craftCategory) return false
+      return (
         !q ||
         item.name[locale].toLowerCase().includes(q) ||
         item.description[locale].toLowerCase().includes(q) ||
-        t(locale, LA_CRAFT_CATEGORY_KEYS[item.category]).toLowerCase().includes(q),
-    )
-  }, [locale, query])
+        t(locale, LA_CRAFT_CATEGORY_KEYS[item.category]).toLowerCase().includes(q)
+      )
+    })
+  }, [locale, query, craftCategory])
 
   const specials = useMemo(() => {
     const q = query.trim().toLowerCase()
-    return LA_SPECIAL_ITEMS.filter(
-      (item) =>
+    return LA_SPECIAL_ITEMS.filter((item) => {
+      if (specialCategory !== 'all' && item.category !== specialCategory) return false
+      return (
         !q ||
         item.name[locale].toLowerCase().includes(q) ||
         item.description[locale].toLowerCase().includes(q) ||
         item.source[locale].toLowerCase().includes(q) ||
-        t(locale, LA_SPECIAL_CATEGORY_KEYS[item.category]).toLowerCase().includes(q),
-    )
-  }, [locale, query])
+        t(locale, LA_SPECIAL_CATEGORY_KEYS[item.category]).toLowerCase().includes(q)
+      )
+    })
+  }, [locale, query, specialCategory])
+
+  const recipes = useMemo(() => {
+    const q = query.trim().toLowerCase()
+    return LA_CRAFTS.filter((r) => {
+      if (craftCategory !== 'all' && r.category !== craftCategory) return false
+      return (
+        !q ||
+        r.name[locale].toLowerCase().includes(q) ||
+        r.description[locale].toLowerCase().includes(q) ||
+        (r.unlock?.[locale].toLowerCase().includes(q) ?? false) ||
+        t(locale, LA_CRAFT_CATEGORY_KEYS[r.category]).toLowerCase().includes(q)
+      )
+    })
+  }, [locale, query, craftCategory])
+
+  const handleTabChange = (next: CraftTab) => {
+    onTabChange(next)
+    setQuery('')
+  }
 
   return (
     <div className="map-shell la-craft-browser">
@@ -80,7 +137,8 @@ export function LaCraftBrowser({
           <p>
             {LA_MATERIALS.length} {t(locale, 'laCraftsMaterials')} · {LA_ITEMS.length}{' '}
             {t(locale, 'laCraftsItems')} · {LA_SPECIAL_ITEMS.length}{' '}
-            {t(locale, 'laCraftsSpecial')}
+            {t(locale, 'laCraftsSpecial')} · {LA_CRAFTS.length}{' '}
+            {t(locale, 'laCraftsRecipes')}
           </p>
         </div>
       </div>
@@ -90,33 +148,122 @@ export function LaCraftBrowser({
           <button
             type="button"
             className={tab === 'materials' ? 'is-active' : undefined}
-            onClick={() => onTabChange('materials')}
+            onClick={() => handleTabChange('materials')}
           >
             {t(locale, 'laCraftsMaterials')}
           </button>
           <button
             type="button"
             className={tab === 'items' ? 'is-active' : undefined}
-            onClick={() => onTabChange('items')}
+            onClick={() => handleTabChange('items')}
           >
             {t(locale, 'laCraftsItems')}
           </button>
           <button
             type="button"
             className={tab === 'special' ? 'is-active' : undefined}
-            onClick={() => onTabChange('special')}
+            onClick={() => handleTabChange('special')}
           >
             {t(locale, 'laCraftsSpecial')}
           </button>
+          <button
+            type="button"
+            className={tab === 'recipes' ? 'is-active' : undefined}
+            onClick={() => handleTabChange('recipes')}
+          >
+            {t(locale, 'toolRecipes')}
+          </button>
         </div>
+
+        {tab === 'materials' && (
+          <div
+            className="mission-panel__kind-tabs la-craft-tabs la-craft-tabs--wrap"
+            role="group"
+            aria-label={t(locale, 'laCraftsMatGroups')}
+          >
+            <button
+              type="button"
+              className={materialGroupFilter === 'all' ? 'is-active' : undefined}
+              onClick={() => setMaterialGroupFilter('all')}
+            >
+              {t(locale, 'laCraftsCatAll')}
+            </button>
+            {MATERIAL_GROUPS.map((group) => (
+              <button
+                key={group}
+                type="button"
+                className={materialGroupFilter === group ? 'is-active' : undefined}
+                onClick={() => setMaterialGroupFilter(group)}
+              >
+                {t(locale, LA_MATERIAL_GROUP_KEYS[group])}
+              </button>
+            ))}
+          </div>
+        )}
+
+        {(tab === 'items' || tab === 'recipes') && (
+          <div
+            className="mission-panel__kind-tabs la-craft-tabs la-craft-tabs--wrap"
+            role="group"
+            aria-label={t(locale, 'laCraftsItemCategories')}
+          >
+            <button
+              type="button"
+              className={craftCategory === 'all' ? 'is-active' : undefined}
+              onClick={() => setCraftCategory('all')}
+            >
+              {t(locale, 'laCraftsCatAll')}
+            </button>
+            {CRAFT_CATEGORIES.map((cat) => (
+              <button
+                key={cat}
+                type="button"
+                className={craftCategory === cat ? 'is-active' : undefined}
+                onClick={() => setCraftCategory(cat)}
+              >
+                {t(locale, LA_CRAFT_CATEGORY_KEYS[cat])}
+              </button>
+            ))}
+          </div>
+        )}
+
+        {tab === 'special' && (
+          <div
+            className="mission-panel__kind-tabs la-craft-tabs la-craft-tabs--wrap"
+            role="group"
+            aria-label={t(locale, 'laCraftsItemCategories')}
+          >
+            <button
+              type="button"
+              className={specialCategory === 'all' ? 'is-active' : undefined}
+              onClick={() => setSpecialCategory('all')}
+            >
+              {t(locale, 'laCraftsCatAll')}
+            </button>
+            {SPECIAL_CATEGORIES.map((cat) => (
+              <button
+                key={cat}
+                type="button"
+                className={specialCategory === cat ? 'is-active' : undefined}
+                onClick={() => setSpecialCategory(cat)}
+              >
+                {t(locale, LA_SPECIAL_CATEGORY_KEYS[cat])}
+              </button>
+            ))}
+          </div>
+        )}
 
         <div className="mission-panel__search">
           <input
             type="search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder={t(locale, 'laCraftsSearch')}
-            aria-label={t(locale, 'laCraftsSearch')}
+            placeholder={
+              tab === 'recipes' ? t(locale, 'laRecipesSearch') : t(locale, 'laCraftsSearch')
+            }
+            aria-label={
+              tab === 'recipes' ? t(locale, 'laRecipesSearch') : t(locale, 'laCraftsSearch')
+            }
           />
         </div>
 
@@ -128,11 +275,7 @@ export function LaCraftBrowser({
                 active={selectedId === m.id}
                 sprite={m.sprite}
                 title={m.name[locale]}
-                meta={
-                  m.farm[0]
-                    ? HISUI_REGIONS.find((r) => r.id === m.farm[0].regionId)?.name[locale]
-                    : undefined
-                }
+                meta={`${m.farm.length} ${t(locale, 'laCraftsFarmSpots')}`}
                 onClick={() => onSelect(m.id)}
               />
             ))}
@@ -158,6 +301,20 @@ export function LaCraftBrowser({
                 title={item.name[locale]}
                 meta={t(locale, LA_SPECIAL_CATEGORY_KEYS[item.category])}
                 onClick={() => onSelect(item.id)}
+              />
+            ))}
+
+          {tab === 'recipes' &&
+            recipes.map((r) => (
+              <CraftCard
+                key={r.id}
+                active={selectedId === r.id}
+                sprite={r.resultSprite}
+                title={r.name[locale]}
+                meta={
+                  r.unlock?.[locale] ?? t(locale, LA_CRAFT_CATEGORY_KEYS[r.category])
+                }
+                onClick={() => onSelect(r.id)}
               />
             ))}
         </div>
@@ -220,7 +377,9 @@ export function LaCraftPanel({
     tab === 'items' ? (LA_ITEMS.find((i) => i.id === selectedId) ?? null) : null
   const special =
     tab === 'special' ? (LA_SPECIAL_ITEMS.find((i) => i.id === selectedId) ?? null) : null
-  const selected = material ?? item ?? special
+  const recipe =
+    tab === 'recipes' ? (LA_CRAFTS.find((r) => r.id === selectedId) ?? null) : null
+  const selected = material ?? item ?? special ?? recipe
 
   return (
     <aside
@@ -228,13 +387,30 @@ export function LaCraftPanel({
     >
       <header className="mission-panel__head">
         <div>
-          <p className="mission-panel__eyebrow">{t(locale, 'toolCrafts')}</p>
-          <h2>{selected ? selected.name[locale] : t(locale, 'laCraftsTitle')}</h2>
+          <p className="mission-panel__eyebrow">
+            {tab === 'recipes' ? t(locale, 'toolRecipes') : t(locale, 'toolCrafts')}
+          </p>
+          <h2>
+            {selected
+              ? selected.name[locale]
+              : tab === 'recipes'
+                ? t(locale, 'laRecipesTitle')
+                : t(locale, 'laCraftsTitle')}
+          </h2>
           {!selected && (
             <p className="mission-panel__progress">
-              {LA_MATERIALS.length} {t(locale, 'laCraftsMaterials')} · {LA_ITEMS.length}{' '}
-              {t(locale, 'laCraftsItems')} · {LA_SPECIAL_ITEMS.length}{' '}
-              {t(locale, 'laCraftsSpecial')}
+              {tab === 'recipes' ? (
+                <>
+                  {LA_CRAFTS.length} {t(locale, 'laCraftsRecipes')}
+                </>
+              ) : (
+                <>
+                  {LA_MATERIALS.length} {t(locale, 'laCraftsMaterials')} · {LA_ITEMS.length}{' '}
+                  {t(locale, 'laCraftsItems')} · {LA_SPECIAL_ITEMS.length}{' '}
+                  {t(locale, 'laCraftsSpecial')} · {LA_CRAFTS.length}{' '}
+                  {t(locale, 'laCraftsRecipes')}
+                </>
+              )}
             </p>
           )}
         </div>
@@ -255,22 +431,30 @@ export function LaCraftPanel({
         <ItemDetails locale={locale} item={item} onOpenLocation={onOpenLocation} />
       ) : special ? (
         <SpecialDetails locale={locale} item={special} />
+      ) : recipe ? (
+        <RecipeDetails locale={locale} recipe={recipe} onOpenLocation={onOpenLocation} />
       ) : (
-        <p className="mission-panel__hint">{t(locale, 'laCraftsSelectHint')}</p>
+        <p className="mission-panel__hint">
+          {tab === 'recipes'
+            ? t(locale, 'laRecipesSelectHint')
+            : t(locale, 'laCraftsSelectHint')}
+        </p>
       )}
     </aside>
   )
 }
 
-/** Standalone Recipes tool: grid + detail panel. */
+/** Recipes browser: grid + detail panel. */
 export function LaRecipesBrowser({
   locale,
   selectedId,
   onSelect,
+  toolbarExtra,
 }: {
   locale: Locale
   selectedId: string | null
   onSelect: (id: string) => void
+  toolbarExtra?: ReactNode
 }) {
   const [query, setQuery] = useState('')
 
@@ -295,6 +479,7 @@ export function LaRecipesBrowser({
             {LA_CRAFTS.length} {t(locale, 'laCraftsRecipes')} — {t(locale, 'laRecipesHint')}
           </p>
         </div>
+        {toolbarExtra}
       </div>
 
       <div className="la-craft-browser__body">

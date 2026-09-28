@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState } from 'react'
+import { useMemo, useRef, useState, type ReactNode } from 'react'
 import type { ScrewDistrict } from '../data/colorfulScrews'
 import { COLORFUL_SCREWS } from '../data/colorfulScrews'
 import { useMapZoom } from '../hooks/useMapZoom'
@@ -18,6 +18,7 @@ type Props = {
   hideCollected: boolean
   collected: Record<number, boolean>
   onSelect: (id: number) => void
+  toolbarExtra?: ReactNode
 }
 
 export function ScrewMap({
@@ -27,6 +28,7 @@ export function ScrewMap({
   hideCollected,
   collected,
   onSelect,
+  toolbarExtra,
 }: Props) {
   const [imageOk, setImageOk] = useState(true)
   const viewportRef = useRef<HTMLDivElement>(null)
@@ -48,6 +50,7 @@ export function ScrewMap({
           <h2>{t(locale, 'screwsTitle')}</h2>
           <p>{t(locale, 'screwsHint')}</p>
         </div>
+        {toolbarExtra}
       </div>
 
       <div

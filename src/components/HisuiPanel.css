@@ -52,6 +52,77 @@
   font-size: 0.85rem;
 }
 
+.hisui-panel .mission-details--fill {
+  flex: 1 1 auto;
+  min-height: 0;
+  max-height: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  border-bottom: none;
+  padding-bottom: 0.5rem;
+  align-content: start;
+  grid-auto-rows: min-content;
+}
+
+.hisui-panel .mission-details__toggle {
+  width: 100%;
+  height: auto;
+  align-self: start;
+  justify-self: stretch;
+  margin-top: 0.35rem;
+  padding: 0.42rem 0.75rem;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.hisui-panel .la-pin-detail-hero {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 0.65rem 0.75rem;
+  border-radius: 0.45rem;
+  border: 1px solid rgba(196, 140, 60, 0.22);
+  background: rgba(28, 22, 14, 0.55);
+}
+
+.hisui-panel .la-pin-detail-hero__sprites {
+  display: flex;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.hisui-panel .la-pin-detail-hero__sprite {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  background: rgba(8, 12, 10, 0.55);
+  border-radius: 0.4rem;
+  border: 1px solid rgba(196, 140, 60, 0.18);
+  flex-shrink: 0;
+}
+
+.hisui-panel .la-pin-detail-hero .mission-details__desc {
+  margin: 0;
+  flex: 1 1 auto;
+  min-width: 0;
+  color: #e8dcc8;
+}
+
+.hisui-panel .mission-details__facts--compact {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
+  gap: 0.55rem 0.75rem;
+}
+
+.hisui-panel .mission-details__facts--compact div {
+  padding: 0.45rem 0.55rem;
+  border-radius: 0.35rem;
+  border: 1px solid rgba(196, 140, 60, 0.14);
+  background: rgba(20, 16, 12, 0.4);
+}
+
 .hisui-details {
   display: flex;
   flex-direction: column;
@@ -67,6 +138,22 @@
   line-height: 1.45;
   color: #e8dcc8;
   flex-shrink: 0;
+}
+
+.hisui-panel .hisui-location-shot {
+  margin: 0;
+  border-color: rgba(196, 140, 60, 0.22);
+  background: rgba(12, 10, 8, 0.85);
+  flex-shrink: 0;
+}
+
+.hisui-panel .hisui-location-shot img {
+  height: 148px;
+  max-height: 168px;
+}
+
+.hisui-panel .hisui-location-shot figcaption {
+  color: #a89880;
 }
 
 .hisui-details__subs {

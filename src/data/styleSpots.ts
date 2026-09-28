@@ -7,6 +7,8 @@ export type StyleItem = {
   /** Omit when prices vary widely within the boutique. */
   price?: number
   note?: Localized
+  /** PokeAPI item/Pokémon sprite URL, or local path */
+  sprite: string
 }
 
 export type StyleSpot = {
@@ -21,13 +23,76 @@ export type StyleSpot = {
   locationImageSrc?: string
 }
 
+const ITEM =
+  'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items'
+const PKM =
+  'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon'
+
+export function styleItemSpriteUrl(sprite: string) {
+  if (sprite.startsWith('/') || sprite.startsWith('http')) return sprite
+  return `${ITEM}/${sprite}.png`
+}
+
+/** Distinct real sprites for salon services & clothier brands (no bag sprites for LZA fashion). */
+const STYLE_SPRITES: Record<string, string> = {
+  'Styling & color': `${ITEM}/choice-scarf.png`,
+  'Eyebrow touch-up': `${ITEM}/wise-glasses.png`,
+
+  'The Usual': `${ITEM}/silk-scarf.png`,
+  Énergie: `${PKM}/701.png`,
+  'Le Passe-temps': `${ITEM}/lumiose-galette.png`,
+  'Porte-Chance': `${ITEM}/soothe-bell.png`,
+  Pinceau: `${ITEM}/miracle-seed.png`,
+  Naptime: `${PKM}/143.png`,
+  'Soil and Sneaks': `${ITEM}/soft-sand.png`,
+  Marquage: `${ITEM}/focus-band.png`,
+
+  FILMFAN: `${ITEM}/poke-radar.png`,
+  'Mode Mature': `${ITEM}/shalour-sable.png`,
+  'Mode Magnifique': `${ITEM}/lumiose-galette.png`,
+  'Glammor Girli': `${PKM}/700.png`,
+  'Glammor Pretti': `${PKM}/282.png`,
+  'Glammor Cuti': `${PKM}/133.png`,
+  'Glammor Sporti': `${PKM}/701.png`,
+  'Les Chaussures': `${ITEM}/soft-sand.png`,
+  NIGHTSIDE: `${PKM}/94.png`,
+  Wisp: `${PKM}/200.png`,
+  'Atelier Heads': `${ITEM}/rocky-helmet.png`,
+  'DENSOKU Lumiose': `${ITEM}/muscle-band.png`,
+  'Bundle Up': `${ITEM}/assault-vest.png`,
+  'Midnight Rite': `${ITEM}/spell-tag.png`,
+
+  SUBATOMIC: `${ITEM}/metal-coat.png`,
+  'SUBATOMIC 4': `${ITEM}/charcoal.png`,
+  Kikonashi: `${PKM}/571.png`,
+  'Le Pays des Vêtements': `${ITEM}/choice-band.png`,
+  'Triathlon Rouge': `${PKM}/448.png`,
+  'La Tornade': `${ITEM}/focus-band.png`,
+  Masterpiece: `${ITEM}/rare-candy.png`,
+  'Le Pays des Pieds': `${ITEM}/soft-sand.png`,
+
+  Kickspin: `${ITEM}/soft-sand.png`,
+  'In the Zone': `${ITEM}/twisted-spoon.png`,
+  'Marché Bleu': `${ITEM}/choice-scarf.png`,
+  Équipement: `${ITEM}/focus-band.png`,
+  'DEFOG Eyewear': `${ITEM}/black-glasses.png`,
+  'Triathlon Bleu': `${PKM}/130.png`,
+
+  'Changing Gears': `${ITEM}/rocky-helmet.png`,
+  'Fresh Fits': `${ITEM}/choice-scarf.png`,
+  'Dessert du Moment': `${ITEM}/shalour-sable.png`,
+  BRAVELY: `${PKM}/448.png`,
+  'Boutique Couture': `${ITEM}/rare-candy.png`,
+}
+
 function item(
   en: string,
   pt: string,
-  opts?: { price?: number; note?: Localized },
+  opts?: { price?: number; note?: Localized; sprite?: string },
 ): StyleItem {
   return {
     name: { en, pt },
+    sprite: opts?.sprite ?? STYLE_SPRITES[en] ?? `${ITEM}/silk-scarf.png`,
     ...(opts?.price != null ? { price: opts.price } : {}),
     ...(opts?.note ? { note: opts.note } : {}),
   }

@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useMemo, useState, type ReactNode } from 'react'
 import { LA_ALPHAS } from '../data/laAlphas'
 import { LA_CAMPS } from '../data/laCamps'
 import { LA_LEGENDARIES } from '../data/laLegendaries'
@@ -8,15 +8,22 @@ import { LA_UNOWNS } from '../data/laUnowns'
 import { LA_WISPS } from '../data/laWisps'
 import type { HisuiRegionId } from '../data/hisuiRegions'
 import { getHisuiRegion } from '../data/hisuiRegions'
+import { hisuiFormForDex } from '../data/laHisuiForms'
 import type { LaRegionPin } from '../data/laRegionPins'
 import { resolveSubregionId } from '../data/laSubregionAliases'
 import type { Locale } from '../i18n'
 import { t } from '../i18n'
-import { LaCraftBrowser, LaCraftPanel, LaRecipesBrowser, LaRecipesPanel, type CraftTab } from './LaCraftPanel'
+import { LaItemsView } from './LaItemsView'
+import {
+  isLaFieldGuideCategory,
+  LaFieldGuideTabs,
+  type LaFieldGuideCategory,
+} from './LaFieldGuideTabs'
 import { LaPinPanel } from './LaPinPanel'
 import { LaRegionCollectibleMap } from './LaRegionCollectibleMap'
 import { LaRegionCollectiblePanel } from './LaRegionCollectiblePanel'
 import type { ToolId } from './Sidebar'
+import './LocationsView.css'
 
 type Progress = Record<string, boolean>
 
@@ -36,6 +43,8 @@ type Props = {
   /** Optional pin to open when mounting a region guide (e.g. outbreak from Pokédex). */
   regionGuideFocusId?: string | null
   onOpenHisuiLocation: (regionId: HisuiRegionId, subregionId: string) => void
+  fieldGuideCategory?: LaFieldGuideCategory
+  onFieldGuideCategoryChange?: (category: LaFieldGuideCategory) => void
   wispDone: Progress
   onToggleWisp: (id: string) => void
   unownDone: Progress
@@ -61,9 +70,22 @@ function pinBase(
 }
 
 export function LaExtraTools(props: Props) {
-  const { locale, tool } = props
-  if (tool === 'crafts') return <CraftsView {...props} />
-  if (tool === 'recipes') return <RecipesView {...props} />
+  const {
+    locale,
+    tool,
+    fieldGuideCategory = 'wisps',
+    onFieldGuideCategoryChange,
+  } = props
+  if (tool === 'crafts' || tool === 'recipes') {
+    return (
+      <LaItemsView
+        key={tool}
+        locale={locale}
+        initialTab={tool === 'recipes' ? 'recipes' : 'items'}
+        onOpenHisuiLocation={props.onOpenHisuiLocation}
+      />
+    )
+  }
   if (tool === 'solitude') {
     return (
       <SolitudeView
@@ -73,19 +95,29 @@ export function LaExtraTools(props: Props) {
       />
     )
   }
-  if (
-    tool === 'wisps' ||
-    tool === 'unowns' ||
-    tool === 'alphas' ||
-    tool === 'camps' ||
-    tool === 'legendaries' ||
-    tool === 'outbreaks'
-  ) {
+  if (tool === 'legendaries') {
     return (
       <RegionGuideView
-        key={`${tool}-${props.regionGuideEpoch ?? 0}`}
+        key={`legendaries-${props.regionGuideEpoch ?? 0}`}
         {...props}
-        tool={tool}
+        tool="legendaries"
+      />
+    )
+  }
+  if (tool === 'field-guide' || isLaFieldGuideCategory(tool)) {
+    const category = isLaFieldGuideCategory(tool) ? tool : fieldGuideCategory
+    return (
+      <RegionGuideView
+        key={`${category}-${props.regionGuideEpoch ?? 0}`}
+        {...props}
+        tool={category}
+        toolbarExtra={
+          <LaFieldGuideTabs
+            locale={locale}
+            category={category}
+            onCategoryChange={(next) => onFieldGuideCategoryChange?.(next)}
+          />
+        }
       />
     )
   }
@@ -119,21 +151,57 @@ function toUnownPins(): LaRegionPin[] {
 }
 
 function toAlphaPins(): LaRegionPin[] {
-  return LA_ALPHAS.map((a) => ({
-    id: a.id,
-    name: a.name,
-    description: a.description,
-    ...pinBase(a.regionId, a.subregionId),
-    map: a.map,
-    detailMap: a.detailMap,
-    markerLabel: 'α',
-    facts: [
-      {
-        label: { en: 'Species', pt: 'Espécie' },
-        value: { en: a.speciesName, pt: a.speciesName },
+  return LA_ALPHAS.map((a) => {
+    const levelMatch = a.description?.en.match(/Lv\.\s*(\d+)/i)
+    const level = levelMatch?.[1]
+    const region = getHisuiRegion(a.regionId)
+    const sub = region?.subregions.find((s) => s.id === a.subregionId)
+    const subEn = sub?.name.en ?? a.subregionId
+    const subPt = sub?.name.pt ?? a.subregionId
+
+    return {
+      id: a.id,
+      name: a.name,
+      description: {
+        en: `Fixed alpha spawn${level ? ` (Lv. ${level})` : ''} at ${subEn}. Larger, tougher, and harder to catch than normal wild Pokémon.`,
+        pt: `Spawn alfa fixo${level ? ` (Nv. ${level})` : ''} em ${subPt}. Maior, mais forte e mais difícil de capturar que o Pokémon selvagem comum.`,
       },
-    ],
-  }))
+      note: {
+        en: 'Save before engaging. Use status, sticky items, and strong balls.',
+        pt: 'Salve antes de enfrentar. Use status, itens adesivos e balls fortes.',
+      },
+      ...pinBase(a.regionId, a.subregionId),
+      map: a.map,
+      detailMap: a.detailMap,
+      markerLabel: 'α',
+      spriteId: hisuiFormForDex(a.dex)?.spriteId ?? a.dex,
+      facts: [
+        {
+          label: { en: 'Species', pt: 'Espécie' },
+          value: { en: a.speciesName, pt: a.speciesName },
+        },
+        ...(level
+          ? [
+              {
+                label: { en: 'Level', pt: 'Nível' },
+                value: { en: level, pt: level },
+              },
+            ]
+          : []),
+        {
+          label: { en: 'Dex', pt: 'Dex' },
+          value: { en: `#${a.dex}`, pt: `#${a.dex}` },
+        },
+        {
+          label: { en: 'Spawn', pt: 'Spawn' },
+          value: {
+            en: 'Fixed alpha location',
+            pt: 'Local alfa fixo',
+          },
+        },
+      ],
+    }
+  })
 }
 
 function toCampPins(): LaRegionPin[] {
@@ -167,7 +235,7 @@ function toLegendaryPins(): LaRegionPin[] {
     return {
       id: l.id,
       name: l.name,
-      description: l.mission,
+      description: l.description,
       note: l.tips,
       ...pinBase(l.regionId, l.subregionId),
       map: l.map,
@@ -178,12 +246,41 @@ function toLegendaryPins(): LaRegionPin[] {
       locationImageSrc: l.encounterImageSrc ?? region?.detailMapSrc,
       facts: [
         {
+          label: { en: 'Category', pt: 'Categoria' },
+          value: {
+            en:
+              l.kind === 'noble'
+                ? 'Noble Pokémon'
+                : l.kind === 'mythical'
+                  ? 'Mythical Pokémon'
+                  : 'Legendary Pokémon',
+            pt:
+              l.kind === 'noble'
+                ? 'Pokémon Nobre'
+                : l.kind === 'mythical'
+                  ? 'Pokémon Mítico'
+                  : 'Pokémon Lendário',
+          },
+        },
+        {
+          label: { en: 'Type', pt: 'Tipo' },
+          value: l.typing,
+        },
+        {
+          label: { en: 'Mission / request', pt: 'Missão / pedido' },
+          value: l.mission,
+        },
+        {
           label: { en: 'Requirements', pt: 'Requisitos' },
           value: l.requirements,
         },
         ...(l.rewards
           ? [{ label: { en: 'Rewards', pt: 'Recompensas' }, value: l.rewards }]
           : []),
+        {
+          label: { en: 'Dex', pt: 'Dex' },
+          value: { en: `#${l.dex}`, pt: `#${l.dex}` },
+        },
       ],
     }
   })
@@ -196,7 +293,7 @@ function toOutbreakPins(): LaRegionPin[] {
     note: o.note,
     ...pinBase(o.regionId, o.subregionId),
     markerLabel: String(o.speciesDex).slice(-2),
-    spriteId: o.speciesDex,
+    spriteId: hisuiFormForDex(o.speciesDex)?.spriteId ?? o.speciesDex,
     facts: [
       {
         label: { en: 'Dex', pt: 'Dex' },
@@ -210,6 +307,7 @@ function RegionGuideView({
   locale,
   tool,
   regionGuideFocusId = null,
+  toolbarExtra,
   wispDone,
   onToggleWisp,
   unownDone,
@@ -220,7 +318,7 @@ function RegionGuideView({
   onToggleCamp,
   legendaryDone,
   onToggleLegendary,
-}: Props & { tool: RegionGuideTool }) {
+}: Props & { tool: RegionGuideTool; toolbarExtra?: ReactNode }) {
   const focusPin = useMemo(() => {
     if (!regionGuideFocusId) return null
     const pins =
@@ -417,7 +515,7 @@ function RegionGuideView({
   }
 
   return (
-    <div className="map-layout">
+    <div className="map-layout locations-view">
       <LaRegionCollectibleMap
         key={`${tool}-${detailRegionId ?? 'overview'}`}
         locale={locale}
@@ -441,6 +539,7 @@ function RegionGuideView({
         onCloseDetail={handleCloseDetail}
         onSelectSubregion={handleSelectSubregion}
         onSelectPin={handleSelectPin}
+        toolbarExtra={toolbarExtra}
       />
       <LaRegionCollectiblePanel
         locale={locale}
@@ -463,61 +562,6 @@ function RegionGuideView({
         onHideDoneChange={handleHideDone}
         onToggle={cfg.toggle}
         onOpenDetail={handleOpenDetail}
-      />
-    </div>
-  )
-}
-
-function CraftsView({
-  locale,
-  onOpenHisuiLocation,
-}: Pick<Props, 'locale' | 'onOpenHisuiLocation'>) {
-  const [craftId, setCraftId] = useState<string | null>(null)
-  const [tab, setTab] = useState<CraftTab>('items')
-
-  const handleTabChange = (next: CraftTab) => {
-    setTab(next)
-    setCraftId(null)
-  }
-
-  return (
-    <div className="map-layout map-layout--crafts">
-      <LaCraftBrowser
-        locale={locale}
-        selectedId={craftId}
-        tab={tab}
-        onTabChange={handleTabChange}
-        onSelect={setCraftId}
-      />
-      <LaCraftPanel
-        locale={locale}
-        selectedId={craftId}
-        tab={tab}
-        onClose={() => setCraftId(null)}
-        onOpenLocation={onOpenHisuiLocation}
-      />
-    </div>
-  )
-}
-
-function RecipesView({
-  locale,
-  onOpenHisuiLocation,
-}: Pick<Props, 'locale' | 'onOpenHisuiLocation'>) {
-  const [recipeId, setRecipeId] = useState<string | null>(null)
-
-  return (
-    <div className="map-layout map-layout--crafts">
-      <LaRecipesBrowser
-        locale={locale}
-        selectedId={recipeId}
-        onSelect={setRecipeId}
-      />
-      <LaRecipesPanel
-        locale={locale}
-        selectedId={recipeId}
-        onClose={() => setRecipeId(null)}
-        onOpenLocation={onOpenHisuiLocation}
       />
     </div>
   )

@@ -39,51 +39,141 @@ function farm(
   return { regionId, subregionId, note: { en, pt } }
 }
 
+export type LaMaterialGroup = 'ore' | 'plant' | 'berry' | 'food' | 'misc'
+
+/** Red ore deposits — Tumblestone (every survey area). */
+const RED_ORE_FARMS: LaMaterial['farm'] = [
+  farm('obsidian', 'oreburrow-tunnel', 'Red ore deposits.', 'Depósitos de minério vermelho.'),
+  farm('obsidian', 'deertrack-heights', 'Red ore on rocky heights.', 'Minério vermelho nas alturas.'),
+  farm('obsidian', 'worn-bridge', 'Red ore near the bridge cliffs.', 'Minério vermelho perto da ponte.'),
+  farm('obsidian', 'sandgem-flats', 'Red ore on sandy flats.', 'Minério vermelho nas planícies arenosas.'),
+  farm('obsidian', 'windswept-run', 'Red ore along the run.', 'Minério vermelho ao longo da corrida.'),
+  farm('obsidian', 'obsidian-falls', 'Red ore near the falls.', 'Minério vermelho perto das cataratas.'),
+  farm('crimson', 'bolderoll-slope', 'Red ore on rocky slopes.', 'Minério vermelho nas encostas.'),
+  farm('crimson', 'sludge-mound', 'Red ore around the mound.', 'Minério vermelho no monte.'),
+  farm('crimson', 'cloudpool-ridge', 'Red ore along the ridge.', 'Minério vermelho no cume.'),
+  farm('crimson', 'solaceon-ruins', 'Red ore near the ruins.', 'Minério vermelho perto das ruínas.'),
+  farm('crimson', 'scarlet-bog', 'Red ore around the bog rim.', 'Minério vermelho na borda do brejo.'),
+  farm('cobalt', 'crossing-slope', 'Red ore on coastal slopes.', 'Minério vermelho nas encostas costeiras.'),
+  farm('cobalt', 'castaway-shore', 'Red ore along the shore.', 'Minério vermelho na costa.'),
+  farm('cobalt', 'veilstone-cape', 'Red ore on the cape.', 'Minério vermelho no cabo.'),
+  farm('cobalt', 'windbreak-stand', 'Red ore near Windbreak Stand.', 'Minério vermelho no Quebra-vento.'),
+  farm('cobalt', 'ginkgo-landing', 'Red ore near the landing.', 'Minério vermelho no desembarque.'),
+  farm('coronet', 'ancient-quarry', 'Red ore in the quarry (very common).', 'Minério vermelho na pedreira (muito comum).'),
+  farm('coronet', 'celestica-trail', 'Red ore along the trail.', 'Minério vermelho na trilha.'),
+  farm('coronet', 'clamberclaw-cliffs', 'Red ore on the cliffs.', 'Minério vermelho nos penhascos.'),
+  farm('coronet', 'bolderoll-ravine', 'Red ore in the ravine.', 'Minério vermelho na ravina.'),
+  farm('coronet', 'stonetooth-rows', 'Red ore among the stone rows.', 'Minério vermelho nas fileiras.'),
+  farm('alabaster', 'bonechill-wastes', 'Red ore on icy wastes.', 'Minério vermelho nos ermos.'),
+  farm('alabaster', 'avalanche-slopes', 'Red ore on avalanche slopes.', 'Minério vermelho nas encostas.'),
+  farm('alabaster', 'whiteout-valley', 'Red ore in the valley.', 'Minério vermelho no vale.'),
+  farm('alabaster', 'glacier-terrace', 'Red ore on the terrace.', 'Minério vermelho no terraço.'),
+  farm('alabaster', 'arenas-approach', 'Red ore toward the arena.', 'Minério vermelho a caminho da arena.'),
+  farm('jubilife', 'craftworks', 'Sold at the Craftworks.', 'Vendido na Oficina.'),
+]
+
+/** Black ore deposits — Black Tumblestone. */
+const BLACK_ORE_FARMS: LaMaterial['farm'] = [
+  farm('obsidian', 'oreburrow-tunnel', 'Black ore deposits.', 'Depósitos de minério preto.'),
+  farm('obsidian', 'deertrack-heights', 'Black ore on rocky heights.', 'Minério preto nas alturas.'),
+  farm('obsidian', 'worn-bridge', 'Black ore near cliffs.', 'Minério preto perto dos penhascos.'),
+  farm('crimson', 'bolderoll-slope', 'Black ore on slopes.', 'Minério preto nas encostas.'),
+  farm('crimson', 'sludge-mound', 'Black ore around the mound.', 'Minério preto no monte.'),
+  farm('crimson', 'cloudpool-ridge', 'Black ore on the ridge.', 'Minério preto no cume.'),
+  farm('cobalt', 'castaway-shore', 'Black ore along the shore.', 'Minério preto na costa.'),
+  farm('cobalt', 'veilstone-cape', 'Black ore on the cape.', 'Minério preto no cabo.'),
+  farm('cobalt', 'crossing-slope', 'Black ore on coastal slopes.', 'Minério preto nas encostas.'),
+  farm('cobalt', 'firespit-island', 'Black ore on the volcanic isle.', 'Minério preto na ilha vulcânica.'),
+  farm('coronet', 'ancient-quarry', 'Black ore veins in the quarry.', 'Veios de minério preto na pedreira.'),
+  farm('coronet', 'bolderoll-ravine', 'Black ore in the ravine.', 'Minério preto na ravina.'),
+  farm('coronet', 'celestica-ruins', 'Black ore near the ruins.', 'Minério preto perto das ruínas.'),
+  farm('coronet', 'clamberclaw-cliffs', 'Black ore on the cliffs.', 'Minério preto nos penhascos.'),
+  farm('alabaster', 'bonechill-wastes', 'Black ore on icy wastes.', 'Minério preto nos ermos.'),
+  farm('alabaster', 'avalanche-slopes', 'Black ore on slopes.', 'Minério preto nas encostas.'),
+  farm('alabaster', 'icebound-falls', 'Black ore near the falls.', 'Minério preto perto das cataratas.'),
+  farm('jubilife', 'craftworks', 'Sold at the Craftworks.', 'Vendido na Oficina.'),
+]
+
+/** Blue ore deposits — Sky Tumblestone. */
+const BLUE_ORE_FARMS: LaMaterial['farm'] = [
+  farm('obsidian', 'oreburrow-tunnel', 'Blue ore deposits.', 'Depósitos de minério azul.'),
+  farm('obsidian', 'deertrack-heights', 'Blue ore on rocky heights.', 'Minério azul nas alturas.'),
+  farm('obsidian', 'lake-verity', 'Blue ore near the lake.', 'Minério azul perto do lago.'),
+  farm('crimson', 'bolderoll-slope', 'Blue ore on slopes.', 'Minério azul nas encostas.'),
+  farm('crimson', 'cloudpool-ridge', 'Blue ore on the ridge.', 'Minério azul no cume.'),
+  farm('crimson', 'lake-valor', 'Blue ore near Lake Valor.', 'Minério azul perto do Lago Valor.'),
+  farm('cobalt', 'windbreak-stand', 'Blue ore on high cliffs.', 'Minério azul nos penhascos altos.'),
+  farm('cobalt', 'veilstone-cape', 'Blue ore on coastal deposits.', 'Minério azul nos depósitos costeiros.'),
+  farm('cobalt', 'tranquility-cove', 'Blue ore around the cove.', 'Minério azul na enseada.'),
+  farm('cobalt', 'islespy-shore', 'Blue ore along Islespy Shore.', 'Minério azul na Costa Islespy.'),
+  farm('coronet', 'ancient-quarry', 'Blue ore in the quarry.', 'Minério azul na pedreira.'),
+  farm('coronet', 'fabled-spring', 'Blue ore near the spring.', 'Minério azul perto da fonte.'),
+  farm('coronet', 'celestica-trail', 'Blue ore along the trail.', 'Minério azul na trilha.'),
+  farm('alabaster', 'lake-acuity', 'Blue ore near Lake Acuity.', 'Minério azul perto do Lago Acuity.'),
+  farm('alabaster', 'bonechill-wastes', 'Blue ore on icy wastes.', 'Minério azul nos ermos.'),
+  farm('alabaster', 'glacier-terrace', 'Blue ore on the terrace.', 'Minério azul no terraço.'),
+  farm('jubilife', 'craftworks', 'Sold at the Craftworks.', 'Vendido na Oficina.'),
+]
+
+/** Iron Chunk — drops from ore deposits across Hisui. */
+const IRON_CHUNK_FARMS: LaMaterial['farm'] = [
+  farm('obsidian', 'oreburrow-tunnel', 'Ore deposits (with Tumblestones).', 'Depósitos de minério (com Pedras Rolantes).'),
+  farm('obsidian', 'deertrack-heights', 'Ore deposits on the heights.', 'Depósitos nas alturas.'),
+  farm('crimson', 'bolderoll-slope', 'Ore deposits on rocky slopes.', 'Depósitos nas encostas rochosas.'),
+  farm('crimson', 'sludge-mound', 'Ore deposits around the mound.', 'Depósitos no monte.'),
+  farm('cobalt', 'veilstone-cape', 'Ore deposits on the cape.', 'Depósitos no cabo.'),
+  farm('cobalt', 'castaway-shore', 'Ore deposits along the shore.', 'Depósitos na costa.'),
+  farm('cobalt', 'firespit-island', 'Ore deposits on Firespit Island.', 'Depósitos na Ilha Firespit.'),
+  farm('coronet', 'ancient-quarry', 'Ore deposits in the quarry.', 'Depósitos na pedreira.'),
+  farm('coronet', 'bolderoll-ravine', 'Ore deposits in the ravine.', 'Depósitos na ravina.'),
+  farm('alabaster', 'bonechill-wastes', 'Ore deposits on icy wastes.', 'Depósitos nos ermos gelados.'),
+  farm('alabaster', 'avalanche-slopes', 'Ore deposits on slopes.', 'Depósitos nas encostas.'),
+  farm('jubilife', 'craftworks', 'Sold at the Craftworks.', 'Vendido na Oficina.'),
+]
+
 export const LA_MATERIALS: LaMaterial[] = [
   {
     id: 'apricorn',
     name: { en: 'Apricorn', pt: 'Bolota' },
     sprite: 'apricorn',
     farm: [
-      farm('obsidian', 'aspiration-hill', 'Trees near Aspiration Hill.', 'Árvores perto da Colina da Aspiração.'),
+      farm('obsidian', 'aspiration-hill', 'Apricorn trees near Aspiration Hill.', 'Árvores de bolota perto da Colina da Aspiração.'),
       farm('obsidian', 'horseshoe-plains', 'Apricorn trees on the plains.', 'Árvores de bolota nas planícies.'),
+      farm('obsidian', 'deertrack-path', 'Apricorn trees along the path.', 'Árvores de bolota na trilha.'),
+      farm('obsidian', 'windswept-run', 'Apricorn trees on the run.', 'Árvores de bolota na corrida.'),
+      farm('obsidian', 'floaro-gardens', 'Apricorn trees in the gardens.', 'Árvores de bolota nos jardins.'),
+      farm('obsidian', 'nature-pantry', 'Apricorn trees near Nature’s Pantry.', 'Árvores de bolota na Despensa da Natureza.'),
+      farm('obsidian', 'the-heartwood', 'Apricorn trees in the forest.', 'Árvores de bolota na floresta.'),
+      farm('crimson', 'golden-lowlands', 'Apricorn trees in the lowlands.', 'Árvores de bolota nas terras baixas.'),
+      farm('crimson', 'droning-meadow', 'Apricorn trees in the meadow.', 'Árvores de bolota no prado.'),
+      farm('cobalt', 'ginkgo-landing', 'Apricorn trees near the landing.', 'Árvores de bolota no desembarque.'),
+      farm('cobalt', 'aipom-hills', 'Apricorn trees on the hills.', 'Árvores de bolota nas colinas.'),
+      farm('jubilife', 'craftworks', 'Sold at the Craftworks.', 'Vendido na Oficina.'),
     ],
   },
   {
     id: 'tumblestone',
     name: { en: 'Tumblestone', pt: 'Pedra Rolante' },
     sprite: 'tumblestone',
-    farm: [
-      farm('obsidian', 'oreburrow-tunnel', 'Ore deposits in the tunnel.', 'Depósitos de minério no túnel.'),
-      farm('obsidian', 'deertrack-heights', 'Rocky outcrops.', 'Afloramentos rochosos.'),
-    ],
+    farm: RED_ORE_FARMS,
   },
   {
     id: 'black-tumblestone',
     name: { en: 'Black Tumblestone', pt: 'Pedra Rolante Negra' },
     sprite: 'black-tumblestone',
-    farm: [
-      farm('coronet', 'ancient-quarry', 'Dark ore veins.', 'Veios de minério escuro.'),
-      farm('coronet', 'bolderoll-ravine', 'Mining spots in the ravine.', 'Pontos de mineração na ravina.'),
-    ],
+    farm: BLACK_ORE_FARMS,
   },
   {
     id: 'sky-tumblestone',
     name: { en: 'Sky Tumblestone', pt: 'Pedra Rolante Celeste' },
     sprite: 'sky-tumblestone',
-    farm: [
-      farm('cobalt', 'windbreak-stand', 'High cliffs and ore.', 'Penhascos altos e minério.'),
-      farm('cobalt', 'veilstone-cape', 'Coastal ore deposits.', 'Depósitos de minério na costa.'),
-    ],
+    farm: BLUE_ORE_FARMS,
   },
   {
     id: 'iron-chunk',
     name: { en: 'Iron Chunk', pt: 'Pedaço de Ferro' },
     sprite: 'iron-chunk',
-    farm: [
-      farm('coronet', 'ancient-quarry', 'Mining spots.', 'Pontos de mineração.'),
-      farm('crimson', 'bolderoll-slope', 'Rocky slopes.', 'Encostas rochosas.'),
-    ],
+    farm: IRON_CHUNK_FARMS,
   },
   {
     id: 'wood',
@@ -92,6 +182,12 @@ export const LA_MATERIALS: LaMaterial[] = [
     farm: [
       farm('obsidian', 'the-heartwood', 'Chop trees / forage logs.', 'Corte árvores / colete troncos.'),
       farm('obsidian', 'grueling-grove', 'Forest wood piles.', 'Pilhas de madeira na floresta.'),
+      farm('obsidian', 'grandtree-arena', 'Wood near the Grandtree.', 'Madeira perto da Grande Árvore.'),
+      farm('obsidian', 'nature-pantry', 'Wood piles near the pantry.', 'Pilhas de madeira na despensa.'),
+      farm('crimson', 'gapejaw-bog', 'Wood near bog trees.', 'Madeira perto das árvores do brejo.'),
+      farm('crimson', 'droning-meadow', 'Wood piles in the meadow.', 'Pilhas de madeira no prado.'),
+      farm('coronet', 'wayward-wood', 'Chop trees in Wayward Wood.', 'Corte árvores no Bosque Desviado.'),
+      farm('jubilife', 'craftworks', 'Sold at the Craftworks.', 'Vendido na Oficina.'),
     ],
   },
   {
@@ -298,6 +394,9 @@ export const LA_MATERIALS: LaMaterial[] = [
     sprite: 'oran-berry',
     farm: [
       farm('obsidian', 'horseshoe-plains', 'Berry trees.', 'Árvores de berry.'),
+      farm('obsidian', 'floaro-gardens', 'Berry trees in the gardens.', 'Árvores de berry nos jardins.'),
+      farm('obsidian', 'nature-pantry', 'Berry trees near the pantry.', 'Árvores de berry na despensa.'),
+      farm('crimson', 'golden-lowlands', 'Berry trees in the lowlands.', 'Árvores de berry nas terras baixas.'),
       farm('jubilife', 'farm', 'Grown on the village farm.', 'Cultivada na fazenda da vila.'),
     ],
   },
@@ -308,37 +407,59 @@ export const LA_MATERIALS: LaMaterial[] = [
     farm: [
       farm('obsidian', 'floaro-gardens', 'Berry trees.', 'Árvores de berry.'),
       farm('crimson', 'droning-meadow', 'Meadow berry trees.', 'Árvores de berry no prado.'),
+      farm('obsidian', 'horseshoe-plains', 'Berry trees on the plains.', 'Árvores de berry nas planícies.'),
+      farm('jubilife', 'farm', 'Grown on the village farm.', 'Cultivada na fazenda da vila.'),
     ],
   },
   {
     id: 'cheri-berry',
     name: { en: 'Cheri Berry', pt: 'Berry Cheri' },
     sprite: 'cheri-berry',
-    farm: [farm('obsidian', 'horseshoe-plains', 'Berry trees.', 'Árvores de berry.')],
+    farm: [
+      farm('obsidian', 'horseshoe-plains', 'Berry trees.', 'Árvores de berry.'),
+      farm('obsidian', 'floaro-gardens', 'Berry trees in the gardens.', 'Árvores de berry nos jardins.'),
+      farm('jubilife', 'farm', 'Grown on the village farm.', 'Cultivada na fazenda da vila.'),
+    ],
   },
   {
     id: 'pecha-berry',
     name: { en: 'Pecha Berry', pt: 'Berry Pecha' },
     sprite: 'pecha-berry',
-    farm: [farm('obsidian', 'nature-pantry', 'Berry trees.', 'Árvores de berry.')],
+    farm: [
+      farm('obsidian', 'nature-pantry', 'Berry trees.', 'Árvores de berry.'),
+      farm('obsidian', 'horseshoe-plains', 'Berry trees on the plains.', 'Árvores de berry nas planícies.'),
+      farm('jubilife', 'farm', 'Grown on the village farm.', 'Cultivada na fazenda da vila.'),
+    ],
   },
   {
     id: 'rawst-berry',
     name: { en: 'Rawst Berry', pt: 'Berry Rawst' },
     sprite: 'rawst-berry',
-    farm: [farm('obsidian', 'deertrack-path', 'Berry trees.', 'Árvores de berry.')],
+    farm: [
+      farm('obsidian', 'deertrack-path', 'Berry trees.', 'Árvores de berry.'),
+      farm('obsidian', 'floaro-gardens', 'Berry trees in the gardens.', 'Árvores de berry nos jardins.'),
+      farm('jubilife', 'farm', 'Grown on the village farm.', 'Cultivada na fazenda da vila.'),
+    ],
   },
   {
     id: 'aspear-berry',
     name: { en: 'Aspear Berry', pt: 'Berry Aspear' },
     sprite: 'aspear-berry',
-    farm: [farm('alabaster', 'whiteout-valley', 'Cold-climate berry trees.', 'Árvores de berry no frio.')],
+    farm: [
+      farm('alabaster', 'whiteout-valley', 'Cold-climate berry trees.', 'Árvores de berry no frio.'),
+      farm('alabaster', 'bonechill-wastes', 'Berry trees on icy wastes.', 'Árvores de berry nos ermos.'),
+      farm('jubilife', 'farm', 'Grown on the village farm.', 'Cultivada na fazenda da vila.'),
+    ],
   },
   {
     id: 'leppa-berry',
     name: { en: 'Leppa Berry', pt: 'Berry Leppa' },
     sprite: 'leppa-berry',
-    farm: [farm('obsidian', 'floaro-gardens', 'Berry trees.', 'Árvores de berry.')],
+    farm: [
+      farm('obsidian', 'floaro-gardens', 'Berry trees.', 'Árvores de berry.'),
+      farm('obsidian', 'horseshoe-plains', 'Berry trees on the plains.', 'Árvores de berry nas planícies.'),
+      farm('jubilife', 'farm', 'Grown on the village farm.', 'Cultivada na fazenda da vila.'),
+    ],
   },
   {
     id: 'hopo-berry',
@@ -346,6 +467,8 @@ export const LA_MATERIALS: LaMaterial[] = [
     sprite: 'hopo-berry',
     farm: [
       farm('obsidian', 'horseshoe-plains', 'Hisui berry trees.', 'Árvores de berry de Hisui.'),
+      farm('obsidian', 'floaro-gardens', 'Hisui berry trees in the gardens.', 'Árvores de berry nos jardins.'),
+      farm('crimson', 'golden-lowlands', 'Hisui berry trees in the lowlands.', 'Árvores de berry nas terras baixas.'),
       farm('jubilife', 'farm', 'Village farm.', 'Fazenda da vila.'),
     ],
   },
@@ -353,34 +476,62 @@ export const LA_MATERIALS: LaMaterial[] = [
     id: 'razz-berry',
     name: { en: 'Razz Berry', pt: 'Berry Razz' },
     sprite: 'razz-berry',
-    farm: [farm('obsidian', 'nature-pantry', 'Berry trees.', 'Árvores de berry.')],
+    farm: [
+      farm('obsidian', 'nature-pantry', 'Berry trees.', 'Árvores de berry.'),
+      farm('obsidian', 'horseshoe-plains', 'Berry trees on the plains.', 'Árvores de berry nas planícies.'),
+      farm('jubilife', 'farm', 'Grown on the village farm.', 'Cultivada na fazenda da vila.'),
+    ],
   },
   {
     id: 'stardust',
     name: { en: 'Stardust', pt: 'Poeira Estelar' },
     sprite: 'stardust',
     farm: [
-      farm('obsidian', 'ramanas-island', 'Sparkling ground sparkles.', 'Brilhos no chão.'),
-      farm('coronet', 'celestica-ruins', 'Ruins sparkles.', 'Brilhos nas ruínas.'),
+      farm('obsidian', 'ramanas-island', 'Sparkles / rare ore drops.', 'Brilhos / drops raros de minério.'),
+      farm('obsidian', 'oreburrow-tunnel', 'Rare drop from ore deposits.', 'Drop raro de depósitos de minério.'),
+      farm('crimson', 'bolderoll-slope', 'Rare drop from ore deposits.', 'Drop raro de depósitos de minério.'),
+      farm('cobalt', 'veilstone-cape', 'Rare drop from ore deposits.', 'Drop raro de depósitos de minério.'),
+      farm('coronet', 'celestica-ruins', 'Ruins sparkles and ore.', 'Brilhos e minério nas ruínas.'),
+      farm('coronet', 'ancient-quarry', 'Rare drop from ore deposits.', 'Drop raro de depósitos de minério.'),
+      farm('alabaster', 'bonechill-wastes', 'Rare drop from ore deposits.', 'Drop raro de depósitos de minério.'),
+      farm('jubilife', 'craftworks', 'Sold at the Craftworks.', 'Vendido na Oficina.'),
     ],
   },
   {
     id: 'red-shard',
     name: { en: 'Red Shard', pt: 'Caco Vermelho' },
     sprite: 'red-shard',
-    farm: [farm('cobalt', 'firespit-island', 'Mining / space-time distortions.', 'Mineração / distorções.')],
+    farm: [
+      farm('cobalt', 'firespit-island', 'Mining / space-time distortions.', 'Mineração / distorções.'),
+      farm('obsidian', 'oreburrow-tunnel', 'Rare ore / distortion loot.', 'Minério raro / loot de distorção.'),
+      farm('crimson', 'bolderoll-slope', 'Rare ore / distortion loot.', 'Minério raro / loot de distorção.'),
+      farm('coronet', 'ancient-quarry', 'Rare ore / distortion loot.', 'Minério raro / loot de distorção.'),
+      farm('alabaster', 'bonechill-wastes', 'Rare ore / distortion loot.', 'Minério raro / loot de distorção.'),
+    ],
   },
   {
     id: 'blue-shard',
     name: { en: 'Blue Shard', pt: 'Caco Azul' },
     sprite: 'blue-shard',
-    farm: [farm('cobalt', 'tranquility-cove', 'Coastal mining sparkles.', 'Brilhos de mineração na costa.')],
+    farm: [
+      farm('cobalt', 'tranquility-cove', 'Coastal mining sparkles.', 'Brilhos de mineração na costa.'),
+      farm('cobalt', 'veilstone-cape', 'Ore / distortion loot.', 'Minério / loot de distorção.'),
+      farm('obsidian', 'lake-verity', 'Sparkles near the lake.', 'Brilhos perto do lago.'),
+      farm('coronet', 'fabled-spring', 'Sparkles near the spring.', 'Brilhos perto da fonte.'),
+      farm('alabaster', 'lake-acuity', 'Sparkles near Lake Acuity.', 'Brilhos perto do Lago Acuity.'),
+    ],
   },
   {
     id: 'green-shard',
     name: { en: 'Green Shard', pt: 'Caco Verde' },
     sprite: 'green-shard',
-    farm: [farm('obsidian', 'the-heartwood', 'Forest mining sparkles.', 'Brilhos de mineração na floresta.')],
+    farm: [
+      farm('obsidian', 'the-heartwood', 'Forest mining sparkles.', 'Brilhos de mineração na floresta.'),
+      farm('obsidian', 'moss-rock', 'Sparkles near Moss Rock.', 'Brilhos perto da Pedra Musgosa.'),
+      farm('crimson', 'gapejaw-bog', 'Sparkles in the bog.', 'Brilhos no brejo.'),
+      farm('coronet', 'wayward-wood', 'Forest sparkles.', 'Brilhos na floresta.'),
+      farm('alabaster', 'hearts-crag', 'Sparkles on the crag.', 'Brilhos no penhasco.'),
+    ],
   },
 ]
 
@@ -1165,6 +1316,68 @@ export const LA_CRAFT_CATEGORY_KEYS: Record<
 
 export function laMaterialById(id: string) {
   return LA_MATERIALS.find((m) => m.id === id)
+}
+
+export function laMaterialGroup(id: string): LaMaterialGroup {
+  if (
+    id === 'tumblestone' ||
+    id === 'black-tumblestone' ||
+    id === 'sky-tumblestone' ||
+    id === 'iron-chunk' ||
+    id === 'stardust' ||
+    id.endsWith('-shard')
+  ) {
+    return 'ore'
+  }
+  if (id.endsWith('-berry')) return 'berry'
+  if (
+    id === 'hearty-grains' ||
+    id === 'plump-beans' ||
+    id === 'crunchy-salt' ||
+    id === 'cake-lure-base' ||
+    id === 'dazzling-honey' ||
+    id === 'candy-truffle'
+  ) {
+    return 'food'
+  }
+  if (
+    id === 'apricorn' ||
+    id === 'spoiled-apricot' ||
+    id === 'wood' ||
+    id === 'ball-of-mud' ||
+    id === 'caster-fern' ||
+    id === 'sootfoot-root' ||
+    id === 'pop-pod' ||
+    id === 'medicinal-leek' ||
+    id === 'vivichoke' ||
+    id === 'bugwort' ||
+    id === 'pep-up-plant' ||
+    id === 'kings-leaf' ||
+    id === 'swordcap' ||
+    id === 'iron-barktongue' ||
+    id === 'direshroom' ||
+    id === 'doppel-bonnets' ||
+    id === 'springy-mushroom' ||
+    id === 'sand-radish'
+  ) {
+    return 'plant'
+  }
+  return 'misc'
+}
+
+export const LA_MATERIAL_GROUP_KEYS: Record<
+  LaMaterialGroup,
+  | 'laCraftsMatOre'
+  | 'laCraftsMatPlant'
+  | 'laCraftsMatBerry'
+  | 'laCraftsMatFood'
+  | 'laCraftsMatMisc'
+> = {
+  ore: 'laCraftsMatOre',
+  plant: 'laCraftsMatPlant',
+  berry: 'laCraftsMatBerry',
+  food: 'laCraftsMatFood',
+  misc: 'laCraftsMatMisc',
 }
 
 export function laCraftById(id: string) {

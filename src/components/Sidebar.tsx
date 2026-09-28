@@ -20,6 +20,7 @@ export type ToolId =
   | 'legendaries-lza'
   | 'donuts'
   | 'recipes'
+  | 'field-guide'
   | 'wisps'
   | 'unowns'
   | 'alphas'
@@ -257,66 +258,43 @@ export function Sidebar({
             </button>
             <button
               type="button"
-              className={activeTool === 'markets' ? 'is-active' : undefined}
-              onClick={() => onToolChange('markets')}
+              className={
+                activeTool === 'locations' ||
+                activeTool === 'markets' ||
+                activeTool === 'style'
+                  ? 'is-active'
+                  : undefined
+              }
+              onClick={() => onToolChange('locations')}
             >
-              {t(locale, 'toolMarkets')}
+              {t(locale, 'toolLocations')}
             </button>
             <button
               type="button"
-              className={activeTool === 'style' ? 'is-active' : undefined}
-              onClick={() => onToolChange('style')}
-            >
-              {t(locale, 'toolStyle')}
-            </button>
-            <button
-              type="button"
-              className={activeTool === 'crafts' ? 'is-active' : undefined}
+              className={
+                activeTool === 'crafts' || activeTool === 'recipes'
+                  ? 'is-active'
+                  : undefined
+              }
               onClick={() => onToolChange('crafts')}
             >
               {t(locale, 'toolCrafts')}
             </button>
             <button
               type="button"
-              className={activeTool === 'recipes' ? 'is-active' : undefined}
-              onClick={() => onToolChange('recipes')}
+              className={
+                activeTool === 'field-guide' ||
+                activeTool === 'wisps' ||
+                activeTool === 'unowns' ||
+                activeTool === 'alphas' ||
+                activeTool === 'outbreaks' ||
+                activeTool === 'camps'
+                  ? 'is-active'
+                  : undefined
+              }
+              onClick={() => onToolChange('field-guide')}
             >
-              {t(locale, 'toolRecipes')}
-            </button>
-            <button
-              type="button"
-              className={activeTool === 'wisps' ? 'is-active' : undefined}
-              onClick={() => onToolChange('wisps')}
-            >
-              {t(locale, 'toolWisps')}
-            </button>
-            <button
-              type="button"
-              className={activeTool === 'unowns' ? 'is-active' : undefined}
-              onClick={() => onToolChange('unowns')}
-            >
-              {t(locale, 'toolUnowns')}
-            </button>
-            <button
-              type="button"
-              className={activeTool === 'alphas' ? 'is-active' : undefined}
-              onClick={() => onToolChange('alphas')}
-            >
-              {t(locale, 'toolAlphas')}
-            </button>
-            <button
-              type="button"
-              className={activeTool === 'outbreaks' ? 'is-active' : undefined}
-              onClick={() => onToolChange('outbreaks')}
-            >
-              {t(locale, 'toolOutbreaks')}
-            </button>
-            <button
-              type="button"
-              className={activeTool === 'camps' ? 'is-active' : undefined}
-              onClick={() => onToolChange('camps')}
-            >
-              {t(locale, 'toolCamps')}
+              {t(locale, 'toolFieldGuide')}
             </button>
             <button
               type="button"

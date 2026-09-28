@@ -94,7 +94,7 @@ export const LZA_LEGENDARIES: LzaLegendary[] = [
       pt: 'Capturável no Nv. 84 após a fase Completa. L entrega o Cubo Zygarde para trocar formas.',
     },
     level: 84,
-    encounterImageSrc: '/lza-encounters/zygarde.png?v=1',
+    encounterImageSrc: '/lza-encounters/zygarde.png?v=2',
   },
   {
     id: 'diancie',
@@ -162,7 +162,7 @@ export const LZA_LEGENDARIES: LzaLegendary[] = [
     },
     tips: { en: 'Lv. 80. Watch floor lava patterns.', pt: 'Nv. 80. Cuidado com padrões de lava no chão.' },
     level: 80,
-    encounterImageSrc: '/lza-encounters/heatran.png?v=1',
+    encounterImageSrc: '/lza-encounters/heatran.png?v=2',
   },
   {
     id: 'darkrai',
@@ -207,7 +207,7 @@ export const LZA_LEGENDARIES: LzaLegendary[] = [
     },
     tips: { en: 'Lv. 80.', pt: 'Nv. 80.' },
     level: 80,
-    encounterImageSrc: '/lza-encounters/groudon.png?v=1',
+    encounterImageSrc: '/lza-encounters/groudon.png?v=2',
   },
   {
     id: 'kyogre',
@@ -228,7 +228,7 @@ export const LZA_LEGENDARIES: LzaLegendary[] = [
     },
     tips: { en: 'Lv. 80.', pt: 'Nv. 80.' },
     level: 80,
-    encounterImageSrc: '/lza-encounters/kyogre.png?v=1',
+    encounterImageSrc: '/lza-encounters/kyogre.png?v=2',
   },
   {
     id: 'rayquaza',
@@ -329,7 +329,7 @@ export const LZA_LEGENDARIES: LzaLegendary[] = [
     },
     tips: { en: 'Lv. 80.', pt: 'Nv. 80.' },
     level: 80,
-    encounterImageSrc: '/lza-encounters/hoopa.png?v=1',
+    encounterImageSrc: '/lza-encounters/hoopa.png?v=2',
   },
   {
     id: 'volcanion',
@@ -351,7 +351,7 @@ export const LZA_LEGENDARIES: LzaLegendary[] = [
     },
     tips: { en: 'Lv. 80. Fire/Water — prepare accordingly.', pt: 'Nv. 80. Fogo/Água — prepare-se.' },
     level: 80,
-    encounterImageSrc: '/lza-encounters/volcanion.png?v=1',
+    encounterImageSrc: '/lza-encounters/volcanion.png?v=2',
   },
   {
     id: 'genesect',
@@ -420,7 +420,7 @@ export const LZA_LEGENDARIES: LzaLegendary[] = [
       pt: 'Nv. 85. Cuidado com padrões de Electroweb / Plasma Fists.',
     },
     level: 85,
-    encounterImageSrc: '/lza-encounters/zeraora.png?v=1',
+    encounterImageSrc: '/lza-encounters/zeraora.png?v=2',
   },
   {
     id: 'latias',
@@ -444,7 +444,7 @@ export const LZA_LEGENDARIES: LzaLegendary[] = [
       pt: 'Aparece por volta do Nv. 60. Continue os scans até Latias surgir numa Zona Desconhecida.',
     },
     level: 60,
-    encounterImageSrc: '/lza-encounters/latias.png?v=2',
+    encounterImageSrc: '/lza-encounters/latias.png?v=3',
   },
   {
     id: 'latios',
@@ -492,7 +492,7 @@ export const LZA_LEGENDARIES: LzaLegendary[] = [
       pt: 'Aparece por volta do Nv. 60. Uma das Espadas da Justiça via Special Scans.',
     },
     level: 60,
-    encounterImageSrc: '/lza-encounters/cobalion.png?v=2',
+    encounterImageSrc: '/lza-encounters/cobalion.png?v=3',
   },
   {
     id: 'terrakion',
@@ -516,7 +516,7 @@ export const LZA_LEGENDARIES: LzaLegendary[] = [
       pt: 'Aparece por volta do Nv. 60. Uma das Espadas da Justiça via Special Scans.',
     },
     level: 60,
-    encounterImageSrc: '/lza-encounters/terrakion.png?v=2',
+    encounterImageSrc: '/lza-encounters/terrakion.png?v=3',
   },
   {
     id: 'virizion',
@@ -564,7 +564,7 @@ export const LZA_LEGENDARIES: LzaLegendary[] = [
       pt: 'Aparece por volta do Nv. 60. Alvo mítico do Special Scan — sem forma shiny.',
     },
     level: 60,
-    encounterImageSrc: '/lza-encounters/keldeo.jpg?v=2',
+    encounterImageSrc: '/lza-encounters/keldeo.png?v=3',
   },
   {
     id: 'meloetta',

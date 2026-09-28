@@ -312,13 +312,9 @@ function PokemonDetailCard({
 
       <div className="poke-detail__hero">
         <img
-          src={
-            shiny
-              ? spriteUrl(selected.dex, true)
-              : details?.artworkUrl || spriteUrl(selected.dex, false)
-          }
+          src={spriteUrl(selected.dex, shiny)}
           alt={details?.name ?? selected.name}
-          className={shiny ? 'is-pixel' : undefined}
+          className="is-pixel"
         />
         <div className="poke-detail__hero-meta">
           {details && (

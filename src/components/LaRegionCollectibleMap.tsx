@@ -1,4 +1,4 @@
-import { useMemo, useRef } from 'react'
+import { useMemo, useRef, type ReactNode } from 'react'
 import {
   getHisuiRegion,
   HISUI_REGIONS,
@@ -44,6 +44,7 @@ type Props = {
   onCloseDetail: () => void
   onSelectSubregion: (id: string) => void
   onSelectPin: (id: string) => void
+  toolbarExtra?: ReactNode
 }
 
 export function LaRegionCollectibleMap({
@@ -68,6 +69,7 @@ export function LaRegionCollectibleMap({
   onCloseDetail,
   onSelectSubregion,
   onSelectPin,
+  toolbarExtra,
 }: Props) {
   const viewportRef = useRef<HTMLDivElement>(null)
   const zoomApi = useMapZoom(viewportRef)
@@ -110,11 +112,14 @@ export function LaRegionCollectibleMap({
           <h2>{showingDetail ? detailRegion!.name[locale] : title}</h2>
           <p>{showingDetail ? detailHint : expanded ? expandedHint : hint}</p>
         </div>
-        {(expanded || showingDetail) && (
+        {(toolbarExtra || expanded || showingDetail) && (
           <div className="map-toolbar__actions">
-            <button type="button" onClick={showingDetail ? onCloseDetail : onClearRegion}>
-              {t(locale, 'hisuiBackOverview')}
-            </button>
+            {toolbarExtra}
+            {(expanded || showingDetail) && (
+              <button type="button" onClick={showingDetail ? onCloseDetail : onClearRegion}>
+                {t(locale, 'hisuiBackOverview')}
+              </button>
+            )}
           </div>
         )}
       </div>

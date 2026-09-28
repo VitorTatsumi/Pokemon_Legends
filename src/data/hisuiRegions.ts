@@ -32,6 +32,8 @@ export type HisuiRegion = {
   detailMapSrc?: string
   /** Width / height of the detail map image. */
   detailMapAspect?: number
+  /** In-game landscape shot shown in the region detail panel. */
+  locationImageSrc?: string
 }
 
 function sub(
@@ -60,6 +62,7 @@ export const HISUI_REGIONS: HisuiRegion[] = [
     accent: '#d4a06a',
     detailMapSrc: '/jubilife-village-map.png',
     detailMapAspect: 1,
+    locationImageSrc: '/la-regions/jubilife.png?v=1',
     subregions: [
       sub('galaxy-hall', 'Galaxy Hall', 'Salão Galáctico', { x: 50.0, y: 11.0 }),
       sub('training-grounds', 'Training Grounds', 'Campo de Treino', { x: 31.0, y: 13.0 }),
@@ -90,6 +93,7 @@ export const HISUI_REGIONS: HisuiRegion[] = [
     accent: '#5cad6e',
     detailMapSrc: '/obsidian-fieldlands-map.png',
     detailMapAspect: 1,
+    locationImageSrc: '/la-regions/obsidian.png?v=1',
     subregions: [
       sub('fieldlands-camp', 'Fieldlands Camp', 'Acampamento da Planície', { x: 32.0, y: 12.0 }),
       sub('heights-camp', 'Heights Camp', 'Acampamento das Alturas', { x: 58.0, y: 50.0 }),
@@ -126,6 +130,7 @@ export const HISUI_REGIONS: HisuiRegion[] = [
     accent: '#c4a04a',
     detailMapSrc: '/crimson-mirelands-map.png',
     detailMapAspect: 1,
+    locationImageSrc: '/la-regions/crimson.png?v=1',
     subregions: [
       sub('mirelands-camp', 'Mirelands Camp', 'Acampamento do Pântano', { x: 21.0, y: 42.0 }),
       sub('bogbound-camp', 'Bogbound Camp', 'Acampamento do Brejo', { x: 63.0, y: 73.0 }),
@@ -160,6 +165,7 @@ export const HISUI_REGIONS: HisuiRegion[] = [
     accent: '#4a9bb8',
     detailMapSrc: '/cobalt-coastlands-map.png',
     detailMapAspect: 1,
+    locationImageSrc: '/la-regions/cobalt.png?v=1',
     subregions: [
       sub('coastlands-camp', 'Coastlands Camp', 'Acampamento da Costa', { x: 83.0, y: 65.0 }),
       sub('beachside-camp', 'Beachside Camp', 'Acampamento da Praia', { x: 12.0, y: 78.0 }),
@@ -199,6 +205,7 @@ export const HISUI_REGIONS: HisuiRegion[] = [
     accent: '#8fa878',
     detailMapSrc: '/coronet-highlands-map.png',
     detailMapAspect: 1,
+    locationImageSrc: '/la-regions/coronet.png?v=1',
     subregions: [
       sub('highlands-camp', 'Highlands Camp', 'Acampamento das Terras Altas', { x: 90.0, y: 92.0 }),
       sub('mountain-camp', 'Mountain Camp', 'Acampamento da Montanha', { x: 82.0, y: 67.0 }),
@@ -236,6 +243,7 @@ export const HISUI_REGIONS: HisuiRegion[] = [
     accent: '#c8d8e8',
     detailMapSrc: '/alabaster-icelands-map.png',
     detailMapAspect: 1,
+    locationImageSrc: '/la-regions/alabaster.png?v=1',
     subregions: [
       sub('snowfields-camp', 'Snowfields Camp', 'Acampamento das Neves', { x: 42.0, y: 35.0 }),
       sub('icepeak-camp', 'Icepeak Camp', 'Acampamento do Pico Gelado', { x: 48.0, y: 24.0 }),

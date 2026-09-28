@@ -5,15 +5,15 @@ import { LanguageGate } from './components/LanguageGate'
 import { LumioseMap } from './components/LumioseMap'
 import { LaMissionMap } from './components/LaMissionMap'
 import { LaMissionPanel } from './components/LaMissionPanel'
-import { LaMarketMap } from './components/LaMarketMap'
-import { LaMarketPanel } from './components/LaMarketPanel'
 import { LaExtraTools } from './components/LaExtraTools'
-import { LaStyleMap } from './components/LaStyleMap'
-import { LaStylePanel } from './components/LaStylePanel'
+import {
+  LaLocationsView,
+  type LaLocationCategory,
+} from './components/LaLocationsView'
+import type { LaFieldGuideCategory } from './components/LaFieldGuideTabs'
 import { MissionMap } from './components/MissionMap'
 import { MissionPanel } from './components/MissionPanel'
-import { ScrewMap } from './components/ScrewMap'
-import { ScrewPanel } from './components/ScrewPanel'
+import { ScrewsView, type ScrewsTab } from './components/ScrewsView'
 import { PokedexPanel } from './components/PokedexPanel'
 import { Sidebar, type ToolId } from './components/Sidebar'
 import { ZonePanel } from './components/ZonePanel'
@@ -39,6 +39,8 @@ import { POKEMON_CENTERS } from './data/pokemonCenters'
 import type { StyleKind } from './data/styleSpots'
 import { STYLE_SPOTS } from './data/styleSpots'
 import { LA_STYLE_SPOTS } from './data/laStyleSpots'
+import type { LaMarketKind } from './data/laMarkets'
+import { LA_MARKETS } from './data/laMarkets'
 import { WILD_ZONES } from './data/wildZones'
 import {
   catchKey,
@@ -134,10 +136,13 @@ function App() {
   const [selectedScrewId, setSelectedScrewId] = useState<number | null>(1)
   const [screwDistrict, setScrewDistrict] = useState<ScrewDistrict | 'all'>('all')
   const [hideCollectedScrews, setHideCollectedScrews] = useState(false)
+  const [screwsTab, setScrewsTab] = useState<ScrewsTab>('screws')
+  const [selectedCanariId, setSelectedCanariId] = useState<string | null>(null)
   const [selectedCenterId, setSelectedCenterId] = useState<number | null>(1)
   const [centerDistrict, setCenterDistrict] = useState<CenterDistrict | 'all'>('all')
   const [selectedMarketId, setSelectedMarketId] = useState<number | null>(1)
   const [selectedLaMarketId, setSelectedLaMarketId] = useState<number | null>(1)
+  const [laMarketKind, setLaMarketKind] = useState<LaMarketKind | 'all'>('all')
   const [selectedCafeId, setSelectedCafeId] = useState<number | null>(1)
   const [selectedStyleId, setSelectedStyleId] = useState<number | null>(1)
   const [styleKind, setStyleKind] = useState<StyleKind | 'all'>('all')
@@ -145,6 +150,10 @@ function App() {
   const [laStyleKind, setLaStyleKind] = useState<StyleKind | 'all'>('all')
   const [selectedRestaurantId, setSelectedRestaurantId] = useState<number | null>(1)
   const [locationCategory, setLocationCategory] = useState<LocationCategory>('centers')
+  const [laLocationCategory, setLaLocationCategory] =
+    useState<LaLocationCategory>('markets')
+  const [laFieldGuideCategory, setLaFieldGuideCategory] =
+    useState<LaFieldGuideCategory>('wisps')
   const [pickingLang, setPickingLang] = useState(false)
   const [hisuiRegionId, setHisuiRegionId] = useState<HisuiRegionId | null>(null)
   const [hisuiSubregionId, setHisuiSubregionId] = useState<string | null>(null)
@@ -192,20 +201,48 @@ function App() {
         setHisuiSubnavOpen(false)
         return
       }
+      if (game === 'la' && (next === 'markets' || next === 'style')) {
+        setLaLocationCategory(next)
+        setTool('locations')
+        setRegionGuideFocusId(null)
+        setHisuiSubnavOpen(false)
+        return
+      }
+    }
+    if (game === 'la' && next === 'recipes') {
+      setTool('recipes')
+      setRegionGuideFocusId(null)
+      setHisuiSubnavOpen(false)
+      return
+    }
+    if (
+      game === 'la' &&
+      (next === 'wisps' ||
+        next === 'unowns' ||
+        next === 'alphas' ||
+        next === 'outbreaks' ||
+        next === 'camps')
+    ) {
+      setLaFieldGuideCategory(next)
+      setTool('field-guide')
+      setRegionGuideFocusId(null)
+      setHisuiSubnavOpen(false)
+      setRegionGuideEpoch((n) => n + 1)
+      return
     }
     setTool(next)
     setRegionGuideFocusId(null)
     if (next !== 'map') setHisuiSubnavOpen(false)
-    if (
-      next === 'wisps' ||
-      next === 'unowns' ||
-      next === 'alphas' ||
-      next === 'outbreaks' ||
-      next === 'camps' ||
-      next === 'legendaries'
-    ) {
+    if (next === 'legendaries' || next === 'field-guide') {
       setRegionGuideEpoch((n) => n + 1)
     }
+  }
+
+  function handleLaFieldGuideCategoryChange(next: LaFieldGuideCategory) {
+    setLaFieldGuideCategory(next)
+    setTool('field-guide')
+    setRegionGuideFocusId(null)
+    setRegionGuideEpoch((n) => n + 1)
   }
 
   function handleHisuiRegionSelect(id: HisuiRegionId) {
@@ -375,7 +412,8 @@ function App() {
   function handleOpenOutbreak(outbreakId: string) {
     setRegionGuideFocusId(outbreakId)
     setRegionGuideEpoch((n) => n + 1)
-    setTool('outbreaks')
+    setLaFieldGuideCategory('outbreaks')
+    setTool('field-guide')
   }
 
   function handleScrewDistrictChange(district: ScrewDistrict | 'all') {
@@ -416,6 +454,15 @@ function App() {
     const current = STYLE_SPOTS.find((s) => s.id === selectedStyleId)
     if (!current || current.kind !== next) {
       setSelectedStyleId(STYLE_SPOTS.find((s) => s.kind === next)?.id ?? null)
+    }
+  }
+
+  function handleLaMarketKindChange(next: LaMarketKind | 'all') {
+    setLaMarketKind(next)
+    if (next === 'all') return
+    const current = LA_MARKETS.find((m) => m.id === selectedLaMarketId)
+    if (!current || current.kind !== next) {
+      setSelectedLaMarketId(LA_MARKETS.find((m) => m.kind === next)?.id ?? null)
     }
   }
 
@@ -530,38 +577,22 @@ function App() {
                 />
               </div>
             )}
-            {tool === 'markets' && (
-              <div className="map-layout">
-                <LaMarketMap
-                  locale={locale}
-                  selectedId={selectedLaMarketId}
-                  onSelect={setSelectedLaMarketId}
-                />
-                <LaMarketPanel
-                  locale={locale}
-                  selectedId={selectedLaMarketId}
-                  onSelect={setSelectedLaMarketId}
-                  onClose={() => setSelectedLaMarketId(null)}
-                />
-              </div>
-            )}
-            {tool === 'style' && (
-              <div className="map-layout">
-                <LaStyleMap
-                  locale={locale}
-                  selectedId={selectedLaStyleId}
-                  kind={laStyleKind}
-                  onSelect={setSelectedLaStyleId}
-                />
-                <LaStylePanel
-                  locale={locale}
-                  selectedId={selectedLaStyleId}
-                  kind={laStyleKind}
-                  onSelect={setSelectedLaStyleId}
-                  onKindChange={handleLaStyleKindChange}
-                  onClose={() => setSelectedLaStyleId(null)}
-                />
-              </div>
+            {tool === 'locations' && (
+              <LaLocationsView
+                locale={locale}
+                category={laLocationCategory}
+                onCategoryChange={setLaLocationCategory}
+                selectedMarketId={selectedLaMarketId}
+                marketKind={laMarketKind}
+                onSelectMarket={setSelectedLaMarketId}
+                onCloseMarket={() => setSelectedLaMarketId(null)}
+                onMarketKindChange={handleLaMarketKindChange}
+                selectedStyleId={selectedLaStyleId}
+                styleKind={laStyleKind}
+                onSelectStyle={setSelectedLaStyleId}
+                onCloseStyle={() => setSelectedLaStyleId(null)}
+                onStyleKindChange={handleLaStyleKindChange}
+              />
             )}
             <LaExtraTools
               locale={locale}
@@ -569,6 +600,8 @@ function App() {
               regionGuideEpoch={regionGuideEpoch}
               regionGuideFocusId={regionGuideFocusId}
               onOpenHisuiLocation={handleOpenHisuiLocation}
+              fieldGuideCategory={laFieldGuideCategory}
+              onFieldGuideCategoryChange={handleLaFieldGuideCategoryChange}
               wispDone={wispDone}
               onToggleWisp={toggleWisp}
               unownDone={unownDone}
@@ -653,29 +686,24 @@ function App() {
           />
         )}
         {tool === 'screws' && (
-          <div className="map-layout">
-            <ScrewMap
-              locale={locale}
-              selectedId={selectedScrewId}
-              district={screwDistrict}
-              hideCollected={hideCollectedScrews}
-              collected={screwsCollected}
-              onSelect={setSelectedScrewId}
-            />
-            <ScrewPanel
-              locale={locale}
-              selectedId={selectedScrewId}
-              district={screwDistrict}
-              hideCollected={hideCollectedScrews}
-              collected={screwsCollected}
-              onSelect={setSelectedScrewId}
-              onDistrictChange={handleScrewDistrictChange}
-              onHideCollectedChange={handleHideCollectedScrewsChange}
-              onToggle={handleToggleScrew}
-              onReset={resetScrews}
-              onClose={() => setSelectedScrewId(null)}
-            />
-          </div>
+          <ScrewsView
+            locale={locale}
+            tab={screwsTab}
+            onTabChange={setScrewsTab}
+            selectedScrewId={selectedScrewId}
+            screwDistrict={screwDistrict}
+            hideCollectedScrews={hideCollectedScrews}
+            screwsCollected={screwsCollected}
+            onSelectScrew={setSelectedScrewId}
+            onCloseScrew={() => setSelectedScrewId(null)}
+            onScrewDistrictChange={handleScrewDistrictChange}
+            onHideCollectedScrewsChange={handleHideCollectedScrewsChange}
+            onToggleScrew={handleToggleScrew}
+            onResetScrews={resetScrews}
+            selectedCanariId={selectedCanariId}
+            onSelectCanari={setSelectedCanariId}
+            onCloseCanari={() => setSelectedCanariId(null)}
+          />
         )}
         {tool === 'locations' && (
           <LocationsView

@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useMemo } from 'react'
 import type { LaMarket, LaMarketKind } from '../data/laMarkets'
 import { LA_MARKETS, laMarketItemSpriteUrl } from '../data/laMarkets'
 import type { Locale } from '../i18n'
@@ -8,7 +8,9 @@ import './MarketPanel.css'
 type Props = {
   locale: Locale
   selectedId: number | null
+  kind: LaMarketKind | 'all'
   onSelect: (id: number) => void
+  onKindChange: (kind: LaMarketKind | 'all') => void
   onClose: () => void
 }
 
@@ -22,6 +24,15 @@ const KIND_KEY: Record<LaMarketKind, string> = {
   trading: 'laMarketsKindTrading',
 }
 
+const FILTER_KINDS: LaMarketKind[] = [
+  'general',
+  'berries',
+  'craft',
+  'clothing',
+  'special',
+  'trading',
+]
+
 function formatPrice(price: number, locale: Locale, currency?: 'pokedollars' | 'merit') {
   if (price <= 0) return t(locale, 'laMarketsPriceVaries')
   if (currency === 'merit') {
@@ -30,14 +41,26 @@ function formatPrice(price: number, locale: Locale, currency?: 'pokedollars' | '
   return `₽${price.toLocaleString('en-US')}`
 }
 
-export function LaMarketPanel({ locale, selectedId, onSelect, onClose }: Props) {
+export function LaMarketPanel({
+  locale,
+  selectedId,
+  kind,
+  onSelect,
+  onKindChange,
+  onClose,
+}: Props) {
   const selected = LA_MARKETS.find((m) => m.id === selectedId) ?? null
 
-  useEffect(() => {
-    if (selectedId == null) return
-    const el = document.querySelector(`[data-la-market-id="${selectedId}"]`)
-    el?.scrollIntoView({ block: 'nearest', behavior: 'smooth' })
-  }, [selectedId])
+  const list = useMemo(() => {
+    if (kind === 'all') return LA_MARKETS
+    return LA_MARKETS.filter((m) => m.kind === kind)
+  }, [kind])
+
+  const switcherList = useMemo(() => {
+    if (!selected) return list
+    if (kind === 'all' || selected.kind === kind) return list
+    return LA_MARKETS
+  }, [kind, list, selected])
 
   return (
     <aside className={`market-panel${selected ? '' : ' market-panel--list-only'}`}>
@@ -54,37 +77,76 @@ export function LaMarketPanel({ locale, selectedId, onSelect, onClose }: Props) 
       </header>
 
       {selected ? (
-        <LaMarketDetails locale={locale} market={selected} />
+        <>
+          <label className="market-panel__switcher">
+            <span className="market-panel__switcher-label">{t(locale, 'marketsList')}</span>
+            <select
+              className="market-panel__switcher-select"
+              value={selected.id}
+              onChange={(e) => onSelect(Number(e.target.value))}
+            >
+              {switcherList.map((market) => (
+                <option key={market.id} value={market.id}>
+                  {market.name[locale]} — {t(locale, KIND_KEY[market.kind])}
+                </option>
+              ))}
+            </select>
+          </label>
+          <LaMarketDetails locale={locale} market={selected} />
+        </>
       ) : (
-        <p className="market-panel__hint">{t(locale, 'marketsSelectHint')}</p>
-      )}
+        <>
+          <p className="market-panel__hint">{t(locale, 'marketsSelectHint')}</p>
+          <section className="market-panel__list-section">
+            <div className="market-panel__section-head">
+              <h3>{t(locale, 'marketsList')}</h3>
+            </div>
 
-      <section className="market-panel__list-section">
-        <div className="market-panel__section-head">
-          <h3>{t(locale, 'marketsList')}</h3>
-        </div>
-
-        <ul className="market-list">
-          {LA_MARKETS.map((market) => (
-            <li key={market.id}>
+            <div
+              className="market-panel__filters"
+              role="group"
+              aria-label={t(locale, 'marketsType')}
+            >
               <button
                 type="button"
-                data-la-market-id={market.id}
-                className={selectedId === market.id ? 'is-active' : undefined}
-                onClick={() => onSelect(market.id)}
+                className={kind === 'all' ? 'is-active' : undefined}
+                onClick={() => onKindChange('all')}
               >
-                <span className="market-list__icon">
-                  <img src="/market.svg" alt="" draggable={false} />
-                </span>
-                <span className="market-list__body">
-                  <strong>{market.name[locale]}</strong>
-                  <span>{t(locale, KIND_KEY[market.kind])}</span>
-                </span>
+                {t(locale, 'marketsAll')}
               </button>
-            </li>
-          ))}
-        </ul>
-      </section>
+              {FILTER_KINDS.map((filterKind) => (
+                <button
+                  key={filterKind}
+                  type="button"
+                  className={kind === filterKind ? 'is-active' : undefined}
+                  onClick={() => onKindChange(filterKind)}
+                >
+                  {t(locale, KIND_KEY[filterKind])}
+                </button>
+              ))}
+            </div>
+
+            <ul className="market-list">
+              {list.map((market) => (
+                <li key={market.id}>
+                  <button type="button" onClick={() => onSelect(market.id)}>
+                    <span className="market-list__icon">
+                      <img src="/market.svg" alt="" draggable={false} />
+                    </span>
+                    <span className="market-list__body">
+                      <strong>{market.name[locale]}</strong>
+                      <span>
+                        {t(locale, KIND_KEY[market.kind])} · {market.items.length}{' '}
+                        {t(locale, 'styleOfferCount')}
+                      </span>
+                    </span>
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </section>
+        </>
+      )}
     </aside>
   )
 }
@@ -92,20 +154,13 @@ export function LaMarketPanel({ locale, selectedId, onSelect, onClose }: Props) 
 function LaMarketDetails({ locale, market }: { locale: Locale; market: LaMarket }) {
   return (
     <div className="market-details">
-      <dl className="market-details__facts">
-        <div>
-          <dt>{t(locale, 'marketsType')}</dt>
-          <dd>{t(locale, KIND_KEY[market.kind])}</dd>
-        </div>
-        <div>
-          <dt>{t(locale, 'missionLocation')}</dt>
-          <dd>{market.location[locale]}</dd>
-        </div>
-        <div>
-          <dt>{t(locale, 'laMarketsAbout')}</dt>
-          <dd>{market.description[locale]}</dd>
-        </div>
-      </dl>
+      <p className="market-details__meta">
+        <span>{t(locale, KIND_KEY[market.kind])}</span>
+        <span aria-hidden="true">·</span>
+        <span>{market.location[locale]}</span>
+        <span aria-hidden="true">·</span>
+        <span>{market.description[locale]}</span>
+      </p>
 
       <div className="market-details__items">
         <h3>{t(locale, 'marketsItems')}</h3>

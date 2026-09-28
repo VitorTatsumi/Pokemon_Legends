@@ -2,13 +2,40 @@ import type { StyleKind, StyleItem, StyleSpot } from './styleSpots'
 
 export type { StyleKind, StyleItem, StyleSpot }
 
+const ITEM =
+  'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items'
+const PKM =
+  'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon'
+
+const LA_STYLE_SPRITES: Record<string, string> = {
+  'Change outfit': `${ITEM}/silk-scarf.png`,
+  'Flat Cap': `${ITEM}/rocky-helmet.png`,
+  'Bowlet Hat': `${ITEM}/focus-band.png`,
+  'Brimmed Hat': `${ITEM}/choice-band.png`,
+  'Festival masks': `${PKM}/25.png`,
+  Eyewear: `${ITEM}/black-glasses.png`,
+  Tops: `${ITEM}/choice-scarf.png`,
+  Bottoms: `${ITEM}/soft-sand.png`,
+  Shoes: `${ITEM}/soft-sand.png`,
+  'Full outfits': `${ITEM}/assault-vest.png`,
+  'Contact color': `${ITEM}/wise-glasses.png`,
+  'Styling session': `${ITEM}/choice-scarf.png`,
+  'Base hairstyles': `${ITEM}/silk-scarf.png`,
+  'Extra hair colors': `${PKM}/549.png`,
+  'Misdreavus colors': `${PKM}/200.png`,
+  'Kirlia colors': `${PKM}/281.png`,
+  'Sinnoh Style': `${PKM}/493.png`,
+  'Change clothes': `${ITEM}/silk-scarf.png`,
+}
+
 function item(
   en: string,
   pt: string,
-  opts?: { price?: number; note?: { en: string; pt: string } },
+  opts?: { price?: number; note?: { en: string; pt: string }; sprite?: string },
 ): StyleItem {
   return {
     name: { en, pt },
+    sprite: opts?.sprite ?? LA_STYLE_SPRITES[en] ?? `${ITEM}/silk-scarf.png`,
     ...(opts?.price != null ? { price: opts.price } : {}),
     ...(opts?.note ? { note: opts.note } : {}),
   }

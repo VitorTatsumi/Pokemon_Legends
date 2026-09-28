@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState } from 'react'
+import { useMemo, useRef, useState, type ReactNode } from 'react'
 import type { StyleKind } from '../data/laStyleSpots'
 import { LA_STYLE_SPOTS } from '../data/laStyleSpots'
 import { useMapZoom } from '../hooks/useMapZoom'
@@ -21,9 +21,10 @@ type Props = {
   selectedId: number | null
   kind: StyleKind | 'all'
   onSelect: (id: number) => void
+  toolbarExtra?: ReactNode
 }
 
-export function LaStyleMap({ locale, selectedId, kind, onSelect }: Props) {
+export function LaStyleMap({ locale, selectedId, kind, onSelect, toolbarExtra }: Props) {
   const [imageOk, setImageOk] = useState(true)
   const viewportRef = useRef<HTMLDivElement>(null)
   const zoomApi = useMapZoom(viewportRef)
@@ -39,6 +40,7 @@ export function LaStyleMap({ locale, selectedId, kind, onSelect }: Props) {
           <h2>{t(locale, 'styleTitle')}</h2>
           <p>{t(locale, 'laStyleHint')}</p>
         </div>
+        {toolbarExtra}
       </div>
 
       <div

@@ -1,4 +1,5 @@
-import { useMemo, useRef, useState } from 'react'
+import { useMemo, useRef, useState, type ReactNode } from 'react'
+import type { LaMarketKind } from '../data/laMarkets'
 import { LA_MARKETS } from '../data/laMarkets'
 import { useMapZoom } from '../hooks/useMapZoom'
 import type { Locale } from '../i18n'
@@ -13,14 +14,19 @@ const MAP_SRC = '/jubilife-village-map.png'
 type Props = {
   locale: Locale
   selectedId: number | null
+  kind: LaMarketKind | 'all'
   onSelect: (id: number) => void
+  toolbarExtra?: ReactNode
 }
 
-export function LaMarketMap({ locale, selectedId, onSelect }: Props) {
+export function LaMarketMap({ locale, selectedId, kind, onSelect, toolbarExtra }: Props) {
   const [imageOk, setImageOk] = useState(true)
   const viewportRef = useRef<HTMLDivElement>(null)
   const zoomApi = useMapZoom(viewportRef)
-  const markers = useMemo(() => LA_MARKETS, [])
+  const markers = useMemo(
+    () => (kind === 'all' ? LA_MARKETS : LA_MARKETS.filter((m) => m.kind === kind)),
+    [kind],
+  )
 
   return (
     <div className="map-shell hisui-map">
@@ -29,6 +35,7 @@ export function LaMarketMap({ locale, selectedId, onSelect }: Props) {
           <h2>{t(locale, 'marketsTitle')}</h2>
           <p>{t(locale, 'laMarketsHint')}</p>
         </div>
+        {toolbarExtra}
       </div>
 
       <div

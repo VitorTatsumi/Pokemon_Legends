@@ -142,49 +142,37 @@ export function LaRegionCollectiblePanel({
       </header>
 
       {selectedPin ? (
-        <div className="mission-details">
-          {(selectedPin.spriteId != null || selectedPin.locationImageSrc) && (
-            <div className="la-pin-media">
-              {selectedPin.spriteId != null && (
-                <div className="la-pin-media__sprites">
+        <div className="mission-details mission-details--fill">
+          <div className="la-pin-detail-hero">
+            {(selectedPin.spriteId != null || selectedPin.spriteIdAlt != null) && (
+              <div className="la-pin-detail-hero__sprites">
+                {selectedPin.spriteId != null && (
                   <img
+                    className="la-pin-detail-hero__sprite"
                     src={spriteUrl(selectedPin.spriteId)}
                     alt=""
                     width={72}
                     height={72}
                     loading="lazy"
                   />
-                  {selectedPin.spriteIdAlt != null && (
-                    <img
-                      src={spriteUrl(selectedPin.spriteIdAlt)}
-                      alt=""
-                      width={72}
-                      height={72}
-                      loading="lazy"
-                    />
-                  )}
-                </div>
-              )}
-              {selectedPin.locationImageSrc && (
-                <figure className="la-pin-media__location la-pin-media__location--encounter">
+                )}
+                {selectedPin.spriteIdAlt != null && (
                   <img
-                    src={selectedPin.locationImageSrc}
+                    className="la-pin-detail-hero__sprite"
+                    src={spriteUrl(selectedPin.spriteIdAlt)}
                     alt=""
+                    width={72}
+                    height={72}
                     loading="lazy"
                   />
-                  <figcaption>
-                    {selectedPin.locationImageSrc.includes('/la-encounters/')
-                      ? t(locale, 'laPinEncounterShot')
-                      : t(locale, 'laPinLocationMap')}
-                  </figcaption>
-                </figure>
-              )}
-            </div>
-          )}
-          <p className="mission-details__desc">
-            {selectedPin.description?.[locale] ?? selectedPin.note?.[locale]}
-          </p>
-          <dl className="mission-details__facts">
+                )}
+              </div>
+            )}
+            <p className="mission-details__desc">
+              {selectedPin.description?.[locale] ?? selectedPin.note?.[locale]}
+            </p>
+          </div>
+          <dl className="mission-details__facts mission-details__facts--compact">
             <div>
               <dt>{t(locale, 'hisuiRegions')}</dt>
               <dd>
@@ -208,6 +196,16 @@ export function LaRegionCollectiblePanel({
               </div>
             ))}
           </dl>
+          {selectedPin.locationImageSrc && (
+            <figure className="la-pin-media__location la-pin-media__location--encounter">
+              <img src={selectedPin.locationImageSrc} alt="" loading="lazy" />
+              <figcaption>
+                {selectedPin.locationImageSrc.includes('/la-encounters/')
+                  ? t(locale, 'laPinEncounterShot')
+                  : t(locale, 'laPinLocationMap')}
+              </figcaption>
+            </figure>
+          )}
           {trackProgress && onToggle && (
             <button
               type="button"

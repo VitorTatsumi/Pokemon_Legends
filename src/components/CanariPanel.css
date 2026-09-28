@@ -1,0 +1,386 @@
+.canari-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.28rem;
+  flex: 1 1 auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-height: 0;
+  overscroll-behavior: contain;
+}
+
+.canari-list button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+  padding: 0.45rem 0.5rem;
+  border-radius: 0.35rem;
+  border: 1px solid transparent;
+  background: rgba(12, 22, 26, 0.55);
+  color: #d8e8e0;
+}
+
+.canari-list button:hover {
+  border-color: rgba(201, 160, 232, 0.28);
+  background: rgba(36, 28, 48, 0.75);
+}
+
+.canari-list__icon {
+  flex-shrink: 0;
+  width: 1.85rem;
+  height: 1.85rem;
+  border-radius: 0.35rem;
+  overflow: hidden;
+  background: rgba(8, 12, 16, 0.9);
+  display: grid;
+  place-items: center;
+}
+
+.canari-list__icon img,
+.canari-item-list__sprite {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  image-rendering: pixelated;
+}
+
+.canari-list__body {
+  min-width: 0;
+  display: grid;
+  gap: 0.1rem;
+}
+
+.canari-list__body strong {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.canari-list__body span {
+  font-size: 0.7rem;
+  color: #8aa399;
+}
+
+.canari-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1 1 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.canari-details__hero {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 0 0 auto;
+  padding: 0.55rem;
+  border-radius: 0.4rem;
+  border: 1px solid rgba(201, 160, 232, 0.18);
+  background: rgba(12, 22, 26, 0.55);
+}
+
+.canari-details__hero .canari-item-list__sprite {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 0.35rem;
+  padding: 0.2rem;
+}
+
+.canari-details__summary {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  color: #e6f0ea;
+}
+
+.canari-details__meta {
+  margin: 0;
+  flex: 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.45rem;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  color: #8aa399;
+}
+
+.canari-details__meta span:last-child {
+  min-width: 0;
+  flex: 1 1 12rem;
+  color: #e6f0ea;
+}
+
+.canari-details__items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1 1 0;
+  min-height: 0;
+  overflow: hidden;
+  background: linear-gradient(180deg, #162028 0%, #0e181c 100%);
+  border-top: 1px solid rgba(201, 160, 232, 0.14);
+  padding-top: 0.45rem;
+}
+
+.canari-details__items h3 {
+  margin: 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #c9a0e8;
+  font-weight: 600;
+  flex: 0 0 auto;
+}
+
+.canari-item-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 0.15rem 0 0;
+  display: block;
+  flex: 1 1 0;
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.canari-item-list li {
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr);
+  gap: 0.45rem;
+  align-items: center;
+  padding: 0.4rem 0.5rem;
+  margin-bottom: 0.28rem;
+  border-radius: 0.35rem;
+  border: 1px solid rgba(201, 160, 232, 0.12);
+  background: rgba(12, 22, 26, 0.55);
+}
+
+.canari-item-list li:last-child {
+  margin-bottom: 0;
+}
+
+.canari-item-list li .canari-item-list__sprite {
+  width: 32px;
+  height: 32px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 0.25rem;
+}
+
+.canari-item-list__text {
+  display: grid;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.canari-item-list__main {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.canari-item-list__main strong {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #e6f0ea;
+}
+
+.canari-item-list__price {
+  flex-shrink: 0;
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  color: #c9a0e8;
+}
+
+.canari-item-list__note {
+  font-size: 0.68rem;
+  color: #8aa399;
+}
+
+.canari-shop {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  height: 100%;
+  background: radial-gradient(circle at 30% 20%, #1a2830 0%, #0c1418 55%);
+  border-right: 1px solid rgba(140, 190, 170, 0.12);
+}
+
+.canari-shop__toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid rgba(140, 190, 170, 0.12);
+  flex-shrink: 0;
+}
+
+.canari-shop__toolbar h2 {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(0.95rem, 2vw, 1.15rem);
+}
+
+.canari-shop__toolbar p {
+  margin: 0.25rem 0 0;
+  color: #8aa399;
+  font-size: 0.82rem;
+}
+
+.canari-shop__grid {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16.5rem, 1fr));
+  gap: 0.85rem;
+  align-content: start;
+}
+
+.canari-card {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr);
+  gap: 0.75rem;
+  align-items: start;
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+  padding: 0.85rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(201, 160, 232, 0.18);
+  background: rgba(12, 22, 26, 0.55);
+  color: #d8e8e0;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.canari-card:hover {
+  border-color: rgba(201, 160, 232, 0.38);
+  background: rgba(28, 22, 40, 0.72);
+}
+
+.canari-card.is-selected {
+  border-color: rgba(201, 160, 232, 0.65);
+  background: rgba(40, 28, 56, 0.82);
+  box-shadow: inset 0 0 0 1px rgba(201, 160, 232, 0.2);
+}
+
+.canari-card__sprite {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 0.4rem;
+  background: rgba(0, 0, 0, 0.28);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.canari-card__sprite .canari-item-list__sprite {
+  width: 72px;
+  height: 72px;
+}
+
+.canari-card__body {
+  min-width: 0;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.canari-card__name {
+  font-size: 0.92rem;
+  font-weight: 650;
+  color: #f0e2f8;
+}
+
+.canari-card__summary {
+  font-size: 0.78rem;
+  line-height: 1.4;
+  color: #b8cfc4;
+}
+
+.canari-card__cost {
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #c9a0e8;
+  font-variant-numeric: tabular-nums;
+}
+
+.canari-guide {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1 1 0;
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.canari-guide__card {
+  padding: 0.75rem 0.85rem;
+  border-radius: 0.4rem;
+  border: 1px solid rgba(201, 160, 232, 0.18);
+  background: rgba(12, 22, 26, 0.55);
+}
+
+.canari-guide__card h3 {
+  margin: 0 0 0.4rem;
+  font-size: 0.74rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #c9a0e8;
+}
+
+.canari-guide__card p,
+.canari-guide__card li {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: #d8e8e0;
+}
+
+.canari-guide__card ul {
+  margin: 0;
+  padding-left: 1.05rem;
+  display: grid;
+  gap: 0.3rem;
+}
+
+@media (max-width: 700px) {
+  .canari-shop__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .canari-card {
+    grid-template-columns: 3.5rem minmax(0, 1fr);
+  }
+
+  .canari-card__sprite {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .canari-card__sprite .canari-item-list__sprite {
+    width: 56px;
+    height: 56px;
+  }
+}
