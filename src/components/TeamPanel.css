@@ -233,16 +233,6 @@
   z-index: 1;
 }
 
-/* Pokémon / Build: don't inflate the row — match the stats column height. */
-.team-editor__col:not(.team-editor__col--stats) {
-  height: 0;
-  min-height: 100%;
-}
-
-.team-editor__col--stats {
-  height: fit-content;
-}
-
 .team-panel--la .team-editor__col {
   border-color: rgba(200, 170, 120, 0.18);
   background: #15110d;
@@ -302,10 +292,9 @@
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
-  /* flex-basis 0: list content must not inflate the editor row —
-     row height is driven by the stats column, then these fill the rest. */
   flex: 1 1 0;
-  min-height: 0;
+  min-height: 14rem;
+  max-height: 22rem;
   overflow: auto;
   overscroll-behavior: contain;
   background: #0b1215;
@@ -739,19 +728,12 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .team-editor__col:not(.team-editor__col--stats) {
-    height: auto;
-    min-height: 0;
-  }
-
   .team-editor__col--stats {
     grid-column: 1 / -1;
-    height: auto;
   }
 
   .team-picker,
   .team-item-list {
-    flex: 1 1 auto;
     max-height: 16rem;
   }
 
