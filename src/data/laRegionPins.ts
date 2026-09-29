@@ -21,8 +21,17 @@ export type LaRegionPin = {
   spriteId?: number
   /** Optional second sprite (e.g. Dialga / Palkia). */
   spriteIdAlt?: number
+  /** Local icon (e.g. distortion rift) used instead of a Pokémon sprite. */
+  iconSrc?: string
   /** Region / arena map preview shown in details. */
   locationImageSrc?: string
+  /** Optional spawn roster (e.g. Space-Time Distortion pools). */
+  spawns?: {
+    dex: number
+    spriteId?: number
+    name: Localized
+    note?: Localized
+  }[]
 }
 
 export function pinsForRegion(pins: LaRegionPin[], regionId: string) {

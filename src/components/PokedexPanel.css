@@ -434,6 +434,47 @@
   border-top-color: rgba(200, 170, 120, 0.16);
 }
 
+/* Pokédex has more horizontal room — keep type charts side by side. */
+.pokedex-panel .poke-typechart {
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem 0.85rem;
+}
+
+.pokedex-panel .type-grid {
+  gap: 0.22rem 0.16rem;
+}
+
+.pokedex-panel .type-grid__badge {
+  height: 1.2rem;
+  font-size: 0.5rem;
+}
+
+.pokedex-panel .type-grid__mult {
+  height: 1.1rem;
+  font-size: 0.58rem;
+}
+
+@media (max-width: 720px) {
+  .pokedex-panel .poke-typechart {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .pokedex-panel .type-grid {
+    gap: 0.28rem 0.22rem;
+  }
+
+  .pokedex-panel .type-grid__badge {
+    height: 1.4rem;
+    font-size: 0.55rem;
+  }
+
+  .pokedex-panel .type-grid__mult {
+    height: 1.25rem;
+    font-size: 0.68rem;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .pokedex-card__details-wrap,
   .pokedex-card__chevron-icon {

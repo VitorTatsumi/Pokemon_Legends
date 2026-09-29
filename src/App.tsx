@@ -16,6 +16,7 @@ import { MissionPanel } from './components/MissionPanel'
 import { ScrewsView, type ScrewsTab } from './components/ScrewsView'
 import { PokedexPanel } from './components/PokedexPanel'
 import { Sidebar, type ToolId } from './components/Sidebar'
+import { TeamPanel } from './components/TeamPanel'
 import { ZonePanel } from './components/ZonePanel'
 import { LzaItemsView } from './components/LzaItemsPanel'
 import { LzaMableView } from './components/LzaMablePanel'
@@ -60,6 +61,7 @@ import {
   useLaSolitudeProgress,
   useLaLegendaryProgress,
   useDonutRecipes,
+  useTeamBuilder,
 } from './hooks/useStorage'
 import type { Locale } from './i18n'
 import { t } from './i18n'
@@ -117,6 +119,11 @@ function App() {
     remove: removeDonutRecipe,
     rename: renameDonutRecipe,
   } = useDonutRecipes()
+  const {
+    team: teamSlots,
+    replaceTeam,
+    resetTeam,
+  } = useTeamBuilder(game)
   const [tool, setTool] = useState<ToolId>('pokedex')
   /** Bumped when opening a region-guide tool so the overview map remounts. */
   const [regionGuideEpoch, setRegionGuideEpoch] = useState(0)
@@ -221,7 +228,8 @@ function App() {
         next === 'unowns' ||
         next === 'alphas' ||
         next === 'outbreaks' ||
-        next === 'camps')
+        next === 'camps' ||
+        next === 'distortions')
     ) {
       setLaFieldGuideCategory(next)
       setTool('field-guide')
@@ -518,6 +526,15 @@ function App() {
                 onOpenOutbreak={handleOpenOutbreak}
               />
             )}
+            {tool === 'team' && (
+              <TeamPanel
+                locale={locale}
+                game={game}
+                team={teamSlots}
+                onChange={replaceTeam}
+                onReset={resetTeam}
+              />
+            )}
             {tool === 'map' && (
               <div className="map-layout">
                 <HisuiMap
@@ -626,6 +643,15 @@ function App() {
             onToggle={toggleDex}
             onReset={resetDex}
             onOpenMegaStone={handleOpenMegaStone}
+          />
+        )}
+        {tool === 'team' && (
+          <TeamPanel
+            locale={locale}
+            game={game}
+            team={teamSlots}
+            onChange={replaceTeam}
+            onReset={resetTeam}
           />
         )}
         {tool === 'map' && (

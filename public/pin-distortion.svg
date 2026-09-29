@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <radialGradient id="riftGlow" cx="50%" cy="48%" r="55%">
+      <stop offset="0%" stop-color="#f5d0fe"/>
+      <stop offset="38%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#4c1d95"/>
+    </radialGradient>
+    <linearGradient id="riftCore" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fae8ff"/>
+      <stop offset="50%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="32" cy="32" rx="24" ry="22" fill="url(#riftGlow)"/>
+  <path
+    d="M32 10c8 9 14 14 14 22 0 9-6 16-14 16s-14-7-14-16c0-8 6-13 14-22z"
+    fill="url(#riftCore)"
+    opacity="0.95"
+  />
+  <path
+    d="M32 16c5.5 7 9 11 9 16 0 6.5-4 11.5-9 11.5S23 38.5 23 32c0-5 3.5-9 9-16z"
+    fill="#1e1b4b"
+    opacity="0.55"
+  />
+  <path
+    d="M32 20c3.2 4.5 5.2 7.2 5.2 10.2 0 4-2.4 7-5.2 7s-5.2-3-5.2-7c0-3 2-5.7 5.2-10.2z"
+    fill="#ede9fe"
+  />
+  <path d="M14 18l5 3M50 18l-5 3M13 46l5-3M51 46l-5-3M32 6v6M32 52v6" stroke="#e9d5ff" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="18" cy="28" r="1.6" fill="#f5d0fe"/>
+  <circle cx="46" cy="30" r="1.4" fill="#ddd6fe"/>
+  <circle cx="22" cy="44" r="1.2" fill="#c4b5fd"/>
+</svg>

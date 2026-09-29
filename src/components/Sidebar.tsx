@@ -26,8 +26,10 @@ export type ToolId =
   | 'alphas'
   | 'outbreaks'
   | 'camps'
+  | 'distortions'
   | 'legendaries'
   | 'solitude'
+  | 'team'
 
 type Props = {
   locale: Locale
@@ -137,6 +139,13 @@ export function Sidebar({
             </button>
             <button
               type="button"
+              className={activeTool === 'team' ? 'is-active' : undefined}
+              onClick={() => onToolChange('team')}
+            >
+              {t(locale, 'toolTeam')}
+            </button>
+            <button
+              type="button"
               className={activeTool === 'map' ? 'is-active' : undefined}
               onClick={() => onToolChange('map')}
             >
@@ -212,6 +221,13 @@ export function Sidebar({
               onClick={() => onToolChange('pokedex')}
             >
               {t(locale, 'toolPokedex')}
+            </button>
+            <button
+              type="button"
+              className={activeTool === 'team' ? 'is-active' : undefined}
+              onClick={() => onToolChange('team')}
+            >
+              {t(locale, 'toolTeam')}
             </button>
             <button
               type="button"

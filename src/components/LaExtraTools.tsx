@@ -1,6 +1,7 @@
 import { useMemo, useState, type ReactNode } from 'react'
 import { LA_ALPHAS } from '../data/laAlphas'
 import { LA_CAMPS } from '../data/laCamps'
+import { LA_DISTORTIONS, type LaDistortionTier } from '../data/laDistortions'
 import { LA_LEGENDARIES } from '../data/laLegendaries'
 import { LA_OUTBREAKS } from '../data/laOutbreaks'
 import { LA_SOLITUDE } from '../data/laSolitude'
@@ -34,6 +35,7 @@ type RegionGuideTool =
   | 'camps'
   | 'legendaries'
   | 'outbreaks'
+  | 'distortions'
 
 type Props = {
   locale: Locale
@@ -303,6 +305,58 @@ function toOutbreakPins(): LaRegionPin[] {
   }))
 }
 
+const DISTORTION_TIER_I18N: Record<LaDistortionTier, string> = {
+  exclusive: 'laDistortionsExclusive',
+  rare: 'laDistortionsRare',
+  common: 'laDistortionsCommon',
+  postgame: 'laDistortionsPostgame',
+}
+
+function toDistortionPins(locale: Locale): LaRegionPin[] {
+  return LA_DISTORTIONS.flatMap((zone) => {
+    const region = getHisuiRegion(zone.regionId)
+    const exclusive = zone.pokemon
+      .filter((p) => p.tier === 'exclusive' || p.tier === 'rare' || p.tier === 'postgame')
+      .map((p) => p.name[locale])
+      .join(', ')
+
+    return zone.sites.map((s) => ({
+      id: s.id,
+      name: s.name,
+      description: {
+        en: `Possible Space-Time Distortion site. The same Pokémon pool is shared across all sites in ${region?.name.en ?? s.regionId}. Wait for the rift to open, then catch enraged spawns quickly before it closes.`,
+        pt: `Possível local de Distorção Espaço-Temporal. O mesmo pool de Pokémon é compartilhado por todos os locais em ${region?.name.pt ?? s.regionId}. Espere a fenda abrir e capture os spawns enfurecidos antes que feche.`,
+      },
+      note: s.description,
+      ...pinBase(s.regionId, s.subregionId),
+      markerLabel: '◎',
+      iconSrc: '/pin-distortion.svg?v=2',
+      facts: [
+        {
+          label: { en: 'Region pool', pt: 'Pool da região' },
+          value: {
+            en: `${zone.pokemon.length} species · sites share one list`,
+            pt: `${zone.pokemon.length} espécies · locais compartilham a lista`,
+          },
+        },
+        {
+          label: { en: 'Highlights', pt: 'Destaques' },
+          value: { en: exclusive, pt: exclusive },
+        },
+      ],
+      spawns: zone.pokemon.map((p) => ({
+        dex: p.dex,
+        spriteId: p.spriteId,
+        name: p.name,
+        note: {
+          en: t('en', DISTORTION_TIER_I18N[p.tier]),
+          pt: t('pt', DISTORTION_TIER_I18N[p.tier]),
+        },
+      })),
+    }))
+  })
+}
+
 function RegionGuideView({
   locale,
   tool,
@@ -324,19 +378,21 @@ function RegionGuideView({
     const pins =
       tool === 'outbreaks'
         ? toOutbreakPins()
-        : tool === 'wisps'
-          ? toWispPins()
-          : tool === 'unowns'
-            ? toUnownPins()
-            : tool === 'alphas'
-              ? toAlphaPins()
-              : tool === 'camps'
-                ? toCampPins()
-                : tool === 'legendaries'
-                  ? toLegendaryPins()
-                  : []
+        : tool === 'distortions'
+          ? toDistortionPins(locale)
+          : tool === 'wisps'
+            ? toWispPins()
+            : tool === 'unowns'
+              ? toUnownPins()
+              : tool === 'alphas'
+                ? toAlphaPins()
+                : tool === 'camps'
+                  ? toCampPins()
+                  : tool === 'legendaries'
+                    ? toLegendaryPins()
+                    : []
     return pins.find((p) => p.id === regionGuideFocusId) ?? null
-  }, [regionGuideFocusId, tool])
+  }, [locale, regionGuideFocusId, tool])
 
   const [selectedRegionId, setSelectedRegionId] = useState<HisuiRegionId | null>(
     focusPin?.regionId ?? null,
@@ -447,6 +503,22 @@ function RegionGuideView({
           itemLabel: t(locale, 'toolOutbreaks').toLowerCase(),
           marker: 'la-pin-marker la-pin-marker--outbreak',
           markerIcon: '/pin-outbreak.svg',
+        }
+      case 'distortions':
+        return {
+          pins: toDistortionPins(locale),
+          done: {},
+          toggle: undefined,
+          trackProgress: false,
+          title: t(locale, 'laDistortionsTitle'),
+          hint: t(locale, 'laRegionGuideHint'),
+          expandedHint: t(locale, 'laRegionGuideExpandedHint'),
+          detailHint: t(locale, 'laRegionGuideDetailHint'),
+          selectHint: t(locale, 'laRegionGuideSelectHint'),
+          eyebrow: t(locale, 'toolDistortions'),
+          itemLabel: t(locale, 'toolDistortions').toLowerCase(),
+          marker: 'la-pin-marker la-pin-marker--distortion',
+          markerIcon: '/pin-distortion.svg?v=2',
         }
     }
   }, [

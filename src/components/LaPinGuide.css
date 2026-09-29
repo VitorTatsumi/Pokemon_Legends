@@ -75,6 +75,11 @@
   border-color: #fecaca;
 }
 
+.la-pin-marker--distortion {
+  background: #1e1b4b;
+  border-color: #c4b5fd;
+}
+
 .la-pin-marker--camp {
   background: #14532d;
   border-color: #86efac;
@@ -312,6 +317,73 @@
   object-fit: contain;
   image-rendering: pixelated;
   flex-shrink: 0;
+}
+
+.mission-list__sprite--icon {
+  image-rendering: auto;
+  border-radius: 999px;
+  background: #1e1b4b;
+}
+
+.la-pin-spawns {
+  margin: 0.75rem 0 0;
+  padding: 0;
+  border: 0;
+}
+
+.la-pin-spawns__title {
+  margin: 0 0 0.45rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #9bb3a7;
+}
+
+.la-pin-spawns__grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(7.5rem, 1fr));
+  gap: 0.35rem;
+}
+
+.la-pin-spawns__grid li {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-width: 0;
+  padding: 0.3rem 0.4rem;
+  border-radius: 0.35rem;
+  background: rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(140, 190, 170, 0.12);
+}
+
+.la-pin-spawns__grid img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  flex-shrink: 0;
+}
+
+.la-pin-spawns__meta {
+  display: grid;
+  gap: 0.05rem;
+  min-width: 0;
+}
+
+.la-pin-spawns__meta strong {
+  font-size: 0.72rem;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.la-pin-spawns__meta small {
+  font-size: 0.62rem;
+  color: #8aa399;
 }
 
 @media (max-width: 640px) {

@@ -83,11 +83,13 @@ export function LaRegionCollectiblePanel({
         getHisuiRegion(p.regionId)?.subregions.find((s) => s.id === p.subregionId)?.name[
           locale
         ] ?? ''
+      const spawnHit = p.spawns?.some((s) => s.name[locale].toLowerCase().includes(q)) ?? false
       return (
         p.name[locale].toLowerCase().includes(q) ||
         sub.toLowerCase().includes(q) ||
         (p.note?.[locale].toLowerCase().includes(q) ?? false) ||
-        (p.description?.[locale].toLowerCase().includes(q) ?? false)
+        (p.description?.[locale].toLowerCase().includes(q) ?? false) ||
+        spawnHit
       )
     })
   }, [locale, query, scopedPins])
@@ -144,27 +146,41 @@ export function LaRegionCollectiblePanel({
       {selectedPin ? (
         <div className="mission-details mission-details--fill">
           <div className="la-pin-detail-hero">
-            {(selectedPin.spriteId != null || selectedPin.spriteIdAlt != null) && (
+            {(selectedPin.iconSrc ||
+              selectedPin.spriteId != null ||
+              selectedPin.spriteIdAlt != null) && (
               <div className="la-pin-detail-hero__sprites">
-                {selectedPin.spriteId != null && (
+                {selectedPin.iconSrc ? (
                   <img
-                    className="la-pin-detail-hero__sprite"
-                    src={spriteUrl(selectedPin.spriteId)}
+                    className="la-pin-detail-hero__sprite la-pin-detail-hero__sprite--icon"
+                    src={selectedPin.iconSrc}
                     alt=""
-                    width={72}
-                    height={72}
-                    loading="lazy"
+                    width={56}
+                    height={56}
                   />
-                )}
-                {selectedPin.spriteIdAlt != null && (
-                  <img
-                    className="la-pin-detail-hero__sprite"
-                    src={spriteUrl(selectedPin.spriteIdAlt)}
-                    alt=""
-                    width={72}
-                    height={72}
-                    loading="lazy"
-                  />
+                ) : (
+                  <>
+                    {selectedPin.spriteId != null && (
+                      <img
+                        className="la-pin-detail-hero__sprite"
+                        src={spriteUrl(selectedPin.spriteId)}
+                        alt=""
+                        width={72}
+                        height={72}
+                        loading="lazy"
+                      />
+                    )}
+                    {selectedPin.spriteIdAlt != null && (
+                      <img
+                        className="la-pin-detail-hero__sprite"
+                        src={spriteUrl(selectedPin.spriteIdAlt)}
+                        alt=""
+                        width={72}
+                        height={72}
+                        loading="lazy"
+                      />
+                    )}
+                  </>
                 )}
               </div>
             )}
@@ -196,6 +212,28 @@ export function LaRegionCollectiblePanel({
               </div>
             ))}
           </dl>
+          {selectedPin.spawns && selectedPin.spawns.length > 0 && (
+            <section className="la-pin-spawns" aria-label={t(locale, 'laDistortionsSpawns')}>
+              <h3 className="la-pin-spawns__title">{t(locale, 'laDistortionsSpawns')}</h3>
+              <ul className="la-pin-spawns__grid">
+                {selectedPin.spawns.map((s) => (
+                  <li key={`${s.dex}-${s.name.en}`}>
+                    <img
+                      src={spriteUrl(s.spriteId ?? s.dex)}
+                      alt=""
+                      width={28}
+                      height={28}
+                      loading="lazy"
+                    />
+                    <span className="la-pin-spawns__meta">
+                      <strong>{s.name[locale]}</strong>
+                      {s.note && <small>{s.note[locale]}</small>}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
           {selectedPin.locationImageSrc && (
             <figure className="la-pin-media__location la-pin-media__location--encounter">
               <img src={selectedPin.locationImageSrc} alt="" loading="lazy" />
@@ -277,10 +315,10 @@ export function LaRegionCollectiblePanel({
                   >
                     <span className="mission-list__name">
                       <span className="mission-list__title">
-                        {p.spriteId != null && (
+                        {(p.iconSrc || p.spriteId != null) && (
                           <img
-                            className="mission-list__sprite"
-                            src={spriteUrl(p.spriteId)}
+                            className={`mission-list__sprite${p.iconSrc ? ' mission-list__sprite--icon' : ''}`}
+                            src={p.iconSrc ?? spriteUrl(p.spriteId!)}
                             alt=""
                             width={28}
                             height={28}

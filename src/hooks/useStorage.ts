@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import { isGameId, type GameId } from '../data/games'
 import type { SavedDonutRecipe } from '../data/lzaDonuts'
+import { emptyTeam, parseTeamJson, type TeamExport } from '../data/teamBuilder'
 import type { Locale } from '../i18n'
 
 const LANG_KEY = 'lza-locale'
@@ -21,6 +22,8 @@ const LA_CAMPS_KEY = 'la-camps'
 const LA_SOLITUDE_KEY = 'la-solitude'
 const LA_LEGENDARIES_KEY = 'la-legendaries'
 const LZA_DONUT_RECIPES_KEY = 'lza-donut-recipes'
+const LZA_TEAM_KEY = 'lza-team'
+const LA_TEAM_KEY = 'la-team'
 
 export function useLocale() {
   const [locale, setLocaleState] = useState<Locale | null>(() => {
@@ -268,4 +271,44 @@ export function useDonutRecipes() {
   }, [])
 
   return { recipes, save, remove, rename }
+}
+
+export function useTeamBuilder(game: GameId) {
+  const storageKey = game === 'la' ? LA_TEAM_KEY : LZA_TEAM_KEY
+  const [team, setTeam] = useState<TeamExport>(() => {
+    try {
+      const raw = localStorage.getItem(storageKey)
+      if (!raw) return emptyTeam(game)
+      return parseTeamJson(raw, game)
+    } catch {
+      return emptyTeam(game)
+    }
+  })
+
+  useEffect(() => {
+    try {
+      const raw = localStorage.getItem(storageKey)
+      if (!raw) {
+        setTeam(emptyTeam(game))
+        return
+      }
+      setTeam(parseTeamJson(raw, game))
+    } catch {
+      setTeam(emptyTeam(game))
+    }
+  }, [game, storageKey])
+
+  useEffect(() => {
+    localStorage.setItem(storageKey, JSON.stringify(team))
+  }, [team, storageKey])
+
+  const replaceTeam = useCallback((next: TeamExport) => {
+    setTeam(next)
+  }, [])
+
+  const resetTeam = useCallback(() => {
+    setTeam(emptyTeam(game))
+  }, [game])
+
+  return { team, setTeam, replaceTeam, resetTeam }
 }

@@ -8,6 +8,7 @@ export type LaFieldGuideCategory =
   | 'alphas'
   | 'outbreaks'
   | 'camps'
+  | 'distortions'
 
 export const LA_FIELD_GUIDE_CATEGORIES: LaFieldGuideCategory[] = [
   'wisps',
@@ -15,6 +16,7 @@ export const LA_FIELD_GUIDE_CATEGORIES: LaFieldGuideCategory[] = [
   'alphas',
   'outbreaks',
   'camps',
+  'distortions',
 ]
 
 const CATEGORY_I18N: Record<LaFieldGuideCategory, string> = {
@@ -23,6 +25,7 @@ const CATEGORY_I18N: Record<LaFieldGuideCategory, string> = {
   alphas: 'toolAlphas',
   outbreaks: 'toolOutbreaks',
   camps: 'toolCamps',
+  distortions: 'toolDistortions',
 }
 
 export function isLaFieldGuideCategory(
